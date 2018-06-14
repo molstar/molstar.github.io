@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mol*</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/pure-min.css">
+    <style>
+        .splash-container {
+            background: #FFFFFF;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .splash {
+            /* absolute center .splash within .splash-container */
+            width: 80%;
+            height: 50%;
+            margin: auto;
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+            text-align: center;
+        }
+
+        .splash-head {
+            font-weight: bold;
+            color: white;
+            border: 3px solid white;
+            padding: 1em 1.6em;
+            font-weight: 100;
+            border-radius: 5px;
+            line-height: 1em;
+        }
+
+        .splash-subhead {
+            font-size: 1em;
+            color: black;
+            /* letter-spacing: 0.05em; */
+        }
+
+        .splash-button {
+            font-size: 1em;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="splash-container">
+        <div class="splash">
+            <h1 class="splash-head">
+                <img style="max-width: 525px; width: 100%;" src="img/molstar-logo.png" />
+            </h1>
+            <p class="splash-subhead">
+                Mol* (<i>/'molstar/</i>) is an open collaboration started by <a href="https://www.ebi.ac.uk/pdbe/">PDBe</a> and <a href="https://www.rcsb.org/">RCSB PDB</a> to provide a technology stack for data delivery and analysis tools of macromolecules.
+            </p>
+            <p class="splash-button">
+                <a href="https://github.com/molstar" class="pure-button pure-button-primary">Join Development on GitHub</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
