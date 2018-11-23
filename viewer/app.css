@@ -2217,7 +2217,7 @@
     width: 100%;
     background: #f3f2ee;
     color: #332b1f;
-    border: none !important;
+    border: none;
     padding: 0 10px;
     line-height: 30px;
     height: 32px;
@@ -3259,7 +3259,8 @@
   .msp-plugin .msp-transform-wrapper {
     margin-bottom: 10px; }
   .msp-plugin .msp-transform-header {
-    position: relative; }
+    position: relative;
+    border-top: 1px solid #b07cc6; }
     .msp-plugin .msp-transform-header > button {
       text-align: left;
       background: #f6f5f3;
@@ -3387,7 +3388,8 @@
     margin-bottom: 10px;
     text-align: center;
     font-weight: bold;
-    background: #eeece7; }
+    background: #eeece7;
+    border-top: 1px solid #e98b39; }
   .msp-plugin .msp-btn-row-group {
     display: flex;
     flex-direction: row;
