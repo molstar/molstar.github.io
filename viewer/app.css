@@ -3461,6 +3461,52 @@
       background: #f3f2ee;
       margin-bottom: 1px;
       padding: 3px 6px; }
+  .msp-plugin .msp-canvas {
+    width: 100%;
+    height: 100%;
+    background-color: #f3f2ee; }
+    .msp-plugin .msp-canvas text {
+      -webkit-touch-callout: none;
+      /* iOS Safari */
+      -webkit-user-select: none;
+      /* Safari */
+      -khtml-user-select: none;
+      /* Konqueror HTML */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* Internet Explorer/Edge */
+      user-select: none;
+      /* Non-prefixed version, currently
+                              supported by Chrome and Opera */ }
+    .msp-plugin .msp-canvas circle {
+      stroke: black;
+      stroke-width: 10;
+      stroke-opacity: .3; }
+      .msp-plugin .msp-canvas circle:hover {
+        fill: #ae5d04;
+        stroke: black;
+        stroke-width: 10px; }
+    .msp-plugin .msp-canvas .info {
+      fill: white;
+      stroke: black;
+      stroke-width: 3; }
+    .msp-plugin .msp-canvas .show {
+      visibility: visible; }
+    .msp-plugin .msp-canvas .hide {
+      visibility: hidden; }
+    .msp-plugin .msp-canvas .delete-button rect {
+      fill: #ED4337;
+      stroke: black; }
+    .msp-plugin .msp-canvas .delete-button text {
+      stroke: white;
+      fill: white; }
+    .msp-plugin .msp-canvas .delete-button:hover {
+      stroke: black;
+      stroke-width: 3;
+      fill: #ff6961; }
+    .msp-plugin .msp-canvas .infoCircle:hover {
+      fill: #4c66b2; }
   .msp-plugin .msp-logo {
     position: absolute;
     top: 0;
