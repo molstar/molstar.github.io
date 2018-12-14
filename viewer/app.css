@@ -3507,6 +3507,8 @@
       fill: #ff6961; }
     .msp-plugin .msp-canvas .infoCircle:hover {
       fill: #4c66b2; }
+  .msp-plugin .msp-canvas:focus {
+    outline: none; }
   .msp-plugin .msp-logo {
     position: absolute;
     top: 0;
