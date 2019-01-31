@@ -473,7 +473,7 @@
       .msp-plugin blockquote footer:before,
       .msp-plugin blockquote small:before,
       .msp-plugin blockquote .small:before {
-        content: '\2014   \A0'; }
+        content: '\2014 \00A0'; }
   .msp-plugin .blockquote-reverse,
   .msp-plugin blockquote.pull-right {
     padding-right: 15px;
@@ -494,7 +494,7 @@
     .msp-plugin blockquote.pull-right footer:after,
     .msp-plugin blockquote.pull-right small:after,
     .msp-plugin blockquote.pull-right .small:after {
-      content: '\A0   \2014'; }
+      content: '\00A0 \2014'; }
   .msp-plugin address {
     margin-bottom: 20px;
     font-style: normal;
@@ -1758,55 +1758,55 @@
     /* Uncomment for 3D effect */
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
   .msp-plugin .msp-icon-expand-layout:before {
-    content: "\E84A"; }
+    content: "\e84a"; }
   .msp-plugin .msp-icon-plus:before {
-    content: "\E816"; }
+    content: "\e816"; }
   .msp-plugin .msp-icon-minus:before {
-    content: "\E819"; }
+    content: "\e819"; }
   .msp-plugin .msp-icon-reset-scene:before {
-    content: "\E891"; }
+    content: "\e891"; }
   .msp-plugin .msp-icon-ok:before {
-    content: "\E812"; }
+    content: "\e812"; }
   .msp-plugin .msp-icon-cross:before {
-    content: "\E868"; }
+    content: "\e868"; }
   .msp-plugin .msp-icon-off:before {
-    content: "\E813"; }
+    content: "\e813"; }
   .msp-plugin .msp-icon-expand:before {
-    content: "\E885"; }
+    content: "\e885"; }
   .msp-plugin .msp-icon-collapse:before {
-    content: "\E883"; }
+    content: "\e883"; }
   .msp-plugin .msp-icon-visual-visibility:before {
-    content: "\E826"; }
+    content: "\e826"; }
   .msp-plugin .msp-icon-abort:before {
-    content: "\E814"; }
+    content: "\e814"; }
   .msp-plugin .msp-icon-focus-on-visual:before {
-    content: "\E8A3"; }
+    content: "\e8a3"; }
   .msp-plugin .msp-icon-settings:before {
-    content: "\E855"; }
+    content: "\e855"; }
   .msp-plugin .msp-icon-tools:before {
-    content: "\E856"; }
+    content: "\e856"; }
   .msp-plugin .msp-icon-log:before {
-    content: "\E8A5"; }
+    content: "\e8a5"; }
   .msp-plugin .msp-icon-remove:before {
-    content: "\E847"; }
+    content: "\e847"; }
   .msp-plugin .msp-icon-help:before {
-    content: '\E81C'; }
+    content: '\e81c'; }
   .msp-plugin .msp-icon-info:before {
-    content: '\E81E'; }
+    content: '\e81e'; }
   .msp-plugin .msp-icon-left-open-big:before {
-    content: '\E87C'; }
+    content: '\e87c'; }
   .msp-plugin .msp-icon-right-open-big:before {
-    content: '\E87D'; }
+    content: '\e87d'; }
   .msp-plugin .msp-icon-left-open:before {
-    content: '\E874'; }
+    content: '\e874'; }
   .msp-plugin .msp-icon-right-open:before {
-    content: '\E875'; }
+    content: '\e875'; }
   .msp-plugin .msp-icon-screenshot:before {
-    content: "\E80F"; }
+    content: "\e80f"; }
   .msp-plugin .msp-icon-help:before {
-    content: "\E81C"; }
+    content: "\e81c"; }
   .msp-plugin .msp-icon-help-circle:before {
-    content: "\E81D"; }
+    content: "\e81d"; }
   .msp-plugin .msp-layout-expanded, .msp-plugin .msp-layout-standard {
     left: 0;
     right: 0;
