@@ -2314,17 +2314,10 @@
   .msp-plugin .msp-slider > div:first-child {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 18px;
     bottom: 0;
-    right: 50px;
-    width: 100%;
-    padding-right: 50px;
-    display: table; }
-    .msp-plugin .msp-slider > div:first-child > div {
-      height: 32px;
-      display: table-cell;
-      vertical-align: middle;
-      padding: 0 14px; }
+    right: 62px;
+    display: grid; }
   .msp-plugin .msp-slider > div:last-child {
     position: absolute;
     height: 32px;
@@ -2334,6 +2327,11 @@
     width: 50px;
     top: 0;
     bottom: 0; }
+  .msp-plugin .msp-slider input[type=text] {
+    padding-right: 6px;
+    padding-left: 4px;
+    font-size: 80%;
+    text-align: right; }
   .msp-plugin .msp-slider2 > div:first-child {
     position: absolute;
     height: 32px;
@@ -2347,18 +2345,10 @@
   .msp-plugin .msp-slider2 > div:nth-child(2) {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 35px;
     bottom: 0;
-    right: 25px;
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 25px;
-    display: table; }
-    .msp-plugin .msp-slider2 > div:nth-child(2) > div {
-      height: 32px;
-      display: table-cell;
-      vertical-align: middle;
-      padding: 0 14px; }
+    right: 37px;
+    display: grid; }
   .msp-plugin .msp-slider2 > div:last-child {
     position: absolute;
     height: 32px;
@@ -2369,6 +2359,11 @@
     top: 0;
     bottom: 0;
     font-size: 80%; }
+  .msp-plugin .msp-slider2 input[type=text] {
+    padding-right: 4px;
+    padding-left: 4px;
+    font-size: 80%;
+    text-align: center; }
   .msp-plugin .msp-toggle-color-picker button {
     border: 10px solid #f3f2ee !important;
     margin: 0;
@@ -2454,6 +2449,7 @@
     padding: 5px 0;
     width: 100%;
     border-radius: 6px;
+    align-self: center;
     box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
     .msp-plugin .msp-slider-base * {
@@ -2711,6 +2707,8 @@
     background: white;
     cursor: inherit;
     display: block; }
+  .msp-plugin .msp-animation-section {
+    margin-bottom: 10px; }
   .msp-plugin .msp-entity-tree {
     overflow: hidden;
     position: absolute;
