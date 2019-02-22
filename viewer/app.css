@@ -3256,19 +3256,32 @@
     bottom: 33px; }
   .msp-plugin .msp-transform-wrapper {
     margin-bottom: 10px; }
+  .msp-plugin .msp-transform-update-wrapper {
+    border-bottom: 10px solid #e0ddd4; }
+  .msp-plugin .msp-transform-update-wrapper-collapsed {
+    margin-bottom: 1px; }
+  .msp-plugin .msp-transform-update-wrapper > .msp-transform-header > button, .msp-plugin .msp-transform-update-wrapper-collapsed > .msp-transform-header > button {
+    text-align: left;
+    padding-left: 32px;
+    background: #e0ddd4;
+    font-weight: bold; }
+  .msp-plugin .msp-transform-wrapper > .msp-transform-header > button {
+    text-align: left;
+    background: #f6f5f3;
+    font-weight: bold; }
   .msp-plugin .msp-transform-header {
-    position: relative;
-    border-top: 1px solid #b07cc6; }
-    .msp-plugin .msp-transform-header > button {
-      text-align: left;
-      background: #f6f5f3;
-      font-weight: bold; }
+    position: relative; }
+    .msp-plugin .msp-transform-header > button > small {
+      font-weight: normal;
+      float: right; }
     .msp-plugin .msp-transform-header > button:hover {
       color: #63533c; }
   .msp-plugin .msp-transform-default-params {
+    background: #eeece7;
     position: absolute;
-    right: 0;
-    top: 0; }
+    left: 0;
+    top: 0;
+    width: 32px; }
   .msp-plugin .msp-transform-default-params:hover {
     background: white; }
   .msp-plugin .msp-transform-apply-wrap {
@@ -3276,7 +3289,8 @@
     margin-top: 1px;
     width: 100%; }
   .msp-plugin .msp-transform-refresh {
-    width: 120px;
+    width: 87px;
+    margin-left: 33px;
     background: #eeece7;
     text-align: right; }
   .msp-plugin .msp-transform-apply {
@@ -3388,6 +3402,13 @@
     font-weight: bold;
     background: #eeece7;
     border-top: 1px solid #e98b39; }
+  .msp-plugin .msp-current-header {
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    background: #eeece7; }
   .msp-plugin .msp-btn-row-group {
     display: flex;
     flex-direction: row;
