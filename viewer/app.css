@@ -3243,7 +3243,7 @@
     height: 32px;
     line-height: 32px;
     width: 32px; }
-  .msp-plugin .msp-layout-right {
+  .msp-plugin .msp-layout-right, .msp-plugin .msp-layout-left {
     background: #e0ddd4; }
   .msp-plugin .msp-transformer-wrapper {
     position: relative; }
@@ -3257,14 +3257,14 @@
   .msp-plugin .msp-transform-wrapper {
     margin-bottom: 10px; }
   .msp-plugin .msp-transform-update-wrapper {
-    border-bottom: 10px solid #e0ddd4; }
+    margin-bottom: 1px; }
   .msp-plugin .msp-transform-update-wrapper-collapsed {
     margin-bottom: 1px; }
   .msp-plugin .msp-transform-update-wrapper > .msp-transform-header > button, .msp-plugin .msp-transform-update-wrapper-collapsed > .msp-transform-header > button {
     text-align: left;
     padding-left: 32px;
-    background: #e0ddd4;
-    font-weight: bold; }
+    line-height: 24px;
+    background: #e9e6e0; }
   .msp-plugin .msp-transform-wrapper > .msp-transform-header > button {
     text-align: left;
     background: #f6f5f3;
@@ -3448,9 +3448,18 @@
     margin-bottom: 1px;
     padding-left: 32px;
     padding-right: 74px;
-    border-bottom-left-radius: 10px; }
-    .msp-plugin .msp-tree-row-current {
-      background: #e0ddd4; }
+    border-left: 1px solid #e98b39; }
+    .msp-plugin .msp-tree-row-current a {
+      color: #332b1f; }
+    .msp-plugin .msp-tree-row-current a:hover, .msp-plugin .msp-tree-row-current a:hover > small {
+      color: #7f6b4d; }
+    .msp-plugin .msp-tree-row a {
+      display: block; }
+    .msp-plugin .msp-tree-row a > small {
+      color: #332b1f; }
+    .msp-plugin .msp-tree-row a:hover {
+      font-weight: bold;
+      text-decoration: none; }
   .msp-plugin .msp-tree-remove-button {
     position: absolute;
     right: 32px;
@@ -3463,6 +3472,7 @@
     left: 0;
     top: 0;
     width: 32px;
+    padding: 0;
     color: #7f6b4d; }
   .msp-plugin .msp-tree-visibility {
     position: absolute;
