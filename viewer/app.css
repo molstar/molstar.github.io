@@ -1807,6 +1807,12 @@
     content: "\e81c"; }
   .msp-plugin .msp-icon-help-circle:before {
     content: "\e81d"; }
+  .msp-plugin .msp-icon-model-prev:before {
+    content: "\e884"; }
+  .msp-plugin .msp-icon-model-next:before {
+    content: "\e885"; }
+  .msp-plugin .msp-icon-model-first:before {
+    content: "\e89c"; }
   .msp-plugin .msp-layout-expanded, .msp-plugin .msp-layout-standard {
     left: 0;
     right: 0;
@@ -3157,9 +3163,9 @@
     padding: 6px 10px;
     background: #eeece7;
     position: absolute;
-    top: 10px;
-    left: 10px;
-    text-align: left;
+    right: 10px;
+    bottom: 10px;
+    text-align: right;
     min-height: 32px;
     max-width: 95%;
     z-index: 10000;
@@ -3490,6 +3496,16 @@
       background: #f3f2ee;
       margin-bottom: 1px;
       padding: 3px 6px; }
+  .msp-plugin .msp-traj-controls {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    line-height: 32px; }
+    .msp-plugin .msp-traj-controls > span {
+      color: #332b1f;
+      padding-top: 1px;
+      font-size: 85%;
+      display: inline-block; }
   .msp-plugin .msp-canvas {
     width: 100%;
     height: 100%;
