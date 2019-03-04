@@ -3496,16 +3496,26 @@
       background: #f3f2ee;
       margin-bottom: 1px;
       padding: 3px 6px; }
-  .msp-plugin .msp-traj-controls {
+  .msp-plugin .msp-viewport-top-left-controls {
     position: absolute;
     left: 10px;
-    top: 10px;
-    line-height: 32px; }
-    .msp-plugin .msp-traj-controls > span {
-      color: #332b1f;
-      padding-top: 1px;
-      font-size: 85%;
-      display: inline-block; }
+    top: 10px; }
+    .msp-plugin .msp-viewport-top-left-controls .msp-traj-controls {
+      line-height: 32px;
+      float: left;
+      margin-right: 10px; }
+      .msp-plugin .msp-viewport-top-left-controls .msp-traj-controls > span {
+        color: #332b1f;
+        padding-top: 1px;
+        font-size: 85%;
+        display: inline-block; }
+    .msp-plugin .msp-viewport-top-left-controls .msp-state-snapshot-viewport-controls {
+      line-height: 32px;
+      float: left;
+      margin-right: 10px; }
+      .msp-plugin .msp-viewport-top-left-controls .msp-state-snapshot-viewport-controls > select {
+        display: inline-block;
+        width: 200px; }
   .msp-plugin .msp-canvas {
     width: 100%;
     height: 100%;
