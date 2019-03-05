@@ -1813,6 +1813,26 @@
     content: "\e885"; }
   .msp-plugin .msp-icon-model-first:before {
     content: "\e89c"; }
+  .msp-plugin .msp-icon-down-thin:before {
+    content: "\e88b"; }
+  .msp-plugin .msp-icon-up-thin:before {
+    content: "\e88e"; }
+  .msp-plugin .msp-icon-left-thin:before {
+    content: "\e88c"; }
+  .msp-plugin .msp-icon-right-thin:before {
+    content: "\e88d"; }
+  .msp-plugin .msp-icon-switch:before {
+    content: "\e896"; }
+  .msp-plugin .msp-icon-play:before {
+    content: "\e897"; }
+  .msp-plugin .msp-icon-stop:before {
+    content: "\e898"; }
+  .msp-plugin .msp-icon-pause:before {
+    content: "\e899"; }
+  .msp-plugin .msp-icon-left-open:before {
+    content: "\e87c"; }
+  .msp-plugin .msp-icon-right-open:before {
+    content: "\e87d"; }
   .msp-plugin .msp-layout-expanded, .msp-plugin .msp-layout-standard {
     left: 0;
     right: 0;
@@ -2159,6 +2179,13 @@
   .msp-plugin .msp-btn-icon {
     height: 32px;
     width: 32px;
+    line-height: 32px;
+    padding: 0;
+    text-align: center; }
+  .msp-plugin .msp-btn-icon-small {
+    height: 32px;
+    width: 20px;
+    font-size: 85%;
     line-height: 32px;
     padding: 0;
     text-align: center; }
@@ -3435,14 +3462,13 @@
       position: relative; }
       .msp-plugin .msp-state-list > li > button:first-child {
         border-left: 10px solid #d5d0c3 !important; }
+      .msp-plugin .msp-state-list > li > div {
+        position: absolute;
+        right: 0;
+        top: 0; }
     .msp-plugin .msp-state-list button {
       margin-bottom: 1px;
       text-align: left; }
-  .msp-plugin .msp-state-list-remove-button {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 32px; }
   .msp-plugin .msp-tree-row {
     position: relative;
     height: 32px;
