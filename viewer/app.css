@@ -1767,6 +1767,8 @@
     content: "\e891"; }
   .msp-plugin .msp-icon-ok:before {
     content: "\e812"; }
+  .msp-plugin .msp-icon-back:before {
+    content: "\e820"; }
   .msp-plugin .msp-icon-cross:before {
     content: "\e868"; }
   .msp-plugin .msp-icon-off:before {
@@ -1837,6 +1839,14 @@
     content: "\e890"; }
   .msp-plugin .msp-icon-database:before {
     content: "\e8d3"; }
+  .msp-plugin .msp-icon-upload:before {
+    content: "\e82e"; }
+  .msp-plugin .msp-icon-record:before {
+    content: "\e89a"; }
+  .msp-plugin .msp-icon-code:before {
+    content: "\e834"; }
+  .msp-plugin .msp-icon-floppy:before {
+    content: "\e8d0"; }
   .msp-plugin .msp-layout-expanded, .msp-plugin .msp-layout-standard {
     left: 0;
     right: 0;
@@ -2295,10 +2305,8 @@
     .msp-plugin .msp-btn-commit .msp-icon {
       display: block-inline;
       line-height: 32px;
-      margin-right: 10px;
       width: 32px;
-      text-align: center;
-      float: left; }
+      text-align: center; }
   .msp-plugin select.msp-form-control, .msp-plugin .msp-row select, .msp-plugin .msp-control-row select {
     background: none;
     background-color: #f3f2ee;
@@ -3304,6 +3312,8 @@
     bottom: 33px; }
   .msp-plugin .msp-transform-wrapper {
     margin-bottom: 10px; }
+  .msp-plugin .msp-transform-wrapper-collapsed {
+    margin-bottom: 1px; }
   .msp-plugin .msp-transform-update-wrapper {
     margin-bottom: 1px; }
   .msp-plugin .msp-transform-update-wrapper-collapsed {
@@ -3329,7 +3339,8 @@
     position: absolute;
     left: 0;
     top: 0;
-    width: 32px; }
+    width: 32px;
+    padding: 0; }
   .msp-plugin .msp-transform-default-params:hover {
     background: white; }
   .msp-plugin .msp-transform-apply-wrap {
@@ -3446,10 +3457,14 @@
     height: 32px;
     line-height: 32px;
     margin-bottom: 10px;
-    text-align: center;
+    text-align: right;
+    padding: 0 10px;
     font-weight: bold;
     background: #eeece7;
-    border-top: 1px solid #e98b39; }
+    border-bottom: 1px solid #e98b39; }
+    .msp-plugin .msp-section-header > .msp-icon {
+      display: block;
+      float: left; }
   .msp-plugin .msp-current-header {
     height: 32px;
     line-height: 32px;
@@ -3585,6 +3600,8 @@
       position: absolute;
       right: 0;
       top: 0; }
+  .msp-plugin .msp-state-actions .msp-transform-wrapper:last-child {
+    margin-bottom: 10px; }
   .msp-plugin .msp-canvas {
     width: 100%;
     height: 100%;
