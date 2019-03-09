@@ -1833,6 +1833,10 @@
     content: "\e87c"; }
   .msp-plugin .msp-icon-right-open:before {
     content: "\e87d"; }
+  .msp-plugin .msp-icon-cw:before {
+    content: "\e890"; }
+  .msp-plugin .msp-icon-database:before {
+    content: "\e8d3"; }
   .msp-plugin .msp-layout-expanded, .msp-plugin .msp-layout-standard {
     left: 0;
     right: 0;
@@ -2177,18 +2181,24 @@
   .msp-plugin .msp-btn, .msp-plugin .msp-row button, .msp-plugin .msp-control-row button, .msp-plugin .msp-btn:active, .msp-plugin .msp-row button:active, .msp-plugin .msp-control-row button:active, .msp-plugin .msp-btn-link:focus, .msp-plugin .msp-btn:hover, .msp-plugin .msp-row button:hover, .msp-plugin .msp-control-row button:hover {
     outline: none !important; }
   .msp-plugin .msp-btn-icon {
+    border: none;
     height: 32px;
     width: 32px;
     line-height: 32px;
     padding: 0;
     text-align: center; }
+    .msp-plugin .msp-btn-icon[disabled], .msp-plugin .msp-btn-icon[disabled]:hover, .msp-plugin .msp-btn-icon[disabled]:active {
+      color: #9c835f; }
   .msp-plugin .msp-btn-icon-small {
+    border: none;
     height: 32px;
     width: 20px;
     font-size: 85%;
     line-height: 32px;
     padding: 0;
     text-align: center; }
+    .msp-plugin .msp-btn-icon-small[disabled], .msp-plugin .msp-btn-icon-small[disabled]:hover, .msp-plugin .msp-btn-icon-small[disabled]:active {
+      color: #9c835f; }
   .msp-plugin .msp-btn-link .msp-icon {
     font-size: 100%; }
   .msp-plugin .msp-btn-link, .msp-plugin .msp-btn-link:active, .msp-plugin .msp-btn-link:focus {
@@ -2270,6 +2280,8 @@
       border: none;
       outline-offset: 0;
       outline: none; }
+  .msp-plugin .msp-control-top-offset {
+    margin-top: 1px; }
   .msp-plugin .msp-btn-commit {
     text-align: right;
     padding-top: 0;
@@ -2740,7 +2752,7 @@
     background: white;
     cursor: inherit;
     display: block; }
-  .msp-plugin .msp-animation-section {
+  .msp-plugin .msp-contols-section {
     margin-bottom: 10px; }
   .msp-plugin .msp-entity-tree {
     overflow: hidden;
@@ -3186,6 +3198,8 @@
   .msp-plugin .msp-viewport-controls-scene-options {
     width: 290px;
     background: #e0ddd4; }
+    .msp-plugin .msp-viewport-controls-scene-options .msp-control-group-wrapper:first-child {
+      padding-top: 0; }
   .msp-plugin .msp-highlight-info {
     color: #ae5d04;
     padding: 6px 10px;
@@ -3530,19 +3544,47 @@
     .msp-plugin .msp-viewport-top-left-controls .msp-traj-controls {
       line-height: 32px;
       float: left;
-      margin-right: 10px; }
+      margin-right: 10px;
+      background-color: #f3f2ee; }
       .msp-plugin .msp-viewport-top-left-controls .msp-traj-controls > span {
         color: #332b1f;
-        padding-top: 1px;
+        margin-left: 10px;
+        margin-right: 10px;
         font-size: 85%;
         display: inline-block; }
     .msp-plugin .msp-viewport-top-left-controls .msp-state-snapshot-viewport-controls {
       line-height: 32px;
       float: left;
-      margin-right: 10px; }
+      margin-right: 10px;
+      background-color: #f3f2ee; }
       .msp-plugin .msp-viewport-top-left-controls .msp-state-snapshot-viewport-controls > select {
         display: inline-block;
         width: 200px; }
+    .msp-plugin .msp-viewport-top-left-controls .msp-animation-viewport-controls {
+      line-height: 32px;
+      float: left;
+      margin-right: 10px;
+      position: relative;
+      background-color: #f3f2ee; }
+      .msp-plugin .msp-viewport-top-left-controls .msp-animation-viewport-controls .msp-animation-viewport-controls-select {
+        width: 290px;
+        position: absolute;
+        left: 0;
+        top: 42px;
+        background: #e0ddd4; }
+        .msp-plugin .msp-viewport-top-left-controls .msp-animation-viewport-controls .msp-animation-viewport-controls-select .msp-control-row:first-child {
+          margin-top: 0; }
+  .msp-plugin .msp-param-object-list-item {
+    margin-top: 1px;
+    position: relative; }
+    .msp-plugin .msp-param-object-list-item > button {
+      text-align: left; }
+      .msp-plugin .msp-param-object-list-item > button > span {
+        font-weight: bold; }
+    .msp-plugin .msp-param-object-list-item > div {
+      position: absolute;
+      right: 0;
+      top: 0; }
   .msp-plugin .msp-canvas {
     width: 100%;
     height: 100%;
