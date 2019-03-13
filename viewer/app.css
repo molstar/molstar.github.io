@@ -3570,11 +3570,13 @@
     .msp-plugin .msp-viewport-top-left-controls .msp-state-snapshot-viewport-controls {
       line-height: 32px;
       float: left;
-      margin-right: 10px;
-      background-color: #f3f2ee; }
+      margin-right: 10px; }
+      .msp-plugin .msp-viewport-top-left-controls .msp-state-snapshot-viewport-controls > button {
+        background-color: #f3f2ee; }
       .msp-plugin .msp-viewport-top-left-controls .msp-state-snapshot-viewport-controls > select {
         display: inline-block;
-        width: 200px; }
+        width: 200px;
+        margin-right: 10px; }
     .msp-plugin .msp-viewport-top-left-controls .msp-animation-viewport-controls {
       line-height: 32px;
       float: left;
