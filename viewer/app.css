@@ -3204,6 +3204,8 @@
     .msp-plugin .msp-viewport-controls-buttons .msp-btn-link:hover {
       color: #ae5d04; }
   .msp-plugin .msp-viewport-controls-scene-options {
+    overflow-y: auto;
+    max-height: 400px;
     width: 290px;
     background: #e0ddd4; }
     .msp-plugin .msp-viewport-controls-scene-options .msp-control-group-wrapper:first-child {
