@@ -2475,12 +2475,12 @@
     left: 0;
     top: 0;
     width: 120px;
-    text-align: left; }
+    text-align: left;
+    background: transparent; }
     .msp-plugin .msp-conrol-group-expander .msp-icon {
       line-height: 29px;
       width: 31px;
       text-align: center;
-      display: inline-block;
       font-size: 100%; }
   .msp-plugin .msp-plugin-layout_controls {
     position: absolute;
@@ -3557,7 +3557,8 @@
   .msp-plugin .msp-viewport-top-left-controls {
     position: absolute;
     left: 10px;
-    top: 10px; }
+    top: 10px;
+    z-index: 10000; }
     .msp-plugin .msp-viewport-top-left-controls .msp-traj-controls {
       line-height: 32px;
       float: left;
