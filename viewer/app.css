@@ -1868,7 +1868,7 @@
     overflow-y: auto; }
   .msp-plugin .msp-layout-static {
     overflow: hidden; }
-  .msp-plugin .msp-layout-main .msp-layout-static, .msp-plugin .msp-layout-bottom .msp-layout-static {
+  .msp-plugin .msp-layout-top .msp-layout-static, .msp-plugin .msp-layout-main .msp-layout-static, .msp-plugin .msp-layout-bottom .msp-layout-static {
     left: 0;
     right: 0;
     top: 0;
@@ -2760,7 +2760,7 @@
     background: white;
     cursor: inherit;
     display: block; }
-  .msp-plugin .msp-contols-section {
+  .msp-plugin .msp-controls-section {
     margin-bottom: 10px; }
   .msp-plugin .msp-entity-tree {
     overflow: hidden;
