@@ -3294,6 +3294,26 @@
     background: #FD354B; }
   .msp-plugin .msp-log-entry-warning {
     background: #FCC937; }
+  .msp-plugin .msp-sequence {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #eeece7; }
+  .msp-plugin .msp-sequence-select {
+    float: left;
+    width: 300px; }
+  .msp-plugin .msp-sequence-wrapper {
+    word-break: break-word;
+    padding: 6px 10px 6px 10px;
+    user-select: none;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 90%; }
+  .msp-plugin .msp-sequence-wrapper span {
+    cursor: pointer; }
   .msp-plugin .msp-transformer .msp-entity-badge {
     position: absolute;
     top: 0;
