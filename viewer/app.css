@@ -1899,8 +1899,8 @@
     .msp-plugin .msp-layout-standard-outside .msp-layout-top {
       position: absolute;
       right: 0;
-      height: 65px;
-      top: -65px;
+      height: 97px;
+      top: -97px;
       width: 50%;
       border-left: 1px solid #cec9ba;
       border-bottom: 1px solid #cec9ba; }
@@ -1908,8 +1908,8 @@
       position: absolute;
       left: 0;
       right: 0;
-      height: 65px;
-      top: -65px;
+      height: 97px;
+      top: -97px;
       width: 50%;
       border-bottom: 1px solid #cec9ba; }
     .msp-plugin .msp-layout-standard-outside .msp-layout-right {
@@ -2006,11 +2006,11 @@
       left: 0;
       right: 0;
       bottom: 361px;
-      top: 65px; }
+      top: 97px; }
     .msp-plugin .msp-layout-standard-portrait .msp-layout-top {
       position: absolute;
       right: 0;
-      height: 65px;
+      height: 97px;
       top: 0;
       width: 50%;
       border-left: 1px solid #cec9ba;
@@ -2019,7 +2019,7 @@
       position: absolute;
       left: 0;
       right: 0;
-      height: 65px;
+      height: 97px;
       width: 50%;
       border-bottom: 1px solid #cec9ba; }
     .msp-plugin .msp-layout-standard-portrait .msp-layout-right {
@@ -2119,11 +2119,11 @@
         left: 0;
         right: 0;
         bottom: 361px;
-        top: 65px; }
+        top: 97px; }
       .msp-plugin .msp-layout-expanded .msp-layout-top {
         position: absolute;
         right: 0;
-        height: 65px;
+        height: 97px;
         top: 0;
         width: 50%;
         border-left: 1px solid #cec9ba;
@@ -2132,7 +2132,7 @@
         position: absolute;
         left: 0;
         right: 0;
-        height: 65px;
+        height: 97px;
         width: 50%;
         border-bottom: 1px solid #cec9ba; }
       .msp-plugin .msp-layout-expanded .msp-layout-right {
