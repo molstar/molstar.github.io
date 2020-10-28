@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <title>Mol* Alpha Orbitals Example</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            #app {
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+            }
+            #controls {
+                position: absolute;
+                left: 8px;
+                top: 8px;
+                width: 300px;
+            }            
+        </style>
+        <link rel="stylesheet" type="text/css" href="molstar.css" />
+        <script type="text/javascript" src="./index.js"></script>
+    </head>
+    <body>
+        <div id="app"></div>
+        <div id='controls'></div>
+        <script>
+            AlphaOrbitalsExample.init('app')
+        </script>
+    </body>
+</html>
