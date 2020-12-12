@@ -4,51 +4,111 @@
     <title>Mol*</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <link rel="stylesheet" href="css/pure-min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
     <style>
-        .splash-container {
-            background: #FFFFFF;
-            z-index: 1;
-            overflow: hidden;
+        .viewer-img {
+            box-shadow: 0 0 9px 1px rgba(0, 0, 0, 1);
         }
-
-        .splash {
-            /* absolute center .splash within .splash-container */
-            width: 80%;
-            height: 80%;
-            margin: auto;
-            position: absolute;
-            top: 0; left: 0; bottom: 0; right: 0;
-            text-align: center;
+        .viewer-img:hover {
+            box-shadow: 0 0 9px 1px  rgb(51, 43, 31)
         }
-
-        .splash-head {
-            font-weight: bold;
-            color: white;
-            border: 3px solid white;
-            padding: 1em 1.6em;
-            font-weight: 100;
-            border-radius: 5px;
-            line-height: 1em;
+        .founders, .examples {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
         }
-
-        .splash-subhead {
-            width: 70%;
-            max-width: 525px;
-            left: 0; right: 0;
-            margin: auto;
-            font-size: 1em;
-            color: black;
+        .founders img {
+            max-width: 120px;
+            max-height: 60px;
+            margin: 0 15px
         }
-
-        .splash-button {
-            font-size: 1em;
-            text-transform: uppercase;
+        .examples img {
+            max-width: 160px;
+            margin: 0 15px
+        }
+        .examples a {
+            opacity: 0.75;
+        }
+        .examples a:hover {
+            opacity: 1;
         }
     </style>
 </head>
 <body>
-    <div class="splash-container">
+    <div class="container" style="margin-bottom: 20px;">
+        <div class="row" style="text-align: center; margin: 80px 0 20px 0">
+            <img style="max-width: 525px; width: 100%;" src="img/molstar-logo.png" />
+        </div>
+
+        <div class="row" style="text-align: center;">
+            <div class="two columns">&nbsp;</div>
+            <div class="eight columns" style="border-top: 1px solid #E0DDD4; padding-top: 20px">
+                <h5 class="hero-heading">Mol* (<i>/'molstar/</i>) is a modern web-based open-source toolkit for visualisation and analysis of large-scale molecular data</h5>
+            </div>
+            <div class="two columns">&nbsp;</div>
+        </div>
+
+        <div class="row" style="margin-top: 30px; display: flex;">
+            <div class="one-half column" style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
+                <a href="viewer" target="_blank" title="Open Mol* Viewer">
+                    <img class="viewer-img" style="max-width: 100%" src="img/viewer.png">
+                </a>
+            </div>
+            <div class="one-half column" style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
+              <a class="button button-primary" href="viewer" style="font-size: 2rem; width: 100%;" target="_blank">Open Mol* Viewer</a>
+              <a class="button" href="documentation.html" style="font-size: 2rem; width: 100%;" target="_blank">Documentation</a>
+              <div style="text-align: justify; margin: 5px">
+                High-performance graphics and data handling of the Mol* Viewer allow users to simultaneously visualise up to hundreds of (superimposed) protein structures, play molecular dynamics trajectories, render cell-level models at atomic detail with tens of millions of atoms (Figure 1), or display huge models obtained by I/HM such as the Nuclear Pore Complex.
+              </div>
+            </div>
+        </div>
+
+        <div class="row" style="text-align: center; margin-top: 50px">
+            <div class="two columns">&nbsp;</div>
+            <div class="eight columns">
+                <h5 class="hero-heading">Interactive Examples</h5>
+                <div class="examples">
+                    <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fwebchem.ncbr.muni.cz%2Fmolstar-state%2Fget%2Fnpc-ao" target="_blank" title="Nuclear Pore Complex"><img alt="Nuclear Pore Complex" src="img/npc.png" /></a>
+                    <a href="demos/lighting" target="_blank" title="Lighting mode examples"><img alt="Lighting" src="img/lighting.png" /></a>
+                    <a href="demos/alpha-orbitals" target="_blank" title="Alpha orbitals and density of Atorvastatin"><img alt="Alpha orbitals and density of Atorvastatin" src="img/ao.png" /></a>
+                    <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fwebchem.ncbr.muni.cz%2Fmolstar-state%2Fget%2Fzikaem" target="_blank" title="Zika virus assembly and Cryo-EM density"><img alt="Zika+EM" src="img/zika.png" /></a>
+                    <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fwebchem.ncbr.muni.cz%2Fmolstar-state%2Fget%2F1rb8asm" target="_blank" title="1RB8 Annotated Assembly"><img alt="1RB8 Annotated Assembly" src="img/1rb8.png" /></a>
+                </div>
+            </div>
+            <div class="two columns">&nbsp;</div>
+        </div>
+
+        <div class="row" style="text-align: center; margin-top: 40px">
+            <div class="two columns">&nbsp;</div>
+            <div class="eight columns" style="border-top: 1px solid #E0DDD4; padding-top: 30px">
+                <h5 class="hero-heading">The project is an open collaboration started by</h5>
+                <div class="founders">
+                    <a href="https://pdbe.org"><img alt="PDBe" src="img/pdbe_logo.png" /></a>
+                    <a href="https://rcsb.org"><img alt="RCSB" src="img/rcsb_logo.png" /></a>
+                    <a href="https://ceitec.cz"><img alt="CEITEC" src="img/ceitec_logo.jpg" /></a>
+                    <a href="https://www.elixir-czech.cz/services"><img title="Mol* is a part of services provided by ELIXIR – European research infrastructure for biological information. For other services provided by ELIXIR's Czech Republic Node" src="img/elixir_logo.png" /></a>
+                </div>
+                <a class="button button-primary" href="https://github.com/molstar" style="font-size: 2rem; margin-top: 30px">
+                    Join Development on GitHub
+                </a>
+                <div style="margin-top: 10px;">
+                    <a href="https://github.com/molstar">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 10px" width="80" height="80" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="two columns">&nbsp;</div>
+        </div>
+
+        <div class="row" style="text-align: right; margin-top: 60px; color: #999">            
+            Copyright 2018–now, Mol* Contributors | <a href="terms-of-use.html" style="color: #999">Terms of Use & GDPR</a>
+        </div>
+    </div>
+
+    <!-- <div class="splash-container">
         <div class="splash">
             <h1 class="splash-head">
                 <img style="max-width: 525px; width: 100%;" src="img/molstar-logo.png" />
@@ -70,6 +130,6 @@
                 <small>work in progress</small>
             </p>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
