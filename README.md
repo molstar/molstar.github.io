@@ -1,2 +1,2 @@
 # molstar.github.io
-Mol* website molstar.org
+Mol* website (molstar.org)
