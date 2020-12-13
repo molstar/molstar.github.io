@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link rel="icon" href="./favicon.ico" type="image/x-icon">
+<title>Mol* Cheat Sheet</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Cache-Control" content="max-age=3600">
+	<meta http-equiv="Cache-Control" content="private">
+	<meta http-equiv="Cache-Control" content="must-revalidate">
+	<meta http-equiv="Pragma" content="private">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Charset" content="UTF-8">
+	<meta name="Distribution" content="Global">
+	<meta name="Rating" content="General">
+	<meta http-equiv="content-language" content="en-US">
+	
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/search.css">
+
+
+</head>
+
+<body>
+
+<div class="container" id="maincontentcontainer">
+<style>
+div#molstar-help-menu { margin-top: 10px; }
+div#molstar-help-menu a { text-decoration: none; }
+div#molstar-help-menu div { text-align: right; padding: 10px; border-bottom: 1px dotted #eee; }
+div#molstar-help-menu div:hover { background-color: #f9f9f9; cursor: pointer }
+div#molstar-help-menu span.glyphicon-chevron-right { font-size: 10px; margin-left: 10px; }
+div#molstar-help-menu div.item-selected { color: #ccc; }
+
+div#molstar-help-content { border-left: 1px solid #eee; }
+
+div#molstar-help-content table { border-collapse: collapse; }
+div#molstar-help-content table th, div#molstar-help-content table td { border: 1px solid #ddd; padding: 2px 4px; }
+div#molstar-help-content table th { background-color: #eee; }
+
+div#molstar-help-content h3 { margin-bottom: 30px; }
+div#molstar-help-content ul, div#molstar-help-content ol { margin-left: 30px; }
+
+/* anchor offset to account for fixed top nav bar - old: .anchor { position: relative; top: -50px; }*/
+div#molstar-help-content a.anchor {
+    display: block;
+    position: relative;
+    visibility: hidden;
+    top: -60px;
+}
+</style>
+<h2>Mol* Help</h2>
+<div class="row" id="molstar-help">
+<div class="col-xs-3" id="molstar-help-menu">
+<a href="index.html"><div>Getting Started<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="maneuvering-in-mol_.html"><div>Maneuvering in Mol*<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="making-selections.html"><div>Making Selections<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="navigating-by-sequence.html"><div>Navigating by Sequence<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="managing-the-display.html"><div>Managing the Display<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="common-actions.html"><div>Common Actions<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="faqs-scenarios.html"><div>FAQs/Scenarios<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="glossary.html"><div>Glossary<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<div class="item-selected">Mol* Cheat Sheet<span class="glyphicon glyphicon-chevron-right"></span></div>
+
+</div>
+
+<div class="col-xs-9" id="molstar-help-content">
+
+<h3>Mol* Cheat Sheet</h3>
+
+
+<h4> To Navigate the 3D Canvas:</h4><p><i><b>Rotate</b></i> - Press the left mouse button and move, or use the Shift button + left mouse button and drag.</p><p><i><b>Translate</b></i> - Press the right mouse button and move, or use the Control button + the left mouse button and move. On a touchscreen device, use a two-finger drag.</p><p><i><b>Zoom</b></i> - Use the mouse wheel. On a touchpad, use a two-finger drag. On a touchscreen device, pinch two fingers.</p><p><i><b>Center and zoom</b></i> - Use the right mouse button to click onto the part of the structure you wish to see.</p><p><i><b>Change clipping planes</b></i> - Use the Shift button + the mouse wheel. On a touchpad, use the Shift button + a two-finger drag.</p><br><h4>To Select</h4><p>First open Selection Mode and change the Picking Level (if needed):</p><ul><li>Click on objects in the 3D canvas, OR</li><li>Click on residues in the Sequence Panel, OR</li><li>Use the Set Operations Menu in the Selection Mode toolbar</li></ul><br><h4>To See or Hide</h4><ul><li>Create a component of the region you wish to see/hide →</li><li>Go to the Components Panel and press the “eye” icon next to the component you created</li></ul><br><h4>To Color</h4><p><i><b>N-terminus to C-terminus (rainbow)</b></i> - Components → Polymer → Set Coloring → Residue Property → Sequence Id</p><p><i><b>Heteroatom</b></i> - Components → Polymer → Set Coloring → Atom Property → Element Symbol</p><p><i><b>Secondary structure</b></i> - Components → Polymer → Set Coloring → Residue Property → Secondary Structure</p><p><i><b>Hydrophobicity</b></i> - Components → Polymer → Set Coloring → Residue Property → Hydrophobicity</p><p><i><b>Domain</b></i> - Select domain → Selections Menu → Apply Theme to Selection → Color → Apply Theme</p><br><h4>To Compare Structures</h4><p>First upload two or more structures at rcsb.org/3D-view</p><p><i><b>By chains</b></i> - Select 2 or more polymer chains/residues → Superposition → By Chains → Superpose</p><p><i><b>By atoms</b></i> - Select 1 or more atoms → Superposition → By Atoms→ Superpose</p><br><h4>To Make Measurements</h4><p><i><b>Distance</b></i> - Make 2 or more selections → Measurements → Add → Distance (for first 2 selections)</p><p><i><b>Angle</b></i> - Make 3 or more selections → Measurements → Add → Angle (for first 3 selections)</p><p><i><b>Dihedral</b></i> - Make 4 or more selections → Measurements → Add → Dihedral (for first 4 selections)</p></div></div></div>
+<p style="text-align:center;">Based on the <a href="https://www.rcsb.org/3d-view/molstar/help/getting-started">RCSB PDB mol* documentation</a> thanks to the generosity of RCSB PDB and Dr. Shuchismita Dutta.</p> 
+
+</body>
+
+</html>

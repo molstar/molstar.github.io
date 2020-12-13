@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link rel="icon" href="./favicon.ico" type="image/x-icon">
+<title>Common Actions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Cache-Control" content="max-age=3600">
+	<meta http-equiv="Cache-Control" content="private">
+	<meta http-equiv="Cache-Control" content="must-revalidate">
+	<meta http-equiv="Pragma" content="private">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Charset" content="UTF-8">
+	<meta name="Distribution" content="Global">
+	<meta name="Rating" content="General">
+	<meta http-equiv="content-language" content="en-US">
+	
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/search.css">
+
+
+</head>
+
+<body>
+
+
+<div class="container" id="maincontentcontainer">
+<style>
+div#molstar-help-menu { margin-top: 10px; }
+div#molstar-help-menu a { text-decoration: none; }
+div#molstar-help-menu div { text-align: right; padding: 10px; border-bottom: 1px dotted #eee; }
+div#molstar-help-menu div:hover { background-color: #f9f9f9; cursor: pointer }
+div#molstar-help-menu span.glyphicon-chevron-right { font-size: 10px; margin-left: 10px; }
+div#molstar-help-menu div.item-selected { color: #ccc; }
+
+div#molstar-help-content { border-left: 1px solid #eee; }
+
+div#molstar-help-content table { border-collapse: collapse; }
+div#molstar-help-content table th, div#molstar-help-content table td { border: 1px solid #ddd; padding: 2px 4px; }
+div#molstar-help-content table th { background-color: #eee; }
+
+div#molstar-help-content h3 { margin-bottom: 30px; }
+div#molstar-help-content ul, div#molstar-help-content ol { margin-left: 30px; }
+
+/* anchor offset to account for fixed top nav bar - old: .anchor { position: relative; top: -50px; }*/
+div#molstar-help-content a.anchor {
+    display: block;
+    position: relative;
+    visibility: hidden;
+    top: -60px;
+}
+</style>
+
+<h2>Mol* Help</h2>
+<div class="row" id="molstar-help">
+<div class="col-xs-3" id="molstar-help-menu">
+<a href="index.html"><div>Getting Started<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="maneuvering-in-mol_.html"><div>Maneuvering in Mol*<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="making-selections.html"><div>Making Selections<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="navigating-by-sequence.html"><div>Navigating by Sequence<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="managing-the-display.html"><div>Managing the Display<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<div class="item-selected">Common Actions<span class="glyphicon glyphicon-chevron-right"></span></div>
+<a href="faqs-scenarios.html"><div>FAQs/Scenarios<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="glossary.html"><div>Glossary<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="mol_-cheat-sheet.html"><div>Mol* Cheat Sheet<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+
+</div>
+
+<div class="col-xs-9" id="molstar-help-content"><h3>Common Actions</h3>
+
+
+<h4><a class="anchor" name="color" id="color"></a>Color</h4><p>There are three ways to color structures using Mol*.</p><p><b>1. Color using Selection Mode:</b> this method is best when seeking to apply a custom color to a structure. Select the parts of the structure to be colored in Selection Mode, and then the Apply Theme to Selection button (paint brush icon) located in the Selection Mode toolbar. Choose a desired color using the preset colors or create a new color using the RGB tool or the Lighten/Darken buttons. When appropriate color(s) have been selected, click Apply Theme. This tool can also be used to reset the color of the selection.</p><div style="margin: 15px 0;"><img src="./img/color1.png" alt="undefined" class="img-responsive" style="width: 350px;"></div><p><b>2. Color using the Components Panel:</b> this method is best when seeking to apply a color based on structural properties. Create a component for the part of the structure to be colored. Click on the button containing three dots in the <a href="managing-the-display.html#components-panel">Components Panel</a>, and then click on the Set Coloring option. There are several submenus which allow the component to be colored according to its structural properties. For example, it can be colored based on chain ID (rainbow from N-terminus to C-terminus), hydrophobicity, secondary structure, etc.</p><div style="margin: 15px 0;"><img src="./img/color2.png" alt="undefined" class="img-responsive" style="width: 250px;"></div><p><b>3. Color based on validation report:</b> click on the <a href="managing-the-display.html#components-panel">Components Panel</a>, then click on the Preset option. Select Annotation and click on one of the three options:</p><ul><li><b>Assembly symmetry:</b> colors structure based on assembly symmetry cluster membership.</li><li><b>Validation report (geometry quality):</b> colors structure based on geometry quality and shows geometry clashes.</li><li><b>Validation report (density fit):</b> colors structure based on density fit.</li></ul><div style="margin: 15px 0;"><img src="./img/color3.png" alt="undefined" class="img-responsive" style="width: 250px;"></div><p>There is one way to color backgrounds in Mol*. Click on the Settings/Controls Information button in the Toggle Menu. Next to the Background option, choose a desired color using the preset colors, or create a new color using the RGB tool or the Lighten/Darken buttons. If the three dots next to the Background option are clicked, an option is provided to make the background transparent.</p><div style="margin: 15px 0;"><img src="./img/color4.png" alt="undefined" class="img-responsive" style="width: 250px;"></div><h4><a class="anchor" name="transparency" id="transparency"></a>Transparency</h4><p>To change the transparency of a representation and surface, part of the structure must first be selected using <a href="making-selections.html#selection-mode">Selection Mode</a>. Click on the Apply Theme to Selection button located in the Selection Mode toolbar. Next to Action, change the command to Transparency. Then use the Value slide to set the transparency of the selected structure. A value of 0 is completely opaque, and a value of 100 is completely transparent. Click Apply Theme when the desired value is chosen.</p><div style="margin: 15px 0;"><img src="./img/transparency1.png" alt="undefined" class="img-responsive" style="width: 350px;"></div><h4><a class="anchor" name="clipping" id="clipping"></a>Clip Planes</h4><p>Clipping cuts or slices away parts of structures, surfaces, and objects from view. There are two ways to manually change the clipping planes using Mol*.</p><ol><li>Use Shift + Mouse Wheel to move the front and back clipping planes. On a touchpad, use Shift + two-finger drag.</li><li>Use the settings button and the clipping slider</li></ol><p><a href="maneuvering-in-mol_.html#focus">Focusing</a> on an object will automatically change the clipping planes to display the object of interest.</p></div></div></div>
+
+<p style="text-align:center;">Based on the <a href="https://www.rcsb.org/3d-view/molstar/help/getting-started">RCSB PDB mol* documentation</a> thanks to the generosity of RCSB PDB and Dr. Shuchismita Dutta.</p> 
+</body>
+</html>

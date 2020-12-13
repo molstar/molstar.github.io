@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link rel="icon" href="./favicon.ico" type="image/x-icon">
+<title>Maneuvering in Mol*</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Cache-Control" content="max-age=3600">
+	<meta http-equiv="Cache-Control" content="private">
+	<meta http-equiv="Cache-Control" content="must-revalidate">
+	<meta http-equiv="Pragma" content="private">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Charset" content="UTF-8">
+	<meta name="Distribution" content="Global">
+	<meta name="Rating" content="General">
+	<meta http-equiv="content-language" content="en-US">
+	
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/search.css">
+
+
+</head>
+<body>
+
+<div class="container" id="maincontentcontainer">
+<style>
+div#molstar-help-menu { margin-top: 10px; }
+div#molstar-help-menu a { text-decoration: none; }
+div#molstar-help-menu div { text-align: right; padding: 10px; border-bottom: 1px dotted #eee; }
+div#molstar-help-menu div:hover { background-color: #f9f9f9; cursor: pointer }
+div#molstar-help-menu span.glyphicon-chevron-right { font-size: 10px; margin-left: 10px; }
+div#molstar-help-menu div.item-selected { color: #ccc; }
+
+div#molstar-help-content { border-left: 1px solid #eee; }
+
+div#molstar-help-content table { border-collapse: collapse; }
+div#molstar-help-content table th, div#molstar-help-content table td { border: 1px solid #ddd; padding: 2px 4px; }
+div#molstar-help-content table th { background-color: #eee; }
+
+div#molstar-help-content h3 { margin-bottom: 30px; }
+div#molstar-help-content ul, div#molstar-help-content ol { margin-left: 30px; }
+
+/* anchor offset to account for fixed top nav bar - old: .anchor { position: relative; top: -50px; }*/
+div#molstar-help-content a.anchor {
+    display: block;
+    position: relative;
+    visibility: hidden;
+    top: -60px;
+}
+</style>
+<h2>Mol* Help</h2>
+
+<div class="row" id="molstar-help">
+<div class="col-xs-3" id="molstar-help-menu">
+
+<a href="index.html"><div>Getting Started<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<div class="item-selected">Maneuvering in Mol*<span class="glyphicon glyphicon-chevron-right"></span></div>
+<a href="making-selections.html"><div>Making Selections<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="navigating-by-sequence.html"><div>Navigating by Sequence<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="managing-the-display.html"><div>Managing the Display<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="common-actions.html"><div>Common Actions<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="faqs-scenarios.html"><div>FAQs/Scenarios<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="glossary.html"><div>Glossary<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="mol_-cheat-sheet.html"><div>Mol* Cheat Sheet<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+
+
+
+</div>
+
+<div class="col-xs-9" id="molstar-help-content"><h3>Maneuvering in Mol*</h3>
+
+<h4>Understanding how to Maneuver through Mol*</h4><p>Visualizing structures in Mol* requires an understanding of how to maneuver through the controls. This section is aimed at explaining the fundamentals of how Mol* works and how to effectively perform actions within it.</p><br><h4><a class="anchor" name="focus" id="focus"></a>Focus</h4><p>Focusing adjusts the view of the camera and the center of rotation on specific atoms, residues, or parts of structures. Once the camera is focused on a selection, other items in the structure may appear hidden from the camera because they fall outside the region being viewed or are clipped. There are four ways to change the focus of the camera:</p><ol><li>In default mode, click on a residue in the 3D canvas. It will automatically be centered and zoomed-in. The residue along with its surrounding residues will be represented as ball &amp; stick. All local non-covalent interactions will be shown.</li><li>In default mode, click on a residue in the Sequence Panel. It will automatically be centered and zoomed-in. The residue along with its surrounding residues will be represented as ball &amp; stick and nearby interactions will be shown.</li><li>If an object is listed in the <a href="managing-the-display.html#components-panel">Components Panel</a>, it can be clicked on which will make it the focus of the camera.</li><li>If an object is currently selected, it will be listed in the <a href="managing-the-display.html#structure-panel">Structure Panel</a>. For example, if four residues are selected, the Structure Panel will read “4 Residues Selected.” If this text is clicked on, the four residues will become the focus. </li></ol><div style="margin: 15px 0;"><img src="./img/structure.png" alt="RCSB PDB News Image" class="img-responsive" style="width: 400px;"></div><br><h4><a class="anchor" name="selections-logic" id="selections-logic"></a>Selections Logic</h4><p>Making selections is often the first step to performing a range of operations. Selections are made using <a href="making-selections.html#selection-mode">Selection Mode</a> which is activated using the cursor or arrow head icon in the Toggle Menu. The <a href="making-selections.html#picking-level">Picking Level</a> determines the specificity of the selection. For example, keeping the Picking Level on “residue” enables individual or groups of amino acid residues to be selected, while changing the Picking Level to “chain” allows whole chains to be selected. After the desired Picking Level is chosen, selections can be made by:</p><ul><li>Clicking on parts of the structure in the 3D canvas</li><li>Clicking on residues in the Sequence Panel</li><li>Using the Set Operations Menus in Selection Mode toolbar</li></ul><p>After selections are made, several tasks can be directly performed using the current selection. These include:</p><ul><li><a href="managing-the-display.html#create-component">Creating a component</a> of the current selection</li><li><a href="common-actions.html#color">Coloring</a> the current selection</li><li>Changing the <a href="common-actions.html#transparency">transparency</a> of the current selection</li><li>Changing the representation of the current selection (e.g., ball &amp; stick, molecular surface)</li><li>Removing the current selection from the 3D canvas</li><li>Focusing on the current selection</li><li>Creating <a href="managing-the-display.html#measurements-panel">measurements</a></li></ul><br><h4><a class="anchor" name="components-logic" id="components-logic"></a>Components Logic</h4><p>After making a selection, a component can be made from it. Creating components allows the user to make groupings of certain parts of a structure which can later be manipulated. It is not always necessary to create components, but it can be helpful in certain circumstances. For example, if you have selected a number of residues in a protein that you may be returning to multiple times to perform different actions, it may be helpful to create a component for quick reference.</p><p>The following are actions that can be performed with components:</p><ul><li>Showing/hiding using the eye icon</li><li>Changing the representation</li><li>Coloring by various requirements</li><li>Modifying the component by selection to add, subtract, or intersect pieces</li><li>Deleting the component - this will remove the grouping but the structure will remain intact</li></ul><p>Once again, it is not always required to make components, but can be useful for easy reference. Clicking on a component in the <a href="managing-the-display.html#components-panel">Components Panel</a> will quickly focus on that component in the 3D canvas. Additionally, the component can be easily selected from the Components Panel.</p><p>Using a component can be helpful for certain tasks:</p><ul><li>Briefly hiding a group to view another part of the structure</li><li>Coloring a selection with specific settings</li><li>Changing the representation after hiding certain parts of the structure</li><li>Grouping certain parts of different components into other components by modifying selection</li></ul></div></div></div>
+
+<p style="text-align:center;">Based on the <a href="https://www.rcsb.org/3d-view/molstar/help/getting-started">RCSB PDB mol* documentation</a> thanks to the generosity of RCSB PDB and Dr. Shuchismita Dutta.</p> 
+</body></html>
