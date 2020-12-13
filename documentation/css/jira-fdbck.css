@@ -1,0 +1,16 @@
+/* for affixing ever present "Contact Us" button */
+#contactus{
+    position: fixed;
+    border: 2px solid white;
+    border-top: none;
+    transform-origin: top left;
+    transform: rotate(90deg);
+    left: 100%;
+    top: 40%;
+    font-weight: bold;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+/* for ensuring that feedback modal is not eclipsed by surrounding elements (e.g. navbar) */
+#jira-fdbck-modal{
+    z-index: 9010;
+}
