@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link rel="icon" href="./favicon.ico" type="image/x-icon">
+<title>Navigating by Sequence</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Cache-Control" content="max-age=3600">
+	<meta http-equiv="Cache-Control" content="private">
+	<meta http-equiv="Cache-Control" content="must-revalidate">
+	<meta http-equiv="Pragma" content="private">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Charset" content="UTF-8">
+	<meta name="Distribution" content="Global">
+	<meta name="Rating" content="General">
+	<meta http-equiv="content-language" content="en-US">
+	
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/search.css">
+
+
+</head>
+
+<body>
+
+
+<div class="container" id="maincontentcontainer">
+<style>
+div#molstar-help-menu { margin-top: 10px; }
+div#molstar-help-menu a { text-decoration: none; }
+div#molstar-help-menu div { text-align: right; padding: 10px; border-bottom: 1px dotted #eee; }
+div#molstar-help-menu div:hover { background-color: #f9f9f9; cursor: pointer }
+div#molstar-help-menu span.glyphicon-chevron-right { font-size: 10px; margin-left: 10px; }
+div#molstar-help-menu div.item-selected { color: #ccc; }
+
+div#molstar-help-content { border-left: 1px solid #eee; }
+
+div#molstar-help-content table { border-collapse: collapse; }
+div#molstar-help-content table th, div#molstar-help-content table td { border: 1px solid #ddd; padding: 2px 4px; }
+div#molstar-help-content table th { background-color: #eee; }
+
+div#molstar-help-content h3 { margin-bottom: 30px; }
+div#molstar-help-content ul, div#molstar-help-content ol { margin-left: 30px; }
+
+/* anchor offset to account for fixed top nav bar - old: .anchor { position: relative; top: -50px; }*/
+div#molstar-help-content a.anchor {
+    display: block;
+    position: relative;
+    visibility: hidden;
+    top: -60px;
+}
+</style>
+<h2>Mol* Help</h2>
+<div class="row" id="molstar-help">
+<div class="col-xs-3" id="molstar-help-menu">
+<a href="index.html"><div>Getting Started<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="maneuvering-in-mol_.html"><div>Maneuvering in Mol*<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="making-selections.html"><div>Making Selections<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<div class="item-selected">Navigating by Sequence<span class="glyphicon glyphicon-chevron-right"></span></div>
+<a href="managing-the-display.html"><div>Managing the Display<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="common-actions.html"><div>Common Actions<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="faqs-scenarios.html"><div>FAQs/Scenarios<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="glossary.html"><div>Glossary<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="mol_-cheat-sheet.html"><div>Mol* Cheat Sheet<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+
+</div>
+<div class="col-xs-9" id="molstar-help-content"><h3>Navigating by Sequence</h3>
+
+
+<h4><a class="anchor" name="sequence-panel" id="sequence-panel"></a>Sequence Panel</h4><p>The Sequence Panel displays the polymer sequences of macromolecules (proteins and nucleic acids) present in the uploaded PDB structure(s). In addition, it provides quick access to any small molecular ligands or entities present in the structure. It enables several operations to be performed such as selecting residues and focusing on ligands. The Sequence Panel is located above the 3D canvas and contains three drop-down menus that allow the user to choose which sequence to display.</p><ul><li><b> First drop-down menu: </b> allows the user to decide which structure the sequence should be from. If multiple structures are uploaded into Mol*, this drop-down menu will list the PDB IDs of each structure along with a short summary of each one. The user should click the structure from which they want to view the sequence. If one structure is uploaded into Mol*, there will be only one option in this drop-down menu.</li></ul><div style="margin: 15px 0;"><img src="./img/sequencepanel1.png" alt="RCSB PDB News Image" class="img-responsive" style="width: 800px;"></div><ul><li><b> Second drop-down menu: </b> allows the user to decide which entity’s sequence should be displayed.</li></ul><div style="margin: 15px 0;"><img src="./img/sequencepanel2.png" alt="RCSB PDB News Image" class="img-responsive" style="width: 800px;"></div><ul><li><b> Third drop-down menu: </b> allows the user to decide which part of an entity the sequence should be from. If there are multiple copies of the entity in the structure, this drop-down menu will list them based on their chain IDs.</li></ul><div style="margin: 15px 0;"><img src="./img/sequencepanel3.png" alt="RCSB PDB News Image" class="img-responsive" style="width: 800px;"></div></div></div></div>
+
+<p style="text-align:center;">Based on the <a href="https://www.rcsb.org/3d-view/molstar/help/getting-started">RCSB PDB mol* documentation</a> thanks to the generosity of RCSB PDB and Dr. Shuchismita Dutta.</p> 
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link rel="icon" href="./favicon.ico" type="image/x-icon">
+<title>Making Selections</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Cache-Control" content="max-age=3600">
+	<meta http-equiv="Cache-Control" content="private">
+	<meta http-equiv="Cache-Control" content="must-revalidate">
+	<meta http-equiv="Pragma" content="private">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Charset" content="UTF-8">
+	<meta name="Distribution" content="Global">
+	<meta name="Rating" content="General">
+	<meta http-equiv="content-language" content="en-US">
+	
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/search.css">
+
+
+</head>
+
+<body>
+
+<div class="container" id="maincontentcontainer">
+<style>
+div#molstar-help-menu { margin-top: 10px; }
+div#molstar-help-menu a { text-decoration: none; }
+div#molstar-help-menu div { text-align: right; padding: 10px; border-bottom: 1px dotted #eee; }
+div#molstar-help-menu div:hover { background-color: #f9f9f9; cursor: pointer }
+div#molstar-help-menu span.glyphicon-chevron-right { font-size: 10px; margin-left: 10px; }
+div#molstar-help-menu div.item-selected { color: #ccc; }
+
+div#molstar-help-content { border-left: 1px solid #eee; }
+
+div#molstar-help-content table { border-collapse: collapse; }
+div#molstar-help-content table th, div#molstar-help-content table td { border: 1px solid #ddd; padding: 2px 4px; }
+div#molstar-help-content table th { background-color: #eee; }
+
+div#molstar-help-content h3 { margin-bottom: 30px; }
+div#molstar-help-content ul, div#molstar-help-content ol { margin-left: 30px; }
+
+/* anchor offset to account for fixed top nav bar - old: .anchor { position: relative; top: -50px; }*/
+div#molstar-help-content a.anchor {
+    display: block;
+    position: relative;
+    visibility: hidden;
+    top: -60px;
+}
+</style>
+<h2>Mol* Help</h2>
+<div class="row" id="molstar-help">
+<div class="col-xs-3" id="molstar-help-menu">
+<a href="index.html"><div>Getting Started<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="maneuvering-in-mol_.html"><div>Maneuvering in Mol*<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<div class="item-selected">Making Selections<span class="glyphicon glyphicon-chevron-right"></span></div>
+<a href="navigating-by-sequence.html"><div>Navigating by Sequence<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="managing-the-display.html"><div>Managing the Display<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="common-actions.html"><div>Common Actions<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="faqs-scenarios.html"><div>FAQs/Scenarios<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="glossary.html"><div>Glossary<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="mol_-cheat-sheet.html"><div>Mol* Cheat Sheet<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+
+</div>
+
+<div class="col-xs-9" id="molstar-help-content"><h3>Making Selections</h3>
+
+
+<h4><a class="anchor" name="selection-mode" id="selection-mode"></a>Selection Mode</h4><p>Making selections is often the first step to performing a range of operations. See <a href="maneuvering-in-mol_.html#selections-logic">Selections Logic </a> for more information about how and when to use Selection Mode.</p><p>Selection Mode allows parts of 3D structures to be selected by clicking on them. It also allows residues to be selected through Set Operations Menus. Selection Mode is enabled by clicking on the cursor icon in the Toggle Menu. Activating Selection Mode opens a toolbar that appears at the top of the 3D canvas. The following provides an illustration of the toolbar and a description of each of the buttons:</p><div style="margin: 15px 0;"><img src="./img/selectionmode1.png" alt="RCSB PDB News Image" class="img-responsive" style="width: 600px;"></div><p></p><table>
+		<tbody><tr>
+			<th>Function</th>
+			<th>Description</th>
+			<th>Icon</th>
+		</tr>
+		<tr>
+			<td><i>Picking Level for Selecting and Highlighting</i></td>
+			<td>Controls to what level a selection or highlight interaction is applied (i.e., atom, residue, chain, etc.)</td>
+			<td class="image"><img src="./img/table1.png" class="image" height="50" width="100"></td>
+		</tr>
+		<tr>
+			<td><i>Add/Union Selection</i></td>
+			<td>The new selection will be the union of the current and the other selection</td>
+			<td class="image"><img src="./img/table2.png" class="image" height="50" width="50"></td>
+		</tr>
+		<tr>
+			<td><i>Remove/Subtract Selection</i></td>
+			<td>The new selection will be the current selection with parts that are in the other selection removed</td>
+			<td class="image"><img src="./img/table3.png" class="image" height="50" width="50"></td>
+		</tr>
+		<tr>
+			<td><i>Intersect Selection</i></td>
+			<td>The new selection will be the intersection of the current selection and the other selection</td>
+			<td class="image"><img src="./img/table4.png" class="image" height="50" width="50"></td>
+		</tr>
+		<tr>
+			<td><i>Set Selection</i></td>
+			<td>The new selection will be the other selection</td>
+			<td class="image"><img src="./img/table5.png" class="image" height="50" width="50"></td>
+		</tr>
+		<tr>
+			<td><i>Apply Theme to Selection</i></td>
+			<td>Enables changes of <a href="common-actions.html#color">color</a>, <a href="common-actions.html#transparency">transparency</a>, and <a href="common-actions.html#clipping">clipping</a> to be applied to the current selection</td>
+			<td class="image"><img src="./img/table6.png" class="image" height="50" width="50"></td>
+		</tr>
+		<tr>
+			<td><i>Create Component of Selection with Representation</i></td>
+			<td>Enables components to be created and its representations to be changed independent of other components</td>
+			<td class="image"><img src="./img/table7.png" class="image" height="50" width="50"></td>
+		</tr>
+		<tr>
+			<td><i>Remove/Subtract Selection from All Components</i></td>
+			<td>Removes the current selection from being displayed in the 3D canvas</td>
+			<td class="image"><img src="./img/table8.png" class="image" height="50" width="50"></td>
+		</tr>
+		<tr>
+			<td><i>Undo Modify Selection</i></td>
+			<td>Allows certain actions (changes of color, hiding of components, etc.) to be reverted while remaining in the selection mode</td>
+			<td class="image"><img src="./img/table9.png" class="image" height="50" width="50"></td>
+		</tr>
+		<tr>
+			<td><i>Show/Hide Help</i></td>
+			<td>Offers a summary of selection operations, representation operations, and mouse controls</td>
+			<td class="image"><img src="./img/table10.png" class="image" height="50" width="50"></td>
+		</tr>
+		<tr>
+			<td><i>Turn Selection Mode Off</i></td>
+			<td>Switches from Selection Mode to Default Mode</td>
+			<td class="image"><img src="./img/table11.png" class="image" height="50" width="50"></td>
+		</tr>
+</tbody></table><p></p><h4><a class="anchor" name="picking-level" id="picking-level"></a>Picking Level</h4><p>The Picking Level in Mol* controls to what level a selection or highlight interaction is applied. Specifically, a selection/interaction can be extended from a single atom to a residue, chain, entity, model, or structure. The default level is residue. For the case of structures with symmetry instances, the interaction can also be extended to include all atom, residue, and chain instances of the clicked atom. In addition, the Picking Level determines the specificity of a selection in the <a href="navigating-by-sequence.html#sequence-panel">Sequence Panel</a>, or the specificity of the focus in <a href="index.html#default-mode">Default Mode</a>. The Picking Level menu can be changed via a menu in the Selection Mode toolbar located at the top of the 3D canvas.</p><div style="margin: 15px 0;"><img src="./img/pickinglevel1.png" alt="RCSB PDB News Image" class="img-responsive" style="width: 600px;"></div><h4><a class="anchor" name="making-selections" id="making-selections"></a>Making Selections</h4><p>Making selections in Mol* allows for many operations to be performed. Although there are several ways to make selections, the first step is to enable <a href="making-selections.html#selection-mode">Selection Mode </a> using the cursor icon in the Toggle Menu.</p><p>After activating Selection Mode, the easiest way to select is to click on objects in the 3D canvas or the <a href="navigating-by-sequence.html#sequence-panel">Sequence Panel</a>. Changing the <a href="making-selections.html#picking-level">Picking Level </a> makes selections more fine (e.g., selecting atoms) or more coarse (e.g., selecting whole chains).</p><p>The second way to select is with the Set Operations Menus that appear when Selection Mode is active. There are four set operations, each represented by two overlapping circles. They all open the same menu with a list of possible options for selections. If nothing is selected, the selection is empty. If an object is currently selected (i.e., the current selection is not empty), that selection can be modified with another selection using the operations. In the icons, the current selection is represented by the left circle and the other selection is represented by the right circle. After the set operation, the resulting selection (and new current selection) is represented by the filled part of the circles.</p><div style="margin: 15px 0;"><img src="./img/makingselections1.png" alt="RCSB PDB News Image" class="img-responsive" style="width: 600px;"></div><ul><li><b>Add/Union:</b> The new selection will be union of the current and the other selection.</li><li><b>Subtract/Remove:</b> The new selection will be the current selection with parts that are in the other selection removed.</li><li><b>Intersect:</b> The new selection will be the intersection of the current selection and the other selection.</li><li><b>Set:</b> The new selection will be the other selection.</li></ul><p>Another way to make selections is to use the <a href="managing-the-display.html#components-panel">Components Panel</a>. If a component of part of a structure is already created, it can be selected via the drop-down menu in the Components Panel. Click on the option that reads “Select This” to select that component.</p></div></div></div>
+
+<p style="text-align:center;">Based on the <a href="https://www.rcsb.org/3d-view/molstar/help/getting-started">RCSB PDB mol* documentation</a> thanks to the generosity of RCSB PDB and Dr. Shuchismita Dutta.</p> 
+</body>
+</html>
