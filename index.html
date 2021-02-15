@@ -19,7 +19,7 @@
         .founders, .examples {
             display: flex;
             justify-content: center;
-            align-items: center; 
+            align-items: center;
         }
         .founders img {
             max-width: 160px;
@@ -36,6 +36,38 @@
         }
         .examples a:hover {
             opacity: 1;
+        }
+
+        .tooltip {
+            display: inline-block;
+            position: relative;
+        }
+        .tooltip .tooltip-info {
+            display: none;
+            color: rgb(51, 43, 31);
+            background-color: #E0DDD4;
+            border-color: #E0DDD4;
+            border-radius: 4px;
+            padding: 5px;
+            position: absolute;
+            left: -25%;
+            width: 150%;
+            z-index: 2;
+        }
+        .tooltip-info:after {
+            content: "";
+            position: absolute;
+            left: calc(50% - 5px);
+            top: -10px;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #E0DDD4;
+        }
+        .tooltip:hover .tooltip-info, .tooltip:focus .tooltip-info {
+            display: inline-block;
+        }
+        a:focus + .tooltip .tooltip-info {
+            display: inline-block;
         }
     </style>
 </head>
@@ -76,23 +108,34 @@
                     <a href="demos/alpha-orbitals" target="_blank" title="Alpha orbitals and density of Atorvastatin"><img alt="Alpha orbitals and density of Atorvastatin" src="img/ao.png" /></a>
                     <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fzikaem.molx&snapshot-url-type=molx" target="_blank" title="Zika virus assembly and Cryo-EM density"><img alt="Zika+EM" src="img/zika.png" /></a>
                     <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fcytochromes.molx&snapshot-url-type=molx" target="_blank" title="Superposition and validation annotation of P-450 cytochromes"><img alt="P-450 Superposition" src="img/cytochromes.png" /></a>
-                    <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fvillin-md.molx&snapshot-url-type=molx" target="_blank" title="Villin trajectory. Doerr, Stefan. https://doi.org/10.6084/m9.figshare.12040257.v1"><img alt="Villin trajector" src="img/villin-md.png" /></a>
+                    <div class="tooltip">
+                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fvillin-md.molx&snapshot-url-type=molx" target="_blank" title="Villin trajectory"><img alt="Villin trajectory" src="img/villin-md.png" /></a>
+                        <p class="tooltip-info">
+                            Villin trajectory. Doerr, Stefan. <a href="https://doi.org/10.6084/m9.figshare.12040257.v1">doi.org/10.6084/m9.figshare.12040257.v1</a>
+                        </p>
+                    </div>
+                    <div class="tooltip">
+                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fgain-md.molx&snapshot-url-type=molx" target="_blank" title="GAIN domain tethered agonist exposure"><img alt="GAIN domain" src="img/gain-md.png"/></a>
+                        <p class="tooltip-info">
+                            GAIN domain tethered agonist exposure (<a href="https://doi.org/10.1016/j.molcel.2020.12.042">doi.org/10.1016/j.molcel.2020.12.042</a>). Based on an <a href="https://twitter.com/ramonguixxa/status/1353767532742766592">animation</a> by Ramon Guixà-González.
+                        </p>
+                    </div>
                 </div>
                 <div class="examples">
                     <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fhiv-simple-cut.molx&snapshot-url-type=molx" target="_blank" title="CellPack model of enveloped HIV capsid in blood serum"><img alt="HIV in blood serum" src="img/hiv_simple.png" /></a>
                     <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fnpc.molx&snapshot-url-type=molx" target="_blank" title="Nuclear Pore Complex"><img alt="Nuclear Pore Complex" src="img/npc.png" /></a>
                     <a href="demos/lighting" target="_blank" title="Lighting mode examples"><img alt="Lighting" src="img/lighting.png" /></a>
-                    <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2F1rb8asm.molx&snapshot-url-type=molx" target="_blank" title="1RB8 Annotated Assembly"><img alt="1RB8 Annotated Assembly" src="img/1rb8.png" /></a>                    
+                    <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2F1rb8asm.molx&snapshot-url-type=molx" target="_blank" title="1RB8 Annotated Assembly"><img alt="1RB8 Annotated Assembly" src="img/1rb8.png" /></a>
                 </div>
             </div>
         </div>
 
-        <div class="row" style="margin-top: 40px; display: flex;">            
+        <div class="row" style="margin-top: 40px; display: flex;">
             <div class="ten columns" style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
               <a class="button button-primary" href="https://github.com/molstar" style="font-size: 2rem; width: 100%;">Join Development on GitHub</a>
               <div style="text-align: justify; margin: 5px">
-                The Mol* toolkit provides a comprehensive solution for molecular data delivery, visualization and analysis that can be embedded into a wide range of 3<sup>rd</sup> party solutions. It includes a customizable plugin for high quality WebGL based molecular data visualization, 
-                as well as servers for model and experimental (X-ray, Cryo-EM, etc.) data delivery, efficient <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008247" style="color: #222">BinaryCIF</a> data format support, and other exciting features. 
+                The Mol* toolkit provides a comprehensive solution for molecular data delivery, visualization and analysis that can be embedded into a wide range of 3<sup>rd</sup> party solutions. It includes a customizable plugin for high quality WebGL based molecular data visualization,
+                as well as servers for model and experimental (X-ray, Cryo-EM, etc.) data delivery, efficient <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008247" style="color: #222">BinaryCIF</a> data format support, and other exciting features.
               </div>
             </div>
 
@@ -115,7 +158,7 @@
             </div>
         </div>
 
-        <div class="row" style="text-align: right; margin-top: 60px; color: #999">            
+        <div class="row" style="text-align: right; margin-top: 60px; color: #999">
             Copyright 2018–now, Mol* Contributors | <a href="terms-of-use.html" style="color: #999">Terms of Use & GDPR</a>
         </div>
     </div>
