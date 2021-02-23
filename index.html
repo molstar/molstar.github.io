@@ -1,141 +1,128 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <title>Mol*</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <style>
-        .viewer-img {
-            box-shadow: 0 0 9px 1px rgba(0, 0, 0, 1);
-        }
-        .viewer-img:hover {
-            box-shadow: 0 0 9px 1px  rgb(51, 43, 31)
-        }
-        .founders, .examples {
-            display: flex;
-            justify-content: center;
-            align-items: center; 
-        }
-        .founders img {
-            max-width: 160px;
-            max-height: 60px;
-            margin: 0 15px
-        }
-        .examples img {
-            max-width: 150px;
-            width: 100%;
-            margin: 0 10px
-        }
-        .examples a {
-            opacity: 0.75;
-        }
-        .examples a:hover {
-            opacity: 1;
-        }
-    </style>
+<link rel="icon" href="./favicon.ico" type="image/x-icon">
+<title>Getting Started</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Cache-Control" content="max-age=3600">
+	<meta http-equiv="Cache-Control" content="private">
+	<meta http-equiv="Cache-Control" content="must-revalidate">
+	<meta http-equiv="Pragma" content="private">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Charset" content="UTF-8">
+	<meta name="Distribution" content="Global">
+	<meta name="Rating" content="General">
+	<meta http-equiv="content-language" content="en-US">
+	
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/main.css">
+<link rel="stylesheet" href="./css/search.css">
+
+
 </head>
+
 <body>
-    <div class="container" style="margin-bottom: 20px;">
-        <div class="row" style="text-align: center; margin: 80px 0 20px 0">
-            <img style="max-width: 525px; width: 100%;" src="img/molstar-logo.png" />
-        </div>
 
-        <div class="row" style="text-align: center;">
-            <div class="two columns">&nbsp;</div>
-            <div class="eight columns" style="border-top: 1px solid #E0DDD4; padding-top: 20px">
-                <h5 class="hero-heading">Mol* (<i>/'molstar/</i>) is a modern web-based open-source toolkit for visualisation and analysis of large-scale molecular data</h5>
-            </div>
-            <div class="two columns">&nbsp;</div>
-        </div>
+<div class="container" id="maincontentcontainer">
+<style>
 
-        <div class="row" style="margin-top: 30px; display: flex;">
-            <div class="one-half column" style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
-                <a href="viewer" target="_blank" title="Open Mol* Viewer">
-                    <img class="viewer-img" style="max-width: 100%" src="img/viewer.png">
-                </a>
-            </div>
-            <div class="one-half column" style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
-              <a class="button button-primary" href="viewer" style="font-size: 2rem; width: 100%;" target="_blank">Open Mol* Viewer</a>
-              <a class="button" href="documentation/index.html" style="font-size: 2rem; width: 100%;" target="_blank">Documentation</a>
-              <div style="text-align: justify; margin: 5px">
-                High-performance graphics and data handling of the Mol* Viewer allow users to simultaneously visualise up to hundreds of (superimposed) protein structures, play molecular dynamics trajectories, render cell-level models at atomic detail with tens of millions of atoms, or display huge models obtained by I/HM such as the Nuclear Pore Complex.
-              </div>
-            </div>
-        </div>
+div#molstar-help-menu { margin-top: 10px; }
+div#molstar-help-menu a { text-decoration: none; }
+div#molstar-help-menu div { text-align: right; padding: 10px; border-bottom: 1px dotted #eee; }
+div#molstar-help-menu div:hover { background-color: #f9f9f9; cursor: pointer }
+div#molstar-help-menu span.glyphicon-chevron-right { font-size: 10px; margin-left: 10px; }
+div#molstar-help-menu div.item-selected { color: #ccc; }
 
-        <div class="row" style="text-align: center; margin-top: 50px">
-            <div class="twelve columns">
-                <h5 class="hero-heading"><b>Interactive Examples</b></h5>
-                <div class="examples">
-                    <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fwebchem.ncbr.muni.cz%2Fmolstar-state%2Fget%2Fnpc-ao" target="_blank" title="Nuclear Pore Complex"><img alt="Nuclear Pore Complex" src="img/npc.png" /></a>
-                    <a href="demos/lighting" target="_blank" title="Lighting mode examples"><img alt="Lighting" src="img/lighting.png" /></a>
-                    <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fhiv-simple-cut.molx&snapshot-url-type=molx" target="_blank" title="CellPack model of enveloped HIV capsid in blood serum"><img alt="HIV in blood serum" src="img/hiv_simple.png" /></a>
-                    <a href="demos/alpha-orbitals" target="_blank" title="Alpha orbitals and density of Atorvastatin"><img alt="Alpha orbitals and density of Atorvastatin" src="img/ao.png" /></a>
-                    <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fwebchem.ncbr.muni.cz%2Fmolstar-state%2Fget%2Fzikaem" target="_blank" title="Zika virus assembly and Cryo-EM density"><img alt="Zika+EM" src="img/zika.png" /></a>
-                    <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fwebchem.ncbr.muni.cz%2Fmolstar-state%2Fget%2F1rb8asm" target="_blank" title="1RB8 Annotated Assembly"><img alt="1RB8 Annotated Assembly" src="img/1rb8.png" /></a>
-                </div>
-            </div>
-        </div>
+div#molstar-help-content { border-left: 1px solid #eee; }
 
-        <div class="row" style="margin-top: 40px; display: flex;">            
-            <div class="ten columns" style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
-              <a class="button button-primary" href="https://github.com/molstar" style="font-size: 2rem; width: 100%;">Join Development on GitHub</a>
-              <div style="text-align: justify; margin: 5px">
-                The Mol* toolkit provides a comprehensive solution for molecular data delivery, visualization and analysis that can be embedded into a wide range of 3<sup>rd</sup> party solutions. It includes a customizable plugin for high quality WebGL based molecular data visualization, 
-                as well as servers for model and experimental (X-ray, Cryo-EM, etc.) data delivery, efficient <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008247" style="color: #222">BinaryCIF</a> data format support, and other exciting features. 
-              </div>
-            </div>
+div#molstar-help-content table { border-collapse: collapse; }
+div#molstar-help-content table th, div#molstar-help-content table td { border: 1px solid #ddd; padding: 2px 4px; }
+div#molstar-help-content table th { background-color: #eee; }
 
-            <div class="two columns" style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
-                <a href="https://github.com/molstar" title="Join Development on GitHub">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                </a>
-            </div>
-        </div>
+div#molstar-help-content h3 { margin-bottom: 30px; }
+div#molstar-help-content ul, div#molstar-help-content ol { margin-left: 30px; }
 
-        <div class="row" style="text-align: center; margin-top: 40px">
-            <div class="twelve columns" style="border-top: 1px solid #E0DDD4; padding-top: 30px">
-                <h5 class="hero-heading">The project is an open collaboration started by</h5>
-                <div class="founders">
-                    <a href="https://pdbe.org"><img alt="PDBe" src="img/pdbe_logo.png" /></a>
-                    <a href="https://rcsb.org"><img alt="RCSB" src="img/rcsb_logo.png" /></a>
-                    <a href="https://ceitec.cz"><img alt="CEITEC" src="img/ceitec_logo.jpg" /></a>
-                    <a href="https://www.elixir-czech.cz/services"><img title="Mol* is a part of services provided by ELIXIR – European research infrastructure for biological information. For other services provided by ELIXIR's Czech Republic Node" src="img/elixir_logo.png" /></a>
-                </div>
-            </div>
-        </div>
+/* anchor offset to account for fixed top nav bar - old: .anchor { position: relative; top: -50px; }*/
+div#molstar-help-content a.anchor {
+    display: block;
+    position: relative;
+    visibility: hidden;
+    top: -60px;
+}
+</style><h2>Mol* Help</h2>
 
-        <div class="row" style="text-align: right; margin-top: 60px; color: #999">            
-            Copyright 2018–now, Mol* Contributors | <a href="terms-of-use.html" style="color: #999">Terms of Use & GDPR</a>
-        </div>
-    </div>
+<div class="row" id="molstar-help">
+<div class="col-xs-3" id="molstar-help-menu">
 
-    <!-- <div class="splash-container">
-        <div class="splash">
-            <h1 class="splash-head">
-                <img style="max-width: 525px; width: 100%;" src="img/molstar-logo.png" />
-            </h1>
-            <p class="splash-subhead">
-                Mol* (<i>/'molstar/</i>) is an open collaboration started by <a href="https://www.ebi.ac.uk/pdbe/">PDBe</a> and <a href="https://www.rcsb.org/">RCSB PDB</a> to provide a technology stack for data delivery and analysis tools of macromolecules.
-            </p>
-            <p class="splash-button">
-                <a href="https://github.com/molstar" class="pure-button pure-button-primary">Join Development on GitHub</a>
-            </p>
-            <br />
-            <p>
-                <a href="viewer" class="splash-button pure-button pure-button-primary" target="_blank">Mol* Viewer</a><br />
-                <small>Macromolecular online viewer capable of coordinate and experimental data streaming and their visualisation, along with the ability to display quality, functional or biological context annotations. Most notable features include the ability to simultaneously and interactively visualise up to hundreds of (superimposed) protein structures; play molecular dynamics trajectories, or render cell-level models at atomic detail with tens of millions of atoms.</small>
-            </p>
-            <br />
-            <p>
-                <a href="documentation" class="splash-button pure-button pure-button-primary" target="_blank">Mol* Documentation</a><br />
-                <small>work in progress</small>
-            </p>
-        </div>
-    </div> -->
+<div class="item-selected">Getting Started<span class="glyphicon glyphicon-chevron-right"></span></div>
+<a href="maneuvering-in-mol_.html"><div>Maneuvering in Mol*<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="making-selections.html"><div>Making Selections<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="navigating-by-sequence.html"><div>Navigating by Sequence<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="managing-the-display.html"><div>Managing the Display<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="common-actions.html"><div>Common Actions<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="faqs-scenarios.html"><div>FAQs/Scenarios<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="glossary.html"><div>Glossary<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="mol_-cheat-sheet.html"><div>Mol* Cheat Sheet<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="Images_Movies.html"><div>Images & Movies<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="examples.html"><div>Examples<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+<a href="integrations.html"><div>Integrations<span class="glyphicon glyphicon-chevron-right"></span></div></a>
+</div>
+
+
+<div class="col-xs-9" id="molstar-help-content"><h3>Getting Started</h3>
+
+
+<h4>General Interface</h4><p>The user interface is structured with the following components.</p><div style="margin: 15px 0;"><img src="./img/generalinterface3.png" alt="General interface" class="img-responsive" style="width: 800px;"></div><p><b>3D Canvas</b>: This is the space where a PDB structure is displayed for manipulation in three dimensions (3D). It is located on the left side of the screen.</p><p><b>Toggle Menu</b>: This menu provides users quick access to some commonly used operations for the 3D canvas. It is located towards the right side of the 3D canvas and has the following functions.</p><p></p><table>
+		<tbody><tr>
+		 	<th>Function</th>
+		 	<th>Description</th>
+		 	<th>Icon</th>
+		</tr>
+		<tr>
+			<td><i>Reset Camera</i></td>
+			<td>Centers and resets the view of the structure on the 3D canvas</td>
+			<td><img src="./img/resetcameraicon.png" alt="" height="50" width="50"></td>
+		</tr>
+		<tr>
+			<td><i>Screenshot/State Snapshot</i></td>
+			<td>Takes an image of the structure as shown and gives options for resolution and download</td>
+			<td><img src="./img/screenshoticon.png" alt="" height="50" width="50"></td>
+		</tr>
+		<tr>
+			<td><i>Controls Panel</i></td>
+			<td>Hides/shows the Controls Panel to the right</td>
+			<td><img src="./img/controlpanelicon.png" alt="" height="50" width="50"></td>
+		</tr>
+		<tr>
+			<td><i>Expanded Viewport</i></td>
+			<td>Expands 3D canvas and Controls Panel to the full browser screen</td>
+			<td><img src="./img/expandedviewporticon.png" alt="" height="50" width="50"></td>
+		</tr>
+		<tr>
+			<td><i>Settings/Control Info</i></td>
+			<td>Provides settings for viewing of 3D canvas, as well as information about moving in 3D and mouse controls</td>
+			<td><img src="./img/settingsicon.png" alt="" height="50" width="50"></td>
+		</tr>
+		<tr>
+			<td><a href="making-selections.html#selection-mode"><i>Selection Mode</i></a></td>
+			<td>Switches from <a href="index.html#default-mode">Default Mode</a> to Selection Mode</td>
+			<td><img src="./img/selectionmodeicon.png" alt="" height="50" width="50"></td>
+		</tr>
+</tbody></table>
+<p>
+<a href="navigating-by-sequence.html#sequence-panel"><b>Sequence Panel</b></a>: This menu displays the polymer sequences of macromolecules (proteins and nucleic acids) present in the uploaded PDB structures. In addition, it provides quick access to any small molecular ligands or entities present in the structure(s). It is located at the top of the screen above the 3D Canvas.</p><p><a href="managing-the-display.html#controls-panel"><b>Controls Panel</b></a>: This menu has the following panels for structure manipulation. It is located at the right side of the screen.</p><ul><li><a href="managing-the-display.html#structure-panel">Structure</a></li><li><a href="managing-the-display.html#measurements-panel">Measurements</a></li><li><a href="managing-the-display.html#components-panel">Components</a></li><li><a href="managing-the-display.html#density-panel">Density</a></li><li><a href="managing-the-display.html#assembly-symmetry-panel">Assembly Symmetry</a></li><li><a href="managing-the-display.html#import-panel">Import</a></li><li><a href="managing-the-display.html#session-panel">Session</a></li><li><a href="managing-the-display.html#superposition-panel">Superposition</a></li></ul><p><b>Log Panel</b>: This panel shows various logs containing information about actions taken while viewing the structure. This is located at the bottom of the screen below the 3D Canvas.</p><br><h4>Mouse Controls</h4><p>All the interactions with the molecule(s) uploaded in Mol* require using mouse controls (in the 3D canvas). These controls allow the user to manipulate the view of structures via a variety of functions such as rotating, translating, zooming, and clipping the structures. When not specified, a “click” refers to pressing the left mouse button or tapping a single finger on a touchscreen. If an action is available for the right mouse button, it can also be completed by using the Control button + left mouse button. The general mouse controls are listed below:</p><ul><li><b>Rotate</b>: click the left mouse button and move. Alternatively, use the Shift button + left mouse button and drag to rotate the canvas.</li><li><b>Translate</b>: click the right mouse button and move. Alternatively, use the Control button + the left mouse button and move. On a touchscreen device, use a two-finger drag.</li><li><b>Zoom</b>: use the mouse wheel. On a touchpad, use a two-finger drag. On a touchscreen device, pinch two fingers.</li><li><b>Center and zoom</b>: use the right mouse button to click onto the part of the structure you wish to focus on.</li><li><b>Clip</b>: use the Shift button + the mouse wheel to change the clipping planes. On a touchpad, use the Shift button + a two-finger drag.</li></ul><p>Moving the mouse over (or hovering over) any part of the 3D structure displayed in the 3D canvas, without clicking on it, will highlight it (by coloring it in magenta) according to the <a href="making-selections.html#picking-level">Picking Level</a> currently selected. Additionally, in the lower right corner of the 3D canvas, information about the PDB ID, model number, instance, chain ID, residue number, and chain name is listed for the highlighted part of the structure.</p><p>As you interact with the structure using the mouse, Mol* contains two modes for which the behavior of a click is different. As a result, each mode enables unique operations to be performed. To switch between the two modes, use the Selection Mode icon (shaped like a cursor) that appears in the Toggle Menu. The list below summarizes Default Mode and Selection Mode.</p><ul><li><a class="anchor" name="default-mode" id="default-mode"></a><b>Default Mode</b>: A click on a residue (or any object in 3D) will focus on it. The focused residue and its surroundings (residues and ligands) will be displayed in a ball &amp; stick representation. All local non-covalent interactions will be shown. To hide the surroundings, click on the target residue again.</li><li><a href="making-selections.html#selection-mode"><b>Selection Mode</b></a>: A click on a residue (or any object in 3D) will select it. What exactly will be selected depends on the value of the <a href="making-selections.html#picking-level">Picking Level</a>. Selected parts of the structure will appear with a bright green tint in the 3D canvas and in the <a href="navigating-by-sequence.html#sequence-panel">Sequence Panel</a>. When selecting polymers with the Picking Level set to “residue,” holding the Shift key while clicking will extend the selection along the polymer from the last clicked residue on. Clicking on any point in the 3D canvas that has no atom will clear the selection.</li></ul>
+
+
+</div>
+
+</div>
+
+</div>
+<p style="text-align:center;">Based on the <a href="https://www.rcsb.org/3d-view/molstar/help/getting-started">RCSB PDB mol* documentation</a> thanks to the generosity of RCSB PDB and Dr. Shuchismita Dutta.</p> 
 </body>
+
 </html>
