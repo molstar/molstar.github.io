@@ -27,16 +27,17 @@
             margin: 0 15px
         }
         .examples img {
-            max-width: 180px;
+            max-width: 140px;
             width: 100%;
-            margin: 0 10px
+            margin: 0 10px;
         }
         .examples div.pad {
             max-width: 40px;
             width: 100%;
             margin: 0 10px
         }
-        .examples a {
+        .tooltip > a {
+            display: block;
             opacity: 0.75;
         }
         .examples a:hover {
@@ -51,12 +52,14 @@
             display: none;
             color: rgb(51, 43, 31);
             background-color: #E0DDD4;
-            border-color: #E0DDD4;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #D0CDC4;
             border-radius: 4px;
             padding: 5px;
             position: absolute;
-            left: -25%;
-            width: 150%;
+            left: -50%;
+            width: 200%;
             z-index: 2;
         }
         .tooltip-info:after {
@@ -110,14 +113,34 @@
             <div class="twelve columns">
                 <h5 class="hero-heading"><b>Interactive Examples</b></h5>
                 <div class="examples">
-                    <div class="pad">&nbsp;</div>
-                    <a href="demos/alpha-orbitals" target="_blank" title="Alpha orbitals and density of Atorvastatin"><img alt="Alpha orbitals and density of Atorvastatin" src="img/ao.png" /></a>
-                    <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fzikaem.molx&snapshot-url-type=molx" target="_blank" title="Zika virus assembly and Cryo-EM density"><img alt="Zika+EM" src="img/zika.png" /></a>
-                    <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fcytochromes.molx&snapshot-url-type=molx" target="_blank" title="Superposition and validation annotation of P-450 cytochromes"><img alt="P-450 Superposition" src="img/cytochromes.png" /></a>
+                    <div class="tooltip">
+                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fhiv-simple-cut.molx&snapshot-url-type=molx" target="_blank"><img alt="HIV in blood serum" src="img/hiv_simple.png" /></a>
+                        <p class="tooltip-info">
+                            CellPack model of enveloped HIV capsid with ~13M atoms.
+                        </p>
+                    </div>
+                    <div class="tooltip">
+                        <a href="demos/alpha-orbitals" target="_blank"><img alt="Alpha orbitals and density of Atorvastatin" src="img/ao.png" /></a>
+                        <p class="tooltip-info">
+                            Alpha orbitals and density of Atorvastatin.
+                        </p>
+                    </div>
+                    <div class="tooltip">
+                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fzikaem.molx&snapshot-url-type=molx" target="_blank"><img alt="Zika+EM" src="img/zika.png" /></a>
+                        <p class="tooltip-info">
+                            Zika virus assembly and Cryo-EM density.
+                        </p>
+                    </div>
+                    <div class="tooltip">
+                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fcytochromes.molx&snapshot-url-type=molx" target="_blank"><img alt="P-450 Superposition" src="img/cytochromes.png" /></a>
+                        <p class="tooltip-info">
+                            Superposition and validation annotation of P-450 cytochromes.
+                        </p>
+                    </div>
                     <div class="tooltip">
                         <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fvillin-md.molx&snapshot-url-type=molx" target="_blank" title="Villin trajectory"><img alt="Villin trajectory" src="img/villin-md.png" /></a>
                         <p class="tooltip-info">
-                            Villin folding trajectory by Stefan Doerr (<a href="https://doi.org/10.6084/m9.figshare.12040257.v1">doi:10.6084/m9.figshare.12040257.v1</a>)
+                            Villin folding trajectory by Stefan Doerr (<a href="https://doi.org/10.6084/m9.figshare.12040257.v1">doi:10.6084/m9.figshare.12040257.v1</a>).
                         </p>
                     </div>
                     <div class="tooltip">
@@ -126,13 +149,32 @@
                             GAIN domain tethered agonist exposure (<a href="https://doi.org/10.1016/j.molcel.2020.12.042">doi:10.1016/j.molcel.2020.12.042</a>). Based on an <a href="https://twitter.com/ramonguixxa/status/1353767532742766592">animation</a> by Ramon Guixà-González.
                         </p>
                     </div>
-                    <div class="pad">&nbsp;</div>
                 </div>
                 <div class="examples">
-                    <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fhiv-simple-cut.molx&snapshot-url-type=molx" target="_blank" title="CellPack model of enveloped HIV capsid in blood serum"><img alt="HIV in blood serum" src="img/hiv_simple.png" /></a>
-                    <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fnpc.molx&snapshot-url-type=molx" target="_blank" title="Nuclear Pore Complex"><img alt="Nuclear Pore Complex" src="img/npc.png" /></a>
-                    <a href="demos/lighting" target="_blank" title="Lighting mode examples"><img alt="Lighting" src="img/lighting.png" /></a>
-                    <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2F1rb8asm.molx&snapshot-url-type=molx" target="_blank" title="1RB8 Annotated Assembly"><img alt="1RB8 Annotated Assembly" src="img/1rb8.png" /></a>
+                    <div class="tooltip">
+                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fhiv-blood-cut.molx&snapshot-url-type=molx" target="_blank"><img alt="HIV in blood serum" src="img/hiv_blood.png" /></a>
+                        <p class="tooltip-info">
+                            CellPack model of enveloped HIV capsid in blood serum with 60+M atoms.
+                        </p>
+                    </div>
+                    <div class="tooltip">
+                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fnpc.molx&snapshot-url-type=molx" target="_blank"><img alt="Nuclear Pore Complex" src="img/npc.png" /></a>
+                        <p class="tooltip-info">
+                            IH/M structure of the Nuclear Pore Complex.
+                        </p>
+                    </div>
+                    <div class="tooltip">
+                        <a href="demos/lighting" target="_blank"><img alt="Lighting" src="img/lighting.png" /></a>
+                        <p class="tooltip-info">
+                            Render styles and lighting modes demonstration.
+                        </p>
+                    </div>
+                    <div class="tooltip">
+                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2F1rb8asm.molx&snapshot-url-type=molx" target="_blank"><img alt="1RB8 Annotated Assembly" src="img/1rb8.png" /></a>
+                        <p class="tooltip-info">
+                            Annotated assembly of the phiX174 DNA binding protein (PDB id 1RB8).
+                        </p>
+                    </div>
                     <div class="tooltip">
                         <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fsars-cov-2_virion.molx&snapshot-url-type=molx" target="_blank" title="SARS-CoV-2 Virion"><img alt="SARS-CoV-2 Virion" src="img/sars-cov-2_virion.png" /></a>
                         <p class="tooltip-info">
