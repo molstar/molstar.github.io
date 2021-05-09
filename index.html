@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Mol*</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <style>
         .viewer-img {
             box-shadow: 0 0 9px 1px rgba(0, 0, 0, 1);
         }
+
         .viewer-img:hover {
-            box-shadow: 0 0 9px 1px  rgb(51, 43, 31)
+            box-shadow: 0 0 9px 1px rgb(51, 43, 31)
         }
-        .founders, .examples {
+
+        .founders,
+        .examples {
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
         .founders img {
             max-width: 160px;
             max-height: 60px;
             margin: 0 15px
         }
+
         .examples img {
             max-width: 160px;
             width: 100%;
             margin: 0 10px;
         }
+
         .examples div.pad {
             max-width: 40px;
             width: 100%;
             margin: 0 10px
         }
-        .tooltip > a {
+
+        .tooltip>a {
             display: block;
             opacity: 0.75;
         }
+
         .examples a:hover {
             opacity: 1;
         }
@@ -48,6 +58,7 @@
             display: inline-block;
             position: relative;
         }
+
         .tooltip .tooltip-info {
             display: none;
             color: rgb(51, 43, 31);
@@ -62,6 +73,7 @@
             width: 200%;
             z-index: 2;
         }
+
         .tooltip-info:after {
             content: "";
             position: absolute;
@@ -71,14 +83,18 @@
             border-right: 10px solid transparent;
             border-bottom: 10px solid #E0DDD4;
         }
-        .tooltip:hover .tooltip-info, .tooltip:focus .tooltip-info {
+
+        .tooltip:hover .tooltip-info,
+        .tooltip:focus .tooltip-info {
             display: inline-block;
         }
-        a:focus + .tooltip .tooltip-info {
+
+        a:focus+.tooltip .tooltip-info {
             display: inline-block;
         }
     </style>
 </head>
+
 <body>
     <div class="container" style="margin-bottom: 20px;">
         <div class="row" style="text-align: center; margin: 80px 0 20px 0">
@@ -88,24 +104,33 @@
         <div class="row" style="text-align: center;">
             <div class="two columns">&nbsp;</div>
             <div class="eight columns" style="border-top: 1px solid #E0DDD4; padding-top: 20px">
-                <h5 class="hero-heading">Mol* (<i>/'molstar/</i>) is a modern web-based open-source toolkit for visualisation and analysis of large-scale molecular data</h5>
+                <h5 class="hero-heading">Mol* (<i>/'molstar/</i>) is a modern web-based open-source toolkit for
+                    visualisation and analysis of large-scale molecular data</h5>
             </div>
             <div class="two columns">&nbsp;</div>
         </div>
 
         <div class="row" style="margin-top: 30px; display: flex;">
-            <div class="one-half column" style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
+            <div class="one-half column"
+                style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
                 <a href="viewer" target="_blank" title="Open Mol* Viewer">
                     <img class="viewer-img" style="max-width: 100%" src="img/viewer.png">
                 </a>
             </div>
-            <div class="one-half column" style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
-              <a class="button button-primary" href="viewer" style="font-size: 2rem; width: 100%;" target="_blank">Open Mol* Viewer</a>
-              <a class="button" href="viewer-docs" style="font-size: 2rem; width: 100%;" target="_blank">Viewer Documentation</a>
-              <a class="button" href="https://github.com/molstar/molstar/issues" style="font-size: 2rem; width: 100%;" target="_blank">Issues &amp; Feedback</a>
-              <div style="text-align: justify; margin: 5px">
-                High-performance graphics and data handling of the Mol* Viewer allow users to simultaneously visualise up to hundreds of (superimposed) protein structures, play molecular dynamics trajectories, render cell-level models at atomic detail with tens of millions of atoms, or display huge models obtained by I/HM such as the Nuclear Pore Complex.
-              </div>
+            <div class="one-half column"
+                style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
+                <a class="button button-primary" href="viewer" style="font-size: 2rem; width: 100%;"
+                    target="_blank">Open Mol* Viewer</a>
+                <a class="button" href="viewer-docs" style="font-size: 2rem; width: 100%;" target="_blank">Viewer
+                    Documentation</a>
+                <a class="button" href="https://github.com/molstar/molstar/issues" style="font-size: 2rem; width: 100%;"
+                    target="_blank">Issues &amp; Feedback</a>
+                <div style="text-align: justify; margin: 5px">
+                    High-performance graphics and data handling of the Mol* Viewer allow users to simultaneously
+                    visualise up to hundreds of (superimposed) protein structures, play molecular dynamics trajectories,
+                    render cell-level models at atomic detail with tens of millions of atoms, or display huge models
+                    obtained by I/HM such as the Nuclear Pore Complex.
+                </div>
             </div>
         </div>
 
@@ -114,25 +139,29 @@
                 <h5 class="hero-heading"><b>Interactive Examples</b></h5>
                 <div class="examples">
                     <div class="tooltip">
-                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fhiv-simple-cut.molx&snapshot-url-type=molx" target="_blank"><img alt="HIV in blood serum" src="img/hiv_simple.png" /></a>
+                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fhiv-simple-cut.molx&snapshot-url-type=molx"
+                            target="_blank"><img alt="HIV in blood serum" src="img/hiv_simple.png" /></a>
                         <p class="tooltip-info">
                             CellPack model of enveloped HIV capsid with ~13M atoms.
                         </p>
                     </div>
                     <div class="tooltip">
-                        <a href="demos/alpha-orbitals" target="_blank"><img alt="Alpha orbitals and density of Atorvastatin" src="img/ao.png" /></a>
+                        <a href="demos/alpha-orbitals" target="_blank"><img
+                                alt="Alpha orbitals and density of Atorvastatin" src="img/ao.png" /></a>
                         <p class="tooltip-info">
                             Alpha orbitals and density of Atorvastatin.
                         </p>
                     </div>
                     <div class="tooltip">
-                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fzikaem.molx&snapshot-url-type=molx" target="_blank"><img alt="Zika+EM" src="img/zika.png" /></a>
+                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fzikaem.molx&snapshot-url-type=molx"
+                            target="_blank"><img alt="Zika+EM" src="img/zika.png" /></a>
                         <p class="tooltip-info">
                             Zika virus assembly and Cryo-EM density.
                         </p>
                     </div>
                     <div class="tooltip">
-                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fcytochromes.molx&snapshot-url-type=molx" target="_blank"><img alt="P-450 Superposition" src="img/cytochromes.png" /></a>
+                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fcytochromes.molx&snapshot-url-type=molx"
+                            target="_blank"><img alt="P-450 Superposition" src="img/cytochromes.png" /></a>
                         <p class="tooltip-info">
                             Superposition and validation annotation of P-450 cytochromes.
                         </p>
@@ -140,19 +169,27 @@
                 </div>
                 <div class="examples">
                     <div class="tooltip">
-                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fgain-md.molx&snapshot-url-type=molx" target="_blank" title="GAIN domain tethered agonist exposure"><img alt="GAIN domain" src="img/gain-md.png"/></a>
+                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fgain-md.molx&snapshot-url-type=molx"
+                            target="_blank" title="GAIN domain tethered agonist exposure"><img alt="GAIN domain"
+                                src="img/gain-md.png" /></a>
                         <p class="tooltip-info">
-                            GAIN domain tethered agonist exposure (<a href="https://doi.org/10.1016/j.molcel.2020.12.042">doi:10.1016/j.molcel.2020.12.042</a>). Based on an <a href="https://twitter.com/ramonguixxa/status/1353767532742766592">animation</a> by Ramon Guixà-González.
+                            GAIN domain tethered agonist exposure (<a
+                                href="https://doi.org/10.1016/j.molcel.2020.12.042">doi:10.1016/j.molcel.2020.12.042</a>).
+                            Based on an <a
+                                href="https://twitter.com/ramonguixxa/status/1353767532742766592">animation</a> by Ramon
+                            Guixà-González.
                         </p>
                     </div>
                     <div class="tooltip">
-                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fhiv-blood-cut.molx&snapshot-url-type=molx" target="_blank"><img alt="HIV in blood serum" src="img/hiv_blood.png" /></a>
+                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fhiv-blood-cut.molx&snapshot-url-type=molx"
+                            target="_blank"><img alt="HIV in blood serum" src="img/hiv_blood.png" /></a>
                         <p class="tooltip-info">
                             CellPack model of enveloped HIV capsid in blood serum with 60+M atoms.
                         </p>
                     </div>
                     <div class="tooltip">
-                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fnpc.molx&snapshot-url-type=molx" target="_blank"><img alt="Nuclear Pore Complex" src="img/npc.png" /></a>
+                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fnpc.molx&snapshot-url-type=molx"
+                            target="_blank"><img alt="Nuclear Pore Complex" src="img/npc.png" /></a>
                         <p class="tooltip-info">
                             IH/M structure of the Nuclear Pore Complex.
                         </p>
@@ -164,53 +201,91 @@
                         </p>
                     </div>
                     <div class="tooltip">
-                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2F1rb8asm.molx&snapshot-url-type=molx" target="_blank"><img alt="1RB8 Annotated Assembly" src="img/1rb8.png" /></a>
+                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2F1rb8asm.molx&snapshot-url-type=molx"
+                            target="_blank"><img alt="1RB8 Annotated Assembly" src="img/1rb8.png" /></a>
                         <p class="tooltip-info">
                             Annotated assembly of the phiX174 DNA binding protein (PDB id 1RB8).
                         </p>
                     </div>
                 </div>
-                <div class="examples">                    
+                <div class="examples">
                     <div class="tooltip">
-                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fvillin-md.molx&snapshot-url-type=molx" target="_blank" title="Villin trajectory"><img alt="Villin trajectory" src="img/villin-md.png" /></a>
+                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fvillin-md.molx&snapshot-url-type=molx"
+                            target="_blank" title="Villin trajectory"><img alt="Villin trajectory"
+                                src="img/villin-md.png" /></a>
                         <p class="tooltip-info">
-                            Villin folding trajectory by Stefan Doerr (<a href="https://doi.org/10.6084/m9.figshare.12040257.v1">doi:10.6084/m9.figshare.12040257.v1</a>).
+                            Villin folding trajectory by Stefan Doerr (<a
+                                href="https://doi.org/10.6084/m9.figshare.12040257.v1">doi:10.6084/m9.figshare.12040257.v1</a>).
                         </p>
                     </div>
                     <div class="tooltip">
-                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fsars-cov-2_virion.molx&snapshot-url-type=molx" target="_blank" title="SARS-CoV-2 Virion"><img alt="SARS-CoV-2 Virion" src="img/sars-cov-2_virion.png" /></a>
+                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fsars-cov-2_virion.molx&snapshot-url-type=molx"
+                            target="_blank" title="SARS-CoV-2 Virion"><img alt="SARS-CoV-2 Virion"
+                                src="img/sars-cov-2_virion.png" /></a>
                         <p class="tooltip-info">
-                            SARS-CoV-2 Virion. Coarse-grained model by Alvin Yu et al. (<a href="https://dx.doi.org/10.1016%2Fj.bpj.2020.10.048">doi:10.1016/j.bpj.2020.10.048</a>).
+                            SARS-CoV-2 Virion. Coarse-grained model by Alvin Yu et al. (<a
+                                href="https://dx.doi.org/10.1016%2Fj.bpj.2020.10.048">doi:10.1016/j.bpj.2020.10.048</a>).
                         </p>
                     </div>
                     <div class="tooltip">
-                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fbtub.molx&snapshot-url-type=molx" target="_blank" title="SARS-CoV-2 Virion"><img alt="BtuB molecules in a lipid bilayer" src="img/btub.png" /></a>
+                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fbtub.molx&snapshot-url-type=molx"
+                            target="_blank" title="SARS-CoV-2 Virion"><img alt="BtuB molecules in a lipid bilayer"
+                                src="img/btub.png" /></a>
                         <p class="tooltip-info">
-                            BtuB molecules in a lipid bilayer. Coarse-grained model by Matthieu Chavent et al. (<a href="https://dx.doi.org/10.1038/s41467-018-05255-9">doi:10.1038/s41467-018-05255-9</a>).
+                            BtuB molecules in a lipid bilayer. Coarse-grained model by Matthieu Chavent et al. (<a
+                                href="https://dx.doi.org/10.1038/s41467-018-05255-9">doi:10.1038/s41467-018-05255-9</a>).
                         </p>
                     </div>
                     <div class="tooltip">
-                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fmotor-hook.molx&snapshot-url-type=molx" target="_blank" title="Bacterial flagellar motor-hook complex"><img alt="bacterial flagellar motor-hook complex" src="img/motor-hook.png" /></a>
+                        <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fmotor-hook.molx&snapshot-url-type=molx"
+                            target="_blank" title="Bacterial flagellar motor-hook complex"><img
+                                alt="bacterial flagellar motor-hook complex" src="img/motor-hook.png" /></a>
                         <p class="tooltip-info">
-                            Cryo-EM structure of the bacterial flagellar motor-hook complex (<a href="https://twitter.com/jiaxing_tan_">@Jiaxing_Tan_</a> et al. PDB 7CGO, <a href="https://dx.doi.org/10.1038/s41467-018-05255-9">doi:10.1016/j.cell.2021.03.057</a>).
+                            Cryo-EM structure of the bacterial flagellar motor-hook complex (<a
+                                href="https://twitter.com/jiaxing_tan_">@Jiaxing_Tan_</a> et al. PDB 7CGO, <a
+                                href="https://dx.doi.org/10.1038/s41467-018-05255-9">doi:10.1016/j.cell.2021.03.057</a>).
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="row" style="text-align: jusitfy; margin-top: 50px">
+            <a class="button button-primary" href="https://doi.org/10.1093/nar/gkab314"
+                style="font-size: 2rem; width: 100%;" target="_blank">Read about Mol* in Nucleic Acids Research</a>
+
+            <div style="margin: 0 4px">
+                <b>When using Mol*, please cite:</b><br />
+                David Sehnal, Sebastian Bittrich, Mandar Deshpande, Radka Svobodová, Karel Berka, Václav Bazgier, Sameer
+                Velankar, Stephen K Burley, Jaroslav Koča, Alexander S Rose: <a
+                    href="https://doi.org/10.1093/nar/gkab31">Mol* Viewer: modern web app for 3D visualization and
+                    analysis of large biomolecular structures</a>, <i>Nucleic Acids Research</i>, 2021; <a
+                    href="https://doi.org/10.1093/nar/gkab31">10.1093/nar/gkab31</a>.
+            </div>
+        </div>
+
         <div class="row" style="margin-top: 40px; display: flex;">
-            <div class="ten columns" style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
-              <a class="button button-primary" href="https://github.com/molstar" style="font-size: 2rem; width: 100%;">Join Development on GitHub</a>
-              <div style="text-align: justify; margin: 5px">
-                The Mol* toolkit provides a comprehensive solution for molecular data delivery, visualization and analysis that can be embedded into a wide range of 3<sup>rd</sup> party solutions. It includes a customizable plugin for high quality WebGL based molecular data visualization,
-                as well as servers for model and experimental (X-ray, Cryo-EM, etc.) data delivery, efficient <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008247" style="color: #222">BinaryCIF</a> data format support, and other exciting features.
-              </div>
+            <div class="ten columns"
+                style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
+                <a class="button button-primary" href="https://github.com/molstar"
+                    style="font-size: 2rem; width: 100%;">Join Development on GitHub</a>
+                <div style="text-align: justify; margin: 5px">
+                    The Mol* toolkit provides a comprehensive solution for molecular data delivery, visualization and
+                    analysis that can be embedded into a wide range of 3<sup>rd</sup> party solutions. It includes a
+                    customizable plugin for high quality WebGL based molecular data visualization,
+                    as well as servers for model and experimental (X-ray, Cryo-EM, etc.) data delivery, efficient <a
+                        href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008247"
+                        style="color: #222">BinaryCIF</a> data format support, and other exciting features.
+                </div>
             </div>
 
-            <div class="two columns" style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
+            <div class="two columns"
+                style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
                 <a href="https://github.com/molstar" title="Join Development on GitHub">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
                 </a>
             </div>
         </div>
@@ -222,15 +297,18 @@
                     <a href="https://pdbe.org"><img alt="PDBe" src="img/pdbe_logo.png" /></a>
                     <a href="https://rcsb.org"><img alt="RCSB" src="img/rcsb_logo.png" /></a>
                     <a href="https://ceitec.cz"><img alt="CEITEC" src="img/ceitec_logo.jpg" /></a>
-                    <a href="https://www.elixir-czech.cz/services"><img title="Mol* is a part of services provided by ELIXIR – European research infrastructure for biological information. For other services provided by ELIXIR's Czech Republic Node" src="img/elixir_logo.png" /></a>
+                    <a href="https://www.elixir-czech.cz/services"><img
+                            title="Mol* is a part of services provided by ELIXIR – European research infrastructure for biological information. For other services provided by ELIXIR's Czech Republic Node"
+                            src="img/elixir_logo.png" /></a>
                 </div>
             </div>
         </div>
 
         <div class="row" style="text-align: right; margin-top: 60px; color: #999">
-            Copyright 2018–now, Mol* Contributors | <a href="terms-of-use.html" style="color: #999">Terms of Use & GDPR</a>
+            Copyright 2018–now, Mol* Contributors | <a href="terms-of-use.html" style="color: #999">Terms of Use &
+                GDPR</a>
         </div>
     </div>
 </body>
-</html>
 
+</html>
