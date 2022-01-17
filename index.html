@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <style>
-        .viewer-img {
+        .shadow-img {
             box-shadow: 0 0 9px 1px rgba(0, 0, 0, 1);
         }
 
-        .viewer-img:hover {
+        .shadow-img:hover {
             box-shadow: 0 0 9px 1px rgb(51, 43, 31)
         }
 
@@ -118,7 +118,7 @@
             <div class="one-half column"
                 style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
                 <a href="viewer" target="_blank" title="Open Mol* Viewer">
-                    <img class="viewer-img" style="max-width: 100%" src="img/viewer.png">
+                    <img class="shadow-img" style="max-width: 100%" src="img/viewer.png">
                 </a>
             </div>
             <div class="one-half column"
@@ -308,21 +308,39 @@
         
         <div class="row" style="margin-top: 40px; display: flex;">
             <div class="six columns" style="text-align: center;">
+                <a href="https://pdbe.org"><img alt="PDBe" style="height: 75px" src="img/pdbe_logo.png" /></a>
+            </div>
+            <div class="six columns" style="text-align: center;">
                 <a href="https://rcsb.org"><img alt="PDBe" style="height: 75px" src="img/rcsb_logo.png" /></a>
-                <div style="text-align: justify; margin-top: 16px;">
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 20px; display: flex; align-items: flex-start;">            
+            <div class="six columns" style="text-align: center;">
+                <div style="text-align: justify;">
+                    EMBL-EBI provides an <a href="https://github.com/molstar/pdbe-molstar">open source integration of Mol*</a> used by data resources such
+                    as <a href="https://pdbe.org/">PDBe</a>, <a href="https://pdbe-kb.org/">PDBe-KB</a> and <a href="https://alphafold.ebi.ac.uk/">AlphaFold DB</a>.
+                    This implementation can be embedded as a JS plugin or a Web Component with helper
+                    methods to facilitate programmatic interactions between the web application and the 3D viewer. Its features include a superposition view for overlaying 
+                    all observed ligand molecules on representative protein conformations.
+                </div>
+            </div>
+            <div class="six columns" style="text-align: center;">
+                <div style="text-align: justify;">
                     <a href="https://www.rcsb.org">RCSB PDB</a> provides an <a href="https://github.com/molstar/rcsb-molstar">open source integration of Mol*</a>
                     that implements additional functionality, including presets for the visualization of structure alignments and structure motifs such as ligand binding sites, 
                     or the option to interactively add or hide chains and other structural components as showcased by 
                     the <a href="https://www.rcsb.org/3d-sequence/4hhb">3D Protein Feature View</a>.
                 </div>
             </div>
+        </div>
+
+        <div class="row" style="margin-top: 20px; display: flex; align-items: center;">
             <div class="six columns" style="text-align: center;">
-                <a href="https://pdbe.org"><img alt="PDBe" style="height: 75px" src="img/pdbe_logo.png" /></a>
-                <div style="text-align: justify; margin-top: 16px;">
-                    <a href="https://www.pdbe.org">PDBe</a> provides an <a href="https://github.com/molstar/pdbe-molstar">open source integration of Mol*</a>
-                    that wraps the viewer in a Web Component, making the use in your app as easy as including
-                    <a href="https://embed.plnkr.co/plunk/kKn7XBc8lZQ1GwKx" style="color: rgb(34, 34, 34); text-decoration: none;"><code>&lt;pdbe-molstar molecule-id="2nnu" /&gt;</code></a>.
-                </div>
+                <a href="https://www.ebi.ac.uk/pdbe/pdbe-kb/"><img alt="PDBe Superposition View" style="max-width: 100%;" class="shadow-img" src="img/pdbe_superposition.png" /></a>
+            </div>
+            <div class="six columns" style="text-align: center;">
+                <a href="https://www.rcsb.org/3d-sequence/4hhb"><img alt="RCSB 3D Protein Feature View" style="max-width: 100%;" class="shadow-img" src="img/rcsb_protein_feature.png" /></a>
             </div>
         </div>
 
