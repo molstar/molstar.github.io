@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.e269f9a8.css",
-    "main.js": "/static/js/main.9ad99fe6.js",
-    "static/js/610.56b7330f.chunk.js": "/static/js/610.56b7330f.chunk.js",
-    "static/css/705.3bd4409f.chunk.css": "/static/css/705.3bd4409f.chunk.css",
-    "static/js/705.c7efae07.chunk.js": "/static/js/705.c7efae07.chunk.js",
-    "index.html": "/index.html",
-    "main.e269f9a8.css.map": "/static/css/main.e269f9a8.css.map",
-    "main.9ad99fe6.js.map": "/static/js/main.9ad99fe6.js.map",
-    "610.56b7330f.chunk.js.map": "/static/js/610.56b7330f.chunk.js.map",
-    "705.3bd4409f.chunk.css.map": "/static/css/705.3bd4409f.chunk.css.map",
-    "705.c7efae07.chunk.js.map": "/static/js/705.c7efae07.chunk.js.map"
+    "main.css": "https://molstar.org/volumes-and-segmentations/static/css/main.e269f9a8.css",
+    "main.js": "https://molstar.org/volumes-and-segmentations/static/js/main.71c4a755.js",
+    "static/js/610.0dcf4aff.chunk.js": "https://molstar.org/volumes-and-segmentations/static/js/610.0dcf4aff.chunk.js",
+    "static/css/705.3bd4409f.chunk.css": "https://molstar.org/volumes-and-segmentations/static/css/705.3bd4409f.chunk.css",
+    "static/js/705.9d660206.chunk.js": "https://molstar.org/volumes-and-segmentations/static/js/705.9d660206.chunk.js",
+    "index.html": "https://molstar.org/volumes-and-segmentations/index.html",
+    "main.e269f9a8.css.map": "https://molstar.org/volumes-and-segmentations/static/css/main.e269f9a8.css.map",
+    "main.71c4a755.js.map": "https://molstar.org/volumes-and-segmentations/static/js/main.71c4a755.js.map",
+    "610.0dcf4aff.chunk.js.map": "https://molstar.org/volumes-and-segmentations/static/js/610.0dcf4aff.chunk.js.map",
+    "705.3bd4409f.chunk.css.map": "https://molstar.org/volumes-and-segmentations/static/css/705.3bd4409f.chunk.css.map",
+    "705.9d660206.chunk.js.map": "https://molstar.org/volumes-and-segmentations/static/js/705.9d660206.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e269f9a8.css",
-    "static/js/main.9ad99fe6.js"
+    "static/js/main.71c4a755.js"
   ]
 }
