@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "https://molstar.org/volumes-and-segmentations/static/css/main.e269f9a8.css",
-    "main.js": "https://molstar.org/volumes-and-segmentations/static/js/main.0ba1c295.js",
+    "main.js": "https://molstar.org/volumes-and-segmentations/static/js/main.6e14373a.js",
     "static/js/610.0dcf4aff.chunk.js": "https://molstar.org/volumes-and-segmentations/static/js/610.0dcf4aff.chunk.js",
     "static/css/705.3bd4409f.chunk.css": "https://molstar.org/volumes-and-segmentations/static/css/705.3bd4409f.chunk.css",
     "static/js/705.9d660206.chunk.js": "https://molstar.org/volumes-and-segmentations/static/js/705.9d660206.chunk.js",
     "index.html": "https://molstar.org/volumes-and-segmentations/index.html",
     "main.e269f9a8.css.map": "https://molstar.org/volumes-and-segmentations/static/css/main.e269f9a8.css.map",
-    "main.0ba1c295.js.map": "https://molstar.org/volumes-and-segmentations/static/js/main.0ba1c295.js.map",
+    "main.6e14373a.js.map": "https://molstar.org/volumes-and-segmentations/static/js/main.6e14373a.js.map",
     "610.0dcf4aff.chunk.js.map": "https://molstar.org/volumes-and-segmentations/static/js/610.0dcf4aff.chunk.js.map",
     "705.3bd4409f.chunk.css.map": "https://molstar.org/volumes-and-segmentations/static/css/705.3bd4409f.chunk.css.map",
     "705.9d660206.chunk.js.map": "https://molstar.org/volumes-and-segmentations/static/js/705.9d660206.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e269f9a8.css",
-    "static/js/main.0ba1c295.js"
+    "static/js/main.6e14373a.js"
   ]
 }
