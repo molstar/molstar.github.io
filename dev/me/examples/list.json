@@ -1,0 +1,12 @@
+[
+    {
+        "label": "Petworld HIV",
+        "url": "./examples/hiv_2-no_bonds.bcif",
+        "type": "bcif"
+    },
+    {
+        "label": "Petworld SARS-CoV-2",
+        "url": "./examples/sarscov2_2-no_bonds.bcif",
+        "type": "bcif"
+    }
+]
