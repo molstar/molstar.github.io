@@ -8,5 +8,10 @@
         "label": "Petworld SARS-CoV-2",
         "url": "./examples/sarscov2_2-no_bonds.bcif",
         "type": "bcif"
+    },
+    {
+        "label": "CellPack HIV",
+        "url": "./examples/hiv1_cellpack_atom_instances.bcif",
+        "type": "bcif"
     }
 ]
