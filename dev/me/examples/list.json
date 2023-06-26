@@ -9,6 +9,33 @@
         "url": "./examples/sarscov2_2-no_bonds.bcif",
         "type": "bcif"
     },
+
+    {
+        "label": "Petworld mushroom-type postsynapse",
+        "url": "https://molstar.s3.us-east-2.amazonaws.com/me/petworld/postsynmushroom_2-no_bonds.bcif",
+        "type": "bcif"
+    },
+    {
+        "label": "Petworld stubby-type postsynapse",
+        "url": "https://molstar.s3.us-east-2.amazonaws.com/me/petworld/postsynstubby_2-no_bonds.bcif",
+        "type": "bcif"
+    },
+    {
+        "label": "Petworld presynaptic bouton",
+        "url": "https://molstar.s3.us-east-2.amazonaws.com/me/petworld/presynapse_2-no_bonds.bcif",
+        "type": "bcif"
+    },
+    {
+        "label": "Petworld synaptic gap",
+        "url": "https://molstar.s3.us-east-2.amazonaws.com/me/petworld/syngap_2-no_bonds.bcif",
+        "type": "bcif"
+    },
+    {
+        "label": "Petworld synaptic vesicle",
+        "url": "https://molstar.s3.us-east-2.amazonaws.com/me/petworld/synvesicle_2-no_bonds.bcif",
+        "type": "bcif"
+    },
+
     {
         "label": "CellPack HIV",
         "url": "./examples/hiv1_cellpack_atom_instances.bcif",
