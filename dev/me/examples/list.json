@@ -40,5 +40,10 @@
         "label": "CellPack HIV",
         "url": "./examples/hiv1_cellpack_atom_instances.bcif",
         "type": "bcif"
+    },
+    {
+        "label": "CellPack MG",
+        "url": "https://d39ulgwcl2k1f0.cloudfront.net/me/cellpack/MG_1184_cellpack_atom_instances.bcif",
+        "type": "bcif"
     }
 ]
