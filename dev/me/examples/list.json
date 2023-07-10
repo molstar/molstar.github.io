@@ -45,5 +45,15 @@
         "label": "CellPack MG",
         "url": "https://d39ulgwcl2k1f0.cloudfront.net/me/cellpack/MG_1184_cellpack_atom_instances.bcif",
         "type": "bcif"
+    },
+    {
+        "label": "CellPack ISG immature",
+        "url": "https://d39ulgwcl2k1f0.cloudfront.net/me/cellpack/isg_immature.molx",
+        "type": "molx"
+    },
+    {
+        "label": "CellPack ISG mature",
+        "url": "https://d39ulgwcl2k1f0.cloudfront.net/me/cellpack/isg_mature.molx",
+        "type": "molx"
     }
 ]
