@@ -1,57 +1,68 @@
 [
     {
+        "id": "petworld-hiv",
         "label": "Petworld HIV",
         "url": "./examples/hiv_2-no_bonds.bcif",
         "type": "bcif"
     },
     {
+        "id": "petworld-sarscov2",
         "label": "Petworld SARS-CoV-2",
         "url": "./examples/sarscov2_2-no_bonds.bcif",
         "type": "bcif"
     },
 
     {
+        "id": "petworld-postsynmushroom",
         "label": "Petworld mushroom-type postsynapse",
         "url": "https://d39ulgwcl2k1f0.cloudfront.net/me/petworld/postsynmushroom_2-no_bonds.bcif",
         "type": "bcif"
     },
     {
+        "id": "petworld-postsynstubby",
         "label": "Petworld stubby-type postsynapse",
         "url": "https://d39ulgwcl2k1f0.cloudfront.net/me/petworld/postsynstubby_2-no_bonds.bcif",
         "type": "bcif"
     },
     {
+        "id": "petworld-presynapse",
         "label": "Petworld presynaptic bouton",
         "url": "https://d39ulgwcl2k1f0.cloudfront.net/me/petworld/presynapse_2-no_bonds.bcif",
         "type": "bcif"
     },
     {
+        "id": "petworld-syngap",
         "label": "Petworld synaptic gap",
         "url": "https://d39ulgwcl2k1f0.cloudfront.net/me/petworld/syngap_2-no_bonds.bcif",
         "type": "bcif"
     },
     {
+        "id": "petworld-synvesicle",
         "label": "Petworld synaptic vesicle",
         "url": "https://d39ulgwcl2k1f0.cloudfront.net/me/petworld/synvesicle_2-no_bonds.bcif",
         "type": "bcif"
     },
 
     {
+        "id": "cellpack-hiv1",
         "label": "CellPack HIV",
         "url": "./examples/hiv1_cellpack_atom_instances.bcif",
         "type": "bcif"
     },
     {
+        "id": "cellpack-mg",
         "label": "CellPack MG",
         "url": "https://d39ulgwcl2k1f0.cloudfront.net/me/cellpack/MG_1184_cellpack_atom_instances.bcif",
         "type": "bcif"
     },
     {
+        "id": "cellpack-isg_immature",
         "label": "CellPack ISG immature",
         "url": "https://d39ulgwcl2k1f0.cloudfront.net/me/cellpack/isg_immature.molx",
         "type": "molx"
     },
     {
+        "id": "cellpack-isg_mature",
         "label": "CellPack ISG mature",
         "url": "https://d39ulgwcl2k1f0.cloudfront.net/me/cellpack/isg_mature.molx",
         "type": "molx"
