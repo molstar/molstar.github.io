@@ -110,7 +110,51 @@
             <div class="offset-by-two eight columns"
                 style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
                 <div style="text-align: justify; margin: 5px">
-                    A Mol* app for exploring mesoscale models. This is a BETA version. The larger models may crash your browser with an out-of-memory exception. Generally best viewed on desktops with a dedicated GPU. Use the "Graphics" dropdown in the right panel to trade quality for performance.
+                    <a href="https://molstar.org/me/">A Mol* app for exploring mesoscale models</a>. This is a BETA version. The larger models may crash your browser with an out-of-memory exception. Generally best viewed on desktops with a dedicated GPU. Use the "Graphics" dropdown in the right panel to trade quality for performance.
+                    Check here the <a href="https://mesoscope.scripps.edu/explorer/docs/">documentation</a>. 
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="text-align: center; margin-top: 60px">
+            <div class="twelve columns">        
+                <h4 class="hero-heading" style="margin-bottom: 40px"><b>Guide Tour Examples</b></h4>
+                <div class="row" id="tours">
+                    <script>
+                        fetch('tour.json')
+                            .then(r => r.json())
+                            .then(l => {
+                                const row = document.getElementById('tours');
+                                let examples;
+                                l.forEach((e, i) => {
+                                    if (i % 4 === 0) {
+                                        examples = document.createElement('div');
+                                        examples.className = 'examples';
+                                        row.appendChild(examples);
+                                    }
+
+                                    const div = document.createElement('div');
+                                    div.className = 'tooltip';
+                                    examples.appendChild(div);
+
+                                    const a = document.createElement('a');
+                                    a.href = `https://molstar.org/me/?example=${e.id}&hide-controls=1`;
+                                    a.target = '_blank';
+                                    a.title = e.label;
+                                    div.appendChild(a);
+
+                                    const img = document.createElement('img');
+                                    img.src = e.image;
+                                    img.alt = e.label;
+                                    a.appendChild(img);
+
+                                    const p = document.createElement('div');
+                                    p.className = 'tooltip-info';
+                                    p.innerHTML = e.link ? `${e.description}<br/><a href=${e.link} target='_blank'>Source</a>` : e.description;
+                                    div.appendChild(p);
+                                });
+                            });
+                    </script>
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@
     {
         "id": "petworld-hiv",
         "label": "Petworld HIV",
-        "url": "./examples/hiv_2-no_bonds.bcif",
+        "url": "https://mesoscope.scripps.edu/explorer/examples/hiv_2-no_bonds.bcif",
         "type": "bcif",
         "description": "Petworld HIV virion model consisting of 37.7 million atoms that carries two at the dimerization initiation sequence coupled RNA strands inside the capsid core particle. Authors: Kornel Ozvoldik, Elmar Krieger and the CellPack team.",
         "link": "http://download.yasara.org/petworld/hiv/index.html",
@@ -11,9 +11,9 @@
     {
         "id": "petworld-sarscov2",
         "label": "Petworld SARS-CoV-2",
-        "url": "./examples/sarscov2_2-no_bonds.bcif",
+        "url": "https://mesoscope.scripps.edu/explorer/examples/sarscov2_2-no_bonds.bcif",
         "type": "bcif",
-        "description": "Petworld model of SARS-CoV-2. Authors: Kornel Ozvoldik and Elmar Krieger.",
+        "description": "Petworld model of SARS-CoV-2, 13.539 million atoms. Authors: Kornel Ozvoldik and Elmar Krieger.",
         "link": "http://download.yasara.org/petworld/sarscov2/index.html",
         "image": "./img/petworld-sarscov2.png"
     },
@@ -21,7 +21,7 @@
     {
         "id": "petworld-postsynmushroom",
         "label": "Petworld mushroom-type postsynapse",
-        "url": "https://d39ulgwcl2k1f0.cloudfront.net/me/petworld/postsynmushroom_2-no_bonds.bcif",
+        "url": "https://mesoscope.scripps.edu/explorer/examples/postsynmushroom_2-no_bonds.bcif",
         "type": "bcif",
         "description": "Petworld model of the postsynapse made of 2.4 billion atoms and includes protein filaments, endosomes and the mitochondrial envelope. Based on previous work by Helm et al. (doi: 10.1038/s41593-021-00874-w).",
         "link": "http://download.yasara.org/petworld/postsynmushroom/index.html",
@@ -30,7 +30,7 @@
     {
         "id": "petworld-postsynstubby",
         "label": "Petworld stubby-type postsynapse",
-        "url": "https://d39ulgwcl2k1f0.cloudfront.net/me/petworld/postsynstubby_2-no_bonds.bcif",
+        "url": "https://mesoscope.scripps.edu/explorer/examples/postsynstubby_2-no_bonds.bcif",
         "type": "bcif",
         "description": "Petworld model of the postsynapse made of 2.4 billion atoms and includes protein filaments and endosomes. Based on previous work by Helm et al. (doi: 10.1038/s41593-021-00874-w).",
         "link": "http://download.yasara.org/petworld/postsynstubby/index.html",
@@ -39,7 +39,7 @@
     {
         "id": "petworld-presynapse",
         "label": "Petworld presynaptic bouton",
-        "url": "https://d39ulgwcl2k1f0.cloudfront.net/me/petworld/presynapse_2-no_bonds.bcif",
+        "url": "https://mesoscope.scripps.edu/explorer/examples/presynapse_2-no_bonds.bcif",
         "type": "bcif",
         "description": "Petworld model of the presynaptic bouton is made of 3.7 billion atoms and includes protein filaments, endosomes, the mitochondrial envelope and 307 glutamatergic vesicles. Based on previous work by Wilhelm et al. (doi: 10.1126/science.1252884).",
         "link": "http://download.yasara.org/petworld/presynapse/index.html",
@@ -48,7 +48,7 @@
     {
         "id": "petworld-syngap",
         "label": "Petworld synaptic gap",
-        "url": "https://d39ulgwcl2k1f0.cloudfront.net/me/petworld/syngap_2-no_bonds.bcif",
+        "url": "https://mesoscope.scripps.edu/explorer/examples/syngap_2-no_bonds.bcif",
         "type": "bcif",
         "description": "Petworld synaptic gap model consists of 102.7 million atoms, carrying 10 synaptic vesicles pre-loaded with 8000 glutamates each. Authors: Leticia Alves da Silva, Kornel Ozvoldik and Elmar Krieger.",
         "link": "http://download.yasara.org/petworld/syngap/index.html",
@@ -57,34 +57,51 @@
     {
         "id": "petworld-synvesicle",
         "label": "Petworld synaptic vesicle",
-        "url": "https://d39ulgwcl2k1f0.cloudfront.net/me/petworld/synvesicle_2-no_bonds.bcif",
+        "url": "https://mesoscope.scripps.edu/explorer/examples/synvesicle_2-no_bonds.bcif",
         "type": "bcif",
         "description": "Petworld synaptic vesicle model consists of 3.6 million atoms, carrying 8000 glutamates. Authors: Kornel Ozvoldik and Elmar Krieger.",
         "link": "http://download.yasara.org/petworld/synvesicle/index.html",
         "image": "./img/petworld-synvesicle.png"
     },
-
+    {
+        "id": "machineryoflife",
+        "label": "Machinery Of Life",
+        "url": "https://mesoscope.scripps.edu/explorer/examples/machineryoflife.bcif",
+        "type": "bcif",
+        "description": "Machinery Of Life by David Goodsell and Ludovic Autin",
+        "link":"https://cdn.rcsb.org/pdb101/molecular-machinery/",
+        "image": "./img/cellpack-machinery.png"
+    },
     {
         "id": "cellpack-hiv1",
         "label": "CellPack HIV",
-        "url": "./examples/hiv1_cellpack_atom_instances.bcif",
+        "url": "https://mesoscope.scripps.edu/explorer/examples/hiv1_cellpack_atom_instances.bcif",
         "type": "bcif",
         "description": "CellPack HIV model by Ludovic Autin et al.",
         "image": "./img/cellpack-hiv1.png"
     },
     {
+        "id": "cellpack-exosome",
+        "label": "CellPack Exosome",
+        "url": "https://mesoscope.scripps.edu/explorer/examples/cellpack_feb2024_exosome.bcif",
+        "type": "bcif",
+        "description": "CellPack Exosome model by Julia Jimenez, and Ludovic Autin et al. (doi:10.5210/jbc.v43i2.10331).",
+	"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9139774/",
+        "image": "./img/cellpack-exosome.png"
+    },
+    {
         "id": "cellpack-mg",
         "label": "CellPack MG",
-        "url": "https://d39ulgwcl2k1f0.cloudfront.net/me/cellpack/MG_1184_cellpack_atom_instances.bcif",
+        "url": "https://mesoscope.scripps.edu/explorer/examples/MG_1184_cellpack_atom_instances.bcif",
         "type": "bcif",
-        "description": "CellPack model of an entire Mycoplasma genitalium cell. Authors: Martina Maritan, and Ludovic Autin et al. (doi: 10.1016/j.jmb.2021.167351).",
+        "description": "CellPack model of an entire Mycoplasma genitalium cell. Authors: Martina Maritan, and Julia Jim�nez et al. (doi:10.1016/j.jmb.2021.167351).",
         "link": "https://ccsb.scripps.edu/gallery/mycoplasma_model/",
         "image": "./img/cellpack-mg.png"
     },
     {
         "id": "cellpack-isg_immature",
         "label": "CellPack ISG immature",
-        "url": "https://d39ulgwcl2k1f0.cloudfront.net/me/cellpack/isg_immature.molx",
+        "url": "https://mesoscope.scripps.edu/explorer/examples/isg_immature.molx",
         "type": "molx",
         "description": "CellPack model of an immature Insulin Secretory Granule by Ludovic Autin et al. (doi: 10.1017/qrd.2022.10).",
         "link": "https://github.com/ccsb-scripps/ISG",
@@ -93,7 +110,7 @@
     {
         "id": "cellpack-isg_mature",
         "label": "CellPack ISG mature",
-        "url": "https://d39ulgwcl2k1f0.cloudfront.net/me/cellpack/isg_mature.molx",
+        "url": "https://mesoscope.scripps.edu/explorer/examples/isg_mature.molx",
         "type": "molx",
         "description": "CellPack model of a mature Insulin Secretory Granule by Ludovic Autin et al. (doi: 10.1017/qrd.2022.10).",
         "link": "https://github.com/ccsb-scripps/ISG",

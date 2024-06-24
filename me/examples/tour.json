@@ -1,0 +1,57 @@
+[
+    {
+        "id": "machineryoflife-tour",
+        "label": "Machinery of life : A Tour of the Protein Data Bank",
+        "url": "https://mesoscope.scripps.edu/explorer/tours/machineryoflife.molx",
+        "type": "molx",
+        "description": "Guided Tour of representative structure in the Protein Data Bank. Tour: Ludovic Autin, David Goodsell",
+        "link": "https://cdn.rcsb.org/pdb101/molecular-machinery/",
+        "image": "./img/cellpack-machinery.png"
+    },
+    {
+        "id": "petworld-hiv-tour",
+        "label": "Petworld HIV Tour",
+        "url": "https://mesoscope.scripps.edu/explorer/tours/HIV_draft_tour.molx",
+        "type": "molx",
+        "description": "Guided Tour of Petworld HIV virion model consisting of 37.7 million atoms that carries two at the dimerization initiation sequence coupled RNA strands inside the capsid core particle. Model: Kornel Ozvoldik, Elmar Krieger. Tour: Ludovic Autin, David Goodsell",
+        "link": "http://download.yasara.org/petworld/hiv/index.html",
+        "image": "./img/petworld-hiv.png"
+    },
+    {
+        "id": "petworld-sarscov2-tour",
+        "label": "Petworld SARS-CoV-2 Tour",
+        "url": "https://mesoscope.scripps.edu/explorer/tours/PetWorld_SarsCov2.molx",
+        "type": "molx",
+        "description": "Guided Tour of Petworld model of SARS-CoV-2. Authors: Kornel Ozvoldik and Elmar Krieger. Tour: Ludovic Autin, David Goodsell",
+        "link": "http://download.yasara.org/petworld/sarscov2/index.html",
+        "image": "./img/petworld-sarscov2.png"
+    },
+    {
+        "id": "cellpack-exosome-tour",
+        "label": "cellPACK Exosome Tour",
+        "url": "https://mesoscope.scripps.edu/explorer/tours/CellPACK_Exosome_Tour.molx",
+        "type": "molx",
+        "description": "Guided Tour of cellPACK Exosome model. Julia Jimenez, Ludovic Autin, David Goodsell",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9139774/",
+        "image": "./img/cellpack-exosome.png"
+    },
+    {
+        "id": "cellpack-hiv-tour",
+        "label": "cellPACK HIV Tour",
+        "url": "https://mesoscope.scripps.edu/explorer/tours/CellPACK_HIV_Tour.molx",
+        "type": "molx",
+        "description": "Guided Tour of cellPACK HIV virion model consisting. Ludovic Autin, David Goodsell",
+        "link": "https://ccsb.scripps.edu/latticenucleoid/HIVnucleoid/",
+        "image": "./img/cellpack-hiv-tour.png"
+    },
+
+    {
+        "id": "cellpack-mg-tour",
+        "label": "CellPack Mycoplasma Genitalium Tour",
+        "url": "https://mesoscope.scripps.edu/explorer/tours/CellPACK_MG_Tour.molx",
+        "type": "molx",
+        "description": "Guided Tour of Mycoplasma Genitalium. Ludovic Autin, David Goodsell, Martina Maritan",
+        "link": "https://ccsb.scripps.edu/gallery/mycoplasma_model/",
+        "image": "./img/cellpack-mg.png"
+    }
+]
