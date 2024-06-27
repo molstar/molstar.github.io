@@ -1,0 +1,20 @@
+/*
+a:link {
+    color: #ff3e00;
+}
+
+a:hover {
+    color: #ffee00;
+}
+
+a:active {
+    color: #d900ff;
+}
+
+a:visited {
+    color: #51ff00;
+}
+*/
+code {
+    white-space : pre-wrap !important;
+  }

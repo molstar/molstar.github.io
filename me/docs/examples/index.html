@@ -1,0 +1,541 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/fav.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-7.0.0b2">
+    
+    
+      
+        <title>Examples - Mol* Mesoscale Explorer Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3149646c.min.css">
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../style.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#examples-of-models" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Mol* Mesoscale Explorer Documentation" class="md-header__button md-logo" aria-label="Mol* Mesoscale Explorer Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mol* Mesoscale Explorer Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Examples
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/molstar/molstar" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Mol* Mesoscale Explorer Documentation" class="md-nav__button md-logo" aria-label="Mol* Mesoscale Explorer Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    Mol* Mesoscale Explorer Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/molstar/molstar" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fileformat/" class="md-nav__link">
+        File Formats
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-actions/" class="md-nav__link">
+        Common Actions
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../viewport/" class="md-nav__link">
+        Viewport Settings
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../snapshot/" class="md-nav__link">
+        Snapshots
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Images_Movies/" class="md-nav__link">
+        Images/Movies
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../query-parameters/" class="md-nav__link">
+        URL Parameters
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../measurements/" class="md-nav__link">
+        Measurements
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-styles/" class="md-nav__link">
+        Quick Styles
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/" class="md-nav__link">
+        Make a Tour
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Examples
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Examples
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-models" class="md-nav__link">
+    Examples of Models
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-tours" class="md-nav__link">
+    Examples of tours
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-models" class="md-nav__link">
+    Examples of Models
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-tours" class="md-nav__link">
+    Examples of tours
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/molstar/molstar/edit/master/docs/examples.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Examples</h1>
+                
+                <div><h4 id="examples-of-models">Examples of Models</h4>
+<p>We prepared several use cases that can be accessed from the Mol* Mesoscale Explorer web page (<a href="https://molstar.org/me/examples/">https://molstar.org/me/examples/</a>):</p>
+<p style="position: relative;">
+    <img src="../img/mme_examples.png" alt="Examples">
+    <a style="position: absolute; top: 0%; left: 10%; width: 15%; height: 15%" href="https://molstar.org/me/?example=petworld-hiv&amp;hide-controls=1" target="_blank" rel="noopener noreferrer"><b>HIV</b></a>
+    <a style="position: absolute; top: 0%; left: 30%; width: 15%; height: 15%" href="https://molstar.org/me/?example=petworld-sarscov2&amp;hide-controls=1" target="_blank" rel="noopener noreferrer"><b>SARS-CoV-2</b></a>    
+    <a style="position: absolute; top: 0%; left: 50%; width: 15%; height: 15%" href="https://molstar.org/me/?example=petworld-postsynmushroom&amp;hide-controls=1" target="_blank" rel="noopener noreferrer"><b>Postsynapse</b></a>    
+    <a style="position: absolute; top: 0%; left: 75%; width: 15%; height: 15%" href="https://molstar.org/me/?example=petworld-postsynstubby&amp;hide-controls=1" target="_blank" rel="noopener noreferrer"><b>Postsynapse</b></a>        
+    <a style="position: absolute; top: 25%; left: 10%; width: 15%; height: 15%" href="https://molstar.org/me/?example=petworld-presynapse&amp;hide-controls=1" target="_blank" rel="noopener noreferrer"><b>Presynaptic</b></a>    
+    <a style="position: absolute; top: 25%; left: 30%; width: 15%; height: 15%" href="https://molstar.org/me/?example=petworld-syngap&amp;hide-controls=1" target="_blank" rel="noopener noreferrer"><b>Synaptic</b></a>    
+    <a style="position: absolute; top: 25%; left: 50%; width: 15%; height: 15%" href="https://molstar.org/me/?example=petworld-synvesicle&amp;hide-controls=1" target="_blank" rel="noopener noreferrer"><b>vesicle</b></a> 
+    <a style="position: absolute; top: 25%; left: 75%; width: 15%; height: 15%" href="https://molstar.org/me/?example=machineryoflife&amp;hide-controls=1" target="_blank" rel="noopener noreferrer"><b>Machinery</b></a>           
+    <a style="position: absolute; top: 47%; left: 10%; width: 15%; height: 15%" href="https://molstar.org/me/?example=cellpack-hiv1&amp;hide-controls=1" target="_blank" rel="noopener noreferrer"><b>HIV</b></a>              
+    <a style="position: absolute; top: 47%; left: 30%; width: 15%; height: 15%" href="https://molstar.org/me/?example=cellpack-exosome&amp;hide-controls=1" target="_blank" rel="noopener noreferrer"><b>Exosome</b></a>       
+    <a style="position: absolute; top: 47%; left: 50%; width: 15%; height: 15%" href="https://molstar.org/me/?example=cellpack-mg&amp;hide-controls=1" target="_blank" rel="noopener noreferrer"><b>Mycoplasma</b></a>      
+    <a style="position: absolute; top: 47%; left: 75%; width: 15%; height: 15%" href="https://molstar.org/me/?example=cellpack-isg_immature&amp;hide-controls=1" target="_blank" rel="noopener noreferrer"><b>immature ISG</b></a>              
+    <a style="position: absolute; top: 70%; left: 40%; width: 15%; height: 15%" href="https://molstar.org/me/?example=cellpack-isg_mature&amp;hide-controls=1" target="_blank" rel="noopener noreferrer"><b>mature ISG</b></a>           
+</p>
+
+<ul>
+<li><a href="https://molstar.org/me/?example=petworld-hiv&amp;hide-controls=1">Petworld HIV virion model</a> consisting of 37.7 million atoms that carries two RNA strands inside the capsid core particle. Authors: Kornel Ozvoldik, Elmar Krieger, and the CellPack team.</li>
+<li><a href="https://molstar.org/me/?example=petworld-sarscov2&amp;hide-controls=1">Petworld model of SARS-CoV-2</a>. 13 million atoms 976 instances. Authors: Kornel Ozvoldik and Elmar Krieger.</li>
+<li><a href="https://molstar.org/me/?example=petworld-postsynmushroom&amp;hide-controls=1">Petworld model of the postsynapse</a> made of 1.4 billion atoms and includes protein filaments, endosomes, and the mitochondrial envelope. Based on previous work by Helm et al. (doi: 10.1038/s41593-021-00874-w).</li>
+<li><a href="https://molstar.org/me/?example=petworld-postsynstubby&amp;hide-controls=1">Petworld model of the postsynapse</a> made of 0.9 billion atoms and includes protein filaments and endosomes. Based on previous work by Helm et al. (doi: 10.1038/s41593-021-00874-w).</li>
+<li><a href="https://molstar.org/me/?example=petworld-presynapse&amp;hide-controls=1">Petworld model of the presynaptic bouton</a> made of 3.07 billion atoms and includes protein filaments, endosomes, the mitochondrial envelope, and 307 glutamatergic vesicles. Based on previous work by Wilhelm et al. (doi: 10.1126/science.1252884).</li>
+<li><a href="https://molstar.org/me/?example=petworld-syngap&amp;hide-controls=1">Petworld synaptic gap</a> model consists of 98.8 million atoms, carrying 10 synaptic vesicles pre-loaded with 8000 glutamates each. Authors: Leticia Alves da Silva, Kornel Ozvoldik, and Elmar Krieger.</li>
+<li><a href="https://molstar.org/me/?example=petworld-synvesicle&amp;hide-controls=1">Petworld synaptic vesicle</a> model consists of 3.6 million atoms, carrying 8000 glutamates. Authors: Kornel Ozvoldik and Elmar Krieger.</li>
+<li><a href="https://molstar.org/me/?example=machineryoflife&amp;hide-controls=1">Machinery Of Life</a> 3.8 million atoms 475 instances by David Goodsell and Ludovic Autin.</li>
+<li><a href="https://molstar.org/me/?example=cellpack-hiv1&amp;hide-controls=1">CellPack HIV model</a> 13.7 million atoms 15313 instances by Ludovic Autin et al.</li>
+<li><a href="https://molstar.org/me/?example=cellpack-exosome&amp;hide-controls=1">CellPack Exosome</a> model of 10 million atoms 7766 instances by Julia Jimenez, and Ludovic Autin et al. (doi:10.5210/jbc.v43i2.10331).</li>
+<li>CellPack model of an entire <a href="https://molstar.org/me/?example=cellpack-mg&amp;hide-controls=1">Mycoplasma genitalium cell</a>. 30 million atoms 3740 instances. Authors: Martina Maritan et al. (doi:10.1016/j.jmb.2021.167351).</li>
+<li><a href="https://molstar.org/me/?example=cellpack-isg_immature&amp;hide-controls=1">CellPack immature Insulin Secretory Granule</a> and <a href="https://molstar.org/me/?example=cellpack-isg_mature&amp;hide-controls=1">CellPack mature Insulin Secretory Granule</a>. 0.9 billion atoms by Ludovic Autin et al. (doi: 10.1017/qrd.2022.10).</li>
+</ul>
+<h4 id="examples-of-tours">Examples of tours</h4>
+<p>Here are the currently available tour based on available models : </p>
+<p style="position: relative;">
+    <img src="../img/mme_tours.png" alt="Tours">
+    <a style="position: absolute; top: 0%; left: 10%; width: 15%; height: 30%" href="https://molstar.org/me/?example=machineryoflife-tour&amp;hide-controls=1" target="_blank" rel="noopener noreferrer"><b>Machinery</b></a>
+    <a style="position: absolute; top: 0%; left: 30%; width: 15%; height: 30%" href="https://molstar.org/me/?example=petworld-sarscov2&amp;hide-controls=1" target="_blank" rel="noopener noreferrer"><b>HIV</b></a>    
+    <a style="position: absolute; top: 0%; left: 50%; width: 15%; height: 30%" href="https://molstar.org/me/?example=petworld-postsynmushroom&amp;hide-controls=1" target="_blank" rel="noopener noreferrer"><b>Sars-cov-2</b></a>    
+    <a style="position: absolute; top: 0%; left: 75%; width: 15%; height: 30%" href="https://molstar.org/me/?example=petworld-postsynstubby&amp;hide-controls=1" target="_blank" rel="noopener noreferrer"><b>Exosome</b></a>        
+    <a style="position: absolute; top: 45%; left: 30%; width: 15%; height: 30%" href="https://molstar.org/me/?example=petworld-presynapse&amp;hide-controls=1" target="_blank" rel="noopener noreferrer"><b>HIV</b></a>    
+    <a style="position: absolute; top: 45%; left: 50%; width: 15%; height: 30%" href="https://molstar.org/me/?example=petworld-syngap&amp;hide-controls=1" target="_blank" rel="noopener noreferrer"><b>Mycoplasma</b></a>   
+</p>
+
+<ul>
+<li><a href="https://molstar.org/me/?example=machineryoflife-tour&amp;hide-controls=1">Machinery Of Life</a></li>
+<li><a href="https://molstar.org/me/?example=petworld-hiv-tour&amp;hide-controls=1">Petworld HIV virion model</a></li>
+<li><a href="https://molstar.org/me/?example=petworld-sarscov2-tour&amp;hide-controls=1">Petworld model of SARS-CoV-2</a> </li>
+<li><a href="https://molstar.org/me/?example=cellpack-exosome-tour&amp;hide-controls=1">CellPack Exosome</a> </li>
+<li><a href="https://molstar.org/me/?example=cellpack-hiv-tour&amp;hide-controls=1">CellPack HIV model</a></li>
+<li><a href="https://molstar.org/me/?example=cellpack-mg-tour&amp;hide-controls=1">Mycoplasma genitalium cell</a></li>
+</ul></div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../tutorial/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Make a Tour
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking"], "search": "../assets/javascripts/workers/search.217ffd95.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.926459b3.min.js"></script>
+      
+    
+  </body>
+</html>

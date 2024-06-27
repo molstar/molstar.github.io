@@ -1,0 +1,589 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="assets/fav.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-7.0.0b2">
+    
+    
+      
+        <title>Mol* Mesoscale Explorer Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.3149646c.min.css">
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="style.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#general-interface" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Mol* Mesoscale Explorer Documentation" class="md-header__button md-logo" aria-label="Mol* Mesoscale Explorer Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mol* Mesoscale Explorer Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/molstar/molstar" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Mol* Mesoscale Explorer Documentation" class="md-nav__button md-logo" aria-label="Mol* Mesoscale Explorer Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    Mol* Mesoscale Explorer Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/molstar/molstar" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Home
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        Home
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-interface" class="md-nav__link">
+    General Interface
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-left-panel" class="md-nav__link">
+    1 Left panel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-middle-panel" class="md-nav__link">
+    2 Middle panel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-right-panel" class="md-nav__link">
+    3 Right panel
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fileformat/" class="md-nav__link">
+        File Formats
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="common-actions/" class="md-nav__link">
+        Common Actions
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="viewport/" class="md-nav__link">
+        Viewport Settings
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="snapshot/" class="md-nav__link">
+        Snapshots
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Images_Movies/" class="md-nav__link">
+        Images/Movies
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="query-parameters/" class="md-nav__link">
+        URL Parameters
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="measurements/" class="md-nav__link">
+        Measurements
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="quick-styles/" class="md-nav__link">
+        Quick Styles
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorial/" class="md-nav__link">
+        Make a Tour
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="examples/" class="md-nav__link">
+        Examples
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-interface" class="md-nav__link">
+    General Interface
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-left-panel" class="md-nav__link">
+    1 Left panel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-middle-panel" class="md-nav__link">
+    2 Middle panel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-right-panel" class="md-nav__link">
+    3 Right panel
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/molstar/molstar/edit/master/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Home</h1>
+                
+                <div><p><strong>Getting Started</strong>
+<a href="https://molstar.org/me/">Mol* Mesoscale Explorer (MME)</a> is built on top of Mol* and shares many features with it. We refer the reader to the <a href="https://molstar.org/viewer-docs/">Mol* viewer documentation</a> for details about the standard viewer. Below you will find specific documentation for MME and related Mol* viewer documentation.</p>
+<h4 id="general-interface"><strong>General Interface</strong></h4>
+<p>The user interface is structured with the following components.</p>
+<p><img alt="General interface" src="img/generalinterfaceME.png"></p>
+<h4 id="1-left-panel"><strong>1 Left panel</strong></h4>
+<p>This menu provides users quick access to:</p>
+<ul>
+<li>Explorer header: Provides general information about the viewer, a link to this documentation, and a button to start a tour with contextual help.</li>
+<li><a href="fileformat/">Loading feature</a>: Load PDB, PDB-DEV, cellPACK, Petworld cif files, manifest files, </li>
+<li>Session download: Download the full current session as a .molx file.</li>
+<li><a href="snapshot/">Snapshots features</a>: Add/edit the current list of snapshots/slides and options.</li>
+<li><a href="Images_Movies/">Export mp4 animation</a>: Create and export movies of default animations (rock, spin) and snapshot animations.</li>
+<li>Viewport settings: Advanced viewport and rendering settings.</li>
+</ul>
+<h4 id="2-middle-panel"><strong>2 Middle panel</strong></h4>
+<p>This is the viewer where the model is displayed for manipulation in three dimensions (3D). In the viewer panel, the animation controller is displayed at the top left when there are snapshots. A description text panel appears on the left side of the viewer if a description is provided in the current snapshot. The description can be hidden, and its size can be controlled using the dedicated button. At the top right, this menu provides users with quick access to some commonly used operations for the 3D canvas. It is located towards the right side of the 3D canvas and has the following functions.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Function</strong></th>
+<th style="text-align: center;"><strong>Description</strong></th>
+<th style="text-align: center;"><strong>Icon</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><em>Reset Camera</em></td>
+<td style="text-align: center;">Centers and resets the view of the structure on the 3D canvas</td>
+<td style="text-align: center;"><img alt="" src="img/resetcameraicon.png"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="Images_Movies/"><em>Screenshot/State Snapshot</em></a></td>
+<td style="text-align: center;">Takes an image of the structure as shown and gives options for resolution and download</td>
+<td style="text-align: center;"><img alt="" src="img/screenshoticon.png"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><em>Controls Panel</em></td>
+<td style="text-align: center;">Hides/shows the Controls Panel to the right</td>
+<td style="text-align: center;"><img alt="" src="img/controlpanelicon.png"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><a href="viewport/"><em>Settings/Control Info</em></a></td>
+<td style="text-align: center;">Provides settings for viewing the 3D canvas, as well as information about navigating in 3D and mouse controls</td>
+<td style="text-align: center;"><img alt="" src="img/settingsicon.png"></td>
+</tr>
+</tbody>
+</table>
+<p>The Controls Panel provides quick access to the viewport settings (camera, lighting) and references to the mouse and key behaviors:</p>
+<ul>
+<li>Rotate: Drag using the left mouse button</li>
+<li>Rotate around z-axis (roll): Drag using the left mouse button + control key + shift key</li>
+<li>Pan: Drag using the right mouse button or left mouse button + control key</li>
+<li>Focus: Drag using three fingers</li>
+<li>Focus and zoom: Drag using the wheel/middle mouse button</li>
+<li>Zoom: Scroll using the wheel/middle mouse button</li>
+<li>Clip: Scroll using the wheel/middle mouse button + shift key</li>
+<li>Move forward, back, left, right, up, down: Press w, s, a, d, r, f</li>
+<li>Roll left, right: Press q, e</li>
+<li>Pitch up, down: Press arrow up + shift key, arrow down + shift key</li>
+<li>Yaw left, right: Press arrow left + shift key, arrow right + shift key</li>
+<li>Boost move: Press left shift key</li>
+<li>Enable pointer lock: Press space + control key</li>
+<li>Toggle the click behavior from center to center and focus : Press c</li>
+</ul>
+<h4 id="3-right-panel"><strong>3 Right panel</strong></h4>
+<ul>
+<li>Exposes the model description if any.</li>
+<li>Displays the current selection settings and information. To select, use shift + left click either on the 3D canvas or in the tree hierarchy.</li>
+<li>Measurements: Given the current selection, you can create Label, Distance, Angle, Dihedral, Orientation, and Plane visuals over the current model. See details on <a href="measurements/">Labeling</a>.</li>
+<li>Quick Styles: Provides different style presets to change the scene appearance. See details <a href="quick-styles/">here</a>.</li>
+<li>Graphics quality: Options include Ultra, Quality (Default), Balanced, Performance, and Custom.</li>
+</ul></div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+        
+          <a href="fileformat/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                File Formats
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tracking"], "search": "assets/javascripts/workers/search.217ffd95.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.926459b3.min.js"></script>
+      
+    
+  </body>
+</html>
