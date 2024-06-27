@@ -23,7 +23,7 @@
         "label": "Petworld mushroom-type postsynapse",
         "url": "https://mesoscope.scripps.edu/explorer/examples/postsynmushroom_2-no_bonds.bcif",
         "type": "bcif",
-        "description": "Petworld model of the postsynapse made of 2.4 billion atoms and includes protein filaments, endosomes and the mitochondrial envelope. Based on previous work by Helm et al. (doi: 10.1038/s41593-021-00874-w).",
+        "description": "Petworld model of the postsynapse made of 1.4 billion atoms and includes protein filaments, endosomes and the mitochondrial envelope. Based on previous work by Helm et al. (doi: 10.1038/s41593-021-00874-w).",
         "link": "http://download.yasara.org/petworld/postsynmushroom/index.html",
         "image": "./img/petworld-postsynmushroom.png"
     },
@@ -32,7 +32,7 @@
         "label": "Petworld stubby-type postsynapse",
         "url": "https://mesoscope.scripps.edu/explorer/examples/postsynstubby_2-no_bonds.bcif",
         "type": "bcif",
-        "description": "Petworld model of the postsynapse made of 2.4 billion atoms and includes protein filaments and endosomes. Based on previous work by Helm et al. (doi: 10.1038/s41593-021-00874-w).",
+        "description": "Petworld model of the postsynapse made of 2.9 billion atoms and includes protein filaments and endosomes. Based on previous work by Helm et al. (doi: 10.1038/s41593-021-00874-w).",
         "link": "http://download.yasara.org/petworld/postsynstubby/index.html",
         "image": "./img/petworld-postsynstubby.png"
     },
@@ -41,7 +41,7 @@
         "label": "Petworld presynaptic bouton",
         "url": "https://mesoscope.scripps.edu/explorer/examples/presynapse_2-no_bonds.bcif",
         "type": "bcif",
-        "description": "Petworld model of the presynaptic bouton is made of 3.7 billion atoms and includes protein filaments, endosomes, the mitochondrial envelope and 307 glutamatergic vesicles. Based on previous work by Wilhelm et al. (doi: 10.1126/science.1252884).",
+        "description": "Petworld model of the presynaptic bouton is made of 3.07 billion atoms and includes protein filaments, endosomes, the mitochondrial envelope and 307 glutamatergic vesicles. Based on previous work by Wilhelm et al. (doi: 10.1126/science.1252884).",
         "link": "http://download.yasara.org/petworld/presynapse/index.html",
         "image": "./img/petworld-presynapse.png"
     },
@@ -68,7 +68,7 @@
         "label": "Machinery Of Life",
         "url": "https://mesoscope.scripps.edu/explorer/examples/machineryoflife.bcif",
         "type": "bcif",
-        "description": "Machinery Of Life by David Goodsell and Ludovic Autin",
+        "description": "Machinery Of Life by David Goodsell and Ludovic Autin. This model is based on the book 'The Machinery of Life' by David Goodsell. The model includes the ribosome, RNA polymerase, DNA polymerase, and other molecular machines.",
         "link":"https://cdn.rcsb.org/pdb101/molecular-machinery/",
         "image": "./img/cellpack-machinery.png"
     },
@@ -78,6 +78,7 @@
         "url": "https://mesoscope.scripps.edu/explorer/examples/hiv1_cellpack_atom_instances.bcif",
         "type": "bcif",
         "description": "CellPack HIV model by Ludovic Autin et al.",
+        "link":"https://pubs.rsc.org/en/content/articlelanding/2014/fd/c4fd00017j",
         "image": "./img/cellpack-hiv1.png"
     },
     {
