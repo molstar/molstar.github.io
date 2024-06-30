@@ -1,0 +1,758 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/fav.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-7.0.0b2">
+    
+    
+      
+        <title>Viewport Settings - Mol* Mesoscale Explorer Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3149646c.min.css">
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../style.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#main-settings" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Mol* Mesoscale Explorer Documentation" class="md-header__button md-logo" aria-label="Mol* Mesoscale Explorer Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mol* Mesoscale Explorer Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Viewport Settings
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/molstar/molstar" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Mol* Mesoscale Explorer Documentation" class="md-nav__button md-logo" aria-label="Mol* Mesoscale Explorer Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    Mol* Mesoscale Explorer Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/molstar/molstar" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fileformat/" class="md-nav__link">
+        File Formats
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-actions/" class="md-nav__link">
+        Common Actions
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Viewport Settings
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Viewport Settings
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main-settings" class="md-nav__link">
+    Main Settings
+  </a>
+  
+    <nav class="md-nav" aria-label="Main Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ambient-occlusion" class="md-nav__link">
+    Ambient Occlusion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shadow" class="md-nav__link">
+    Shadow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outline" class="md-nav__link">
+    Outline
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depth-of-field" class="md-nav__link">
+    Depth Of Field
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fog" class="md-nav__link">
+    Fog
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-settings" class="md-nav__link">
+    Advanced Settings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-in-3d" class="md-nav__link">
+    Moving in 3D
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mouse-and-key-controls" class="md-nav__link">
+    Mouse and Key Controls
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../snapshot/" class="md-nav__link">
+        Snapshots
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Images_Movies/" class="md-nav__link">
+        Images/Movies
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../query-parameters/" class="md-nav__link">
+        URL Parameters
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../measurements/" class="md-nav__link">
+        Measurements
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quick-styles/" class="md-nav__link">
+        Quick Styles
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/" class="md-nav__link">
+        Make a Tour
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/" class="md-nav__link">
+        Examples
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main-settings" class="md-nav__link">
+    Main Settings
+  </a>
+  
+    <nav class="md-nav" aria-label="Main Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ambient-occlusion" class="md-nav__link">
+    Ambient Occlusion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shadow" class="md-nav__link">
+    Shadow
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outline" class="md-nav__link">
+    Outline
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depth-of-field" class="md-nav__link">
+    Depth Of Field
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fog" class="md-nav__link">
+    Fog
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-settings" class="md-nav__link">
+    Advanced Settings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-in-3d" class="md-nav__link">
+    Moving in 3D
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mouse-and-key-controls" class="md-nav__link">
+    Mouse and Key Controls
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/molstar/molstar/edit/master/docs/viewport.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Viewport Settings</h1>
+                
+                <div><h4 id="main-settings">Main Settings</h4>
+<p><img src="../img/viewportsettings.png" align="left" width="300px">
+<br>This panel allows fine-tuning of the viewport rendering effects and camera options:<br>
+- <strong>Animate</strong>: Rock (shortcut <code>o</code>) or Spin (shortcut <code>i</code>) the camera around the current pivot (camera center) at a given speed and angle<br>
+- <strong>Camera</strong>: Perspective or Orthographic camera projection. Hide/Show the Axes. Enable Stereo rendering<br>
+- <strong>Background</strong>: Change the Background Color<br>
+- <strong>Occlusion</strong>: Enable/Disable Ambient Occlusion<br>
+- <strong>Shadow</strong>: Enable/Disable Shadow<br>
+- <strong>Outline</strong>: Enable/Disable Outline<br>
+- <strong>DoF</strong>: Enable/Disable Depth Of Field<br>
+- <strong>Fog</strong>: Enable/Disable Fog<br>
+- <strong>Clipping</strong>: Adjust camera front clipping plane<br>
+- <strong>Layout</strong>: Enable/Disable the Left and Right panel visibility<br></p>
+<p><br clear="left"></p>
+<h5 id="ambient-occlusion">Ambient Occlusion</h5>
+<p>Ambient occlusion is a shading and rendering technique used to calculate how exposed each point in a scene is to ambient lighting. In molecular graphics, this technique enhances the perception of depth and shape of molecules. In Mol*, the effect is achieved using the screen space ambient occlusion (SSAO) algorithm. The SSAO algorithm is implemented as a pixel shader, analyzing the scene depth buffer which is stored in a texture for which we can control the <em>Resolution Scale</em>. For every pixel on the screen, the pixel shader samples the depth values between the <em>Near</em> and <em>Far threshold</em> around the current pixel at a given <em>Radius</em> and tries to compute the amount of occlusion from each of the sampled points. The final occlusion factor can be adjusted using a <em>Bias</em> and is applied by mixing the given <em>Color</em>. This effect is not sufficient for large scenes with different objects of different scales. This is why we added the <strong>Multi Scale</strong> option, which can apply the SSAO effect for different levels of Radius and Bias.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">SSAO</th>
+<th style="text-align: center;">Multiscale SSAO</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="" src="../img/2PLVao1.png"></td>
+<td style="text-align: center;"><img alt="" src="../img/2PLVao2.png"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><img alt="" src="../img/mgao1.png"></td>
+<td style="text-align: center;"><img alt="" src="../img/mgao2.png"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><img alt="" src="../img/aosimple.png"></td>
+<td style="text-align: center;"><img alt="" src="../img/aomulti.png"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="shadow">Shadow</h5>
+<p>The shadow in Mol* is a screen space effect like the SSAO. Our implementation is greatly inspired by <a href="https://panoskarabelas.com/posts/screen_space_shadows/">Panos Karabelas</a>, who detailed the basic idea as follows: We start by moving from the pixel to the light. We move in steps; in each step, we compare the depth of our ray against the depth that the camera perceives. If our ray depth is larger (further away) from the camera’s, then we assume that the pixel is in shadow.</p>
+<p><img alt="" src="https://panoskarabelas.com/media/post_sss_idea.png"> 
+<img src="../img/shadow.png" align="left" width="300px">
+<br>
+The following options are exposed:<br>
+- <strong>Steps</strong>: How many pixels are sampled along the path between the pixel and the light distance<br>
+- <strong>Bias</strong>: Strength of the shadow<br>
+- <strong>Max distance</strong>: The maximum distance to cover in the direction of light<br>
+- <strong>Tolerance</strong>: Depth difference threshold<br></p>
+<p><em>Note that the light settings are accessible in the advanced viewport settings-&gt;Renderer-&gt;Light-&gt;Inclination|Azimuth|Color|Intensity.</em></p>
+<p><br clear="left">
+Here is an example showing a rendering with shadow only, 64 steps, 0.81 bias, and a distance of 256.</p>
+<p><img alt="" src="../img/onlyshadow.png"></p>
+<h5 id="outline">Outline</h5>
+<p><img src="../img/shadow.png" align="left" width="300px">
+The outline effect draws a colored line at abrupt changes of normal and depth. This gives a contouring effect for which we can adjust its Scale (thickness), Threshold (sensitivity), and Color.</p>
+<p><br clear="left"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Threshold 0.1 Black contour</th>
+<th style="text-align: center;">Threshold 0.6 Yellow contour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="" src="../img/outline1.png"></td>
+<td style="text-align: center;"><img alt="" src="../img/outline2.png"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="depth-of-field">Depth Of Field</h5>
+<p>The depth of field is the distance between the nearest and the furthest objects that are in acceptably sharp focus in an image captured with a camera. To fake this visual effect, we implemented a simplified <a href="https://catlikecoding.com/unity/tutorials/advanced-rendering/depth-of-field/">screen space algorithm</a> that evaluates the distance of the pixel from the sharp point of focus, which is either the scene bounding box center or the camera pivot point. The distance test can be done in a sphere or against a plane.</p>
+<p><img src="../img/dof.png" align="left" width="300px">
+- <strong>Blur size</strong>: Controls the number of pixels of the blurring box<br>
+- <strong>Blur spread</strong>: Controls the scale of the blurring box<br>
+- <strong>In Focus</strong>: Used in planar mode to define the distance from the plane passing through the Center<br>
+- <strong>Ppm</strong>: The size of the area in focus (plane thickness or sphere radius)<br>
+- <strong>Center</strong>: The center of the focused area, either the scene center or the current camera target (default)<br>
+- <strong>Mode</strong>: How the focus distance is computed. In planar mode: <br><code>focus = (abs(distance_to_center_Z) - InFocus) / PPM;</code><br> and in spherical mode: <br><code>focus = distance_to_center / PPM;</code><br></p>
+<p><br clear="left"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Planar DOF</th>
+<th style="text-align: center;">Spherical DOF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="" src="../img/dof1.png"></td>
+<td style="text-align: center;"><img alt="" src="../img/dof2.png"></td>
+</tr>
+</tbody>
+</table>
+<h5 id="fog">Fog</h5>
+<p><img src="../img/fog.png" align="left" width="300px">
+Also called depth cue, it helps to emphasize what is in the foreground and background of the image with respect to the camera by adding a progressive fog of a given intensity based on the depth value.<br>
+<br clear="left"></p>
+<h4 id="advanced-settings">Advanced Settings</h4>
+<p><img src="../img/advancedcontrol.png" align="left" width="300px">
+<br>
+This panel provides advanced settings for fine-tuning the rendering and performance of the viewer:<br>
+- <strong>Multi Sample</strong><br>
+    - <strong>Mode</strong>: Toggle between different multi-sampling modes. On, Off, Temporal.<br>
+    - <strong>Sample Level</strong>: Adjust the level of multi-sampling. Higher levels provide better quality at the cost of performance. Take level^2 samples.<br>
+    - <strong>Reduce Flicker</strong>: Enable or disable flicker reduction in "temporal" mode.<br>
+- <strong>Hi Z</strong> Hierarchical Z-buffer occlusion culling. Only available for WebGL2.<br>
+    - <strong>Enabled</strong>: Toggle Hi Z on or off. This improves rendering performance by using a hierarchical Z-buffer.<br>
+    - <strong>Max Frame Lag</strong>: Adjust the maximum frame lag. This sets the upper limit on how many frames the Hi Z buffer can lag behind the current frame.<br>
+    - <strong>Min Level</strong>: Adjust the minimum level for Hi Z. This sets the lower bound for the depth levels considered by Hi Z.<br>
+- <strong>Sharpening</strong> Contrast Adaptive Sharpening<br>
+    - <strong>Enabled</strong>: Toggle sharpening on or off. This improves the visual clarity by enhancing edges.<br>
+    - <strong>Pixel Scale</strong>: Adjust the pixel scaling factor. This controls the intensity of the sharpening effect.<br>
+- <strong>Transparency</strong><br>
+    - <strong>Mode</strong>: Choose the transparency mode. Options include Blended, Weighted and Depth Peeling.<br></p>
+<p><br clear="left"></p>
+<h4 id="moving-in-3d">Moving in 3D</h4>
+<p>References to the mouse and key behaviors in the viewer:</p>
+<ul>
+<li><strong>Rotate</strong>: Drag using the left mouse button</li>
+<li><strong>Rotate around z-axis (roll)</strong>: Drag using the left mouse button + control key + shift key</li>
+<li><strong>Pan</strong>: Drag using the right mouse button or left mouse button + control key</li>
+<li><strong>Focus</strong>: Drag using three fingers</li>
+<li><strong>Focus and zoom</strong>: Drag using the wheel/middle mouse button</li>
+<li><strong>Zoom</strong>: Scroll using the wheel/middle mouse button</li>
+<li><strong>Clip</strong>: Scroll using the wheel/middle mouse button + shift key</li>
+<li><strong>Move forward, back, left, right, up, down</strong>: Press w, s, a, d, r, f</li>
+<li><strong>Roll left, right</strong>: Press q, e</li>
+<li><strong>Pitch up, down</strong>: Press arrow up + shift key, arrow down + shift key</li>
+<li><strong>Yaw left, right</strong>: Press arrow left + shift key, arrow right + shift key</li>
+<li><strong>Boost move</strong>: Press left shift key</li>
+<li><strong>Enable pointer lock</strong>: Press space + control key</li>
+</ul>
+<h4 id="mouse-and-key-controls">Mouse and Key Controls</h4>
+<p>References to the mouse and key controls in the viewer:</p>
+<ul>
+<li><strong>Spin Animation</strong>: Press i</li>
+<li><strong>Rock Animation</strong>: Press o</li>
+<li><strong>Toggle Fly Mode</strong>: Press space + shift key</li>
+<li><strong>Reset View</strong>: Press t</li>
+<li><strong>Camera center</strong>: Click element using left mouse button</li>
+<li><strong>Camera center and focus</strong>: Click element using right mouse button</li>
+<li><strong>Click</strong>: Click element using left mouse button</li>
+<li><strong>Toggle select</strong>: Click element using left mouse button + shift key or left mouse button + control key</li>
+<li><strong>Highlight</strong>: Hover over element using mouse hover + shift key or mouse hover + control key</li>
+</ul></div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../common-actions/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Common Actions
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../snapshot/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Snapshots
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking"], "search": "../assets/javascripts/workers/search.217ffd95.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.926459b3.min.js"></script>
+      
+    
+  </body>
+</html>
