@@ -2,7 +2,7 @@
     {
         "id": "petworld-hiv",
         "label": "Petworld HIV",
-        "url": "./examples/hiv_2-no_bonds.bcif",
+        "url": "../examples/hiv_2-no_bonds.bcif",
         "type": "bcif",
         "description": "Petworld HIV virion model consisting of 37.7 million atoms that carries two at the dimerization initiation sequence coupled RNA strands inside the capsid core particle. Authors: Kornel Ozvoldik, Elmar Krieger and the CellPack team.",
         "link": "http://download.yasara.org/petworld/hiv/index.html",
@@ -11,7 +11,7 @@
     {
         "id": "petworld-sarscov2",
         "label": "Petworld SARS-CoV-2",
-        "url": "./examples/sarscov2_2-no_bonds.bcif",
+        "url": "../examples/sarscov2_2-no_bonds.bcif",
         "type": "bcif",
         "description": "Petworld model of SARS-CoV-2, 13.539 million atoms. Authors: Kornel Ozvoldik and Elmar Krieger.",
         "link": "http://download.yasara.org/petworld/sarscov2/index.html",
@@ -75,7 +75,7 @@
     {
         "id": "cellpack-hiv1",
         "label": "CellPack HIV",
-        "url": "./examples/hiv1_cellpack_atom_instances.bcif",
+        "url": "../examples/hiv1_cellpack_atom_instances.bcif",
         "type": "bcif",
         "description": "CellPack HIV model by Ludovic Autin et al.",
         "link":"https://pubs.rsc.org/en/content/articlelanding/2014/fd/c4fd00017j",
