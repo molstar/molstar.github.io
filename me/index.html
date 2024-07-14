@@ -103,22 +103,50 @@
     <div class="container" style="margin-bottom: 20px;">
         <div class="row" style="text-align: center; margin: 80px 0 20px 0">
             <img style="max-width: 525px; width: 100%;" src="img/molstar-logo.png" />
-            <h1>Mesoscale Explorer &mdash; BETA</h1>
+            <h1>Mesoscale Explorer<sup>BETA</sup></h1>
         </div>
 
-        <div class="row" style="margin-top: 30px; display: flex;">
-            <div class="offset-by-two eight columns"
+        <div class="row" style="text-align: center;">
+            <div class="two columns">&nbsp;</div>
+            <div class="eight columns" style="border-top: 1px solid #E0DDD4; padding-top: 20px">
+                <h5 class="hero-heading">A Mol* app for exploring mesoscale models</h5>
+            </div>
+            <div class="two columns">&nbsp;</div>
+        </div>
+
+        <div class="row" style="text-align: center;">
+            <div class="two columns">&nbsp;</div>
+            <div class="eight columns" style="text-align: justify;">
+                The advent of cryo-EM and cryo-ET, coupled with computational modeling,
+                has enabled the creation of integrative 3D models of viruses, bacteria, and cellular organelles.
+                Based on these models, the <b>Mesoscale Explorer</b> provides unprecedented access and insight into the molecular fabric of life,
+                enhancing perception, streamlining exploration, and simplifying visualization of diverse data types, showcasing the intricate details with unparalleled clarity.
+            </div>
+            <div class="two columns">&nbsp;</div>
+        </div>
+
+        <div class="row" style="margin-top: 60px; display: flex;">
+            <div class="one-half column"
                 style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
+                <a href="https://molstar.org/me/viewer" title="Open Mesoscale Explorer">
+                    <img class="shadow-img" style="max-width: 100%" src="img/me.png">
+                </a>
+            </div>
+            <div class="one-half column"
+                style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
+                <a class="button button-primary" href="https://molstar.org/me/viewer" style="font-size: 2rem; width: 100%;"
+                    >Open Mesoscale Explorer</a>
+                <a class="button" href="https://molstar.org/me/docs/" style="font-size: 2rem; width: 100%;">
+                    Documentation</a>
                 <div style="text-align: justify; margin: 5px">
-                    <a href="https://molstar.org/me/viewer/">A Mol* app for exploring mesoscale models</a>. This is a BETA version. The larger models may crash your browser with an out-of-memory exception. Generally best viewed on desktops with a dedicated GPU. Use the "Graphics" dropdown in the right panel to trade quality for performance.
-                    Check here the <a href="https://molstar.org/me/docs/">documentation</a>.
+                    <i>This is a BETA version. The larger models may crash your browser with an out-of-memory exception. Generally best viewed on desktops with a dedicated GPU. Use the "Graphics" dropdown in the right panel to trade quality for performance.</i>
                 </div>
             </div>
         </div>
 
         <div class="row" style="text-align: center; margin-top: 60px">
             <div class="twelve columns">
-                <h4 class="hero-heading" style="margin-bottom: 40px"><b>Guide Tour Examples</b></h4>
+                <h4 class="hero-heading" style="margin-bottom: 40px"><b>Guided Tours</b></h4>
                 <div class="row" id="tours">
                     <script>
                         fetch('examples/tour.json')
