@@ -121,7 +121,7 @@
                 <h4 class="hero-heading" style="margin-bottom: 40px"><b>Guide Tour Examples</b></h4>
                 <div class="row" id="tours">
                     <script>
-                        fetch('tour.json')
+                        fetch('examples/tour.json')
                             .then(r => r.json())
                             .then(l => {
                                 const row = document.getElementById('tours');
@@ -164,7 +164,7 @@
                 <h4 class="hero-heading" style="margin-bottom: 40px"><b>Interactive Examples</b></h4>
                 <div class="row" id="examples">
                     <script>
-                        fetch('list.json')
+                        fetch('examples/list.json')
                             .then(r => r.json())
                             .then(l => {
                                 const row = document.getElementById('examples');
