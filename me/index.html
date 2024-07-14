@@ -1,106 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-        <link rel="icon" href="./favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="./extras/driver.css"/>
-        <title>Mol* Mesoscale Explorer</title>
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            html, body {
-                width: 100%;
-                height: 100%;
-                overflow: hidden;
-            }
-            hr {
-                margin: 10px;
-            }
-            h1, h2, h3, h4, h5 {
-                margin-top: 5px;
-                margin-bottom: 3px;
-            }
-            button {
-                padding: 2px;
-            }
-            #app {
-                position: absolute;
-                left: 100px;
-                top: 100px;
-                width: 800px;
-                height: 600px;
-            }
-        </style>
-        <link rel="stylesheet" type="text/css" href="molstar.css" />
-    </head>
-    <body>
-        <div id="app"></div>
-        <script src="./extras/driver.js.iife.js"></script>
-        <script type="text/javascript" src="./molstar.js"></script>
-        <script type="text/javascript">
-            const driver = window.driver ? window.driver.js.driver() : undefined;
 
-            function getParam(name, regex) {
-                var r = new RegExp(name + '=' + '(' + regex + ')[&]?', 'i');
-                return decodeURIComponent(((window.location.search || '').match(r) || [])[1] || '');
-            }
+<head>
+    <title>Mol* Mesoscale Explorer &mdash; BETA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="icon" href="https://molstar.org/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <style>
+        .shadow-img {
+            box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.66);
+        }
 
-            var debugMode = getParam('debug-mode', '[^&]+').trim() === '1';
-            if (debugMode) molstar.setDebugMode(debugMode);
+        .shadow-img:hover {
+            box-shadow: 0 0 9px 1px rgb(51, 43, 31)
+        }
 
-            var timingMode = getParam('timing-mode', '[^&]+').trim() === '1';
-            if (timingMode) molstar.setTimingMode(timingMode);
+        .founders,
+        .examples {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-            var hideControls = getParam('hide-controls', '[^&]+').trim() === '1';
-            var preferWebgl1 = getParam('prefer-webgl1', '[^&]+').trim() === '1' || void 0;
-            var allowMajorPerformanceCaveat = getParam('allow-major-performance-caveat', '[^&]+').trim() === '1';
-            var powerPreference = getParam('power-preference', '[^&]+').trim().toLowerCase();
-            var graphicsMode = getParam('graphics-mode', '[^&]+').trim().toLowerCase();
+        .founders img {
+            max-width: 160px;
+            max-height: 60px;
+            margin: 0 15px
+        }
 
-            molstar.MesoscaleExplorer.create('app', {
-                layoutShowControls: !hideControls,
-                viewportShowExpand: false,
-                preferWebgl1: preferWebgl1,
-                allowMajorPerformanceCaveat: allowMajorPerformanceCaveat,
-                powerPreference: powerPreference || 'high-performance',
-                graphicsMode: graphicsMode || 'quality',
-                driver: driver
-            }).then(me => {
-                var example = getParam('example', '[^&]+').trim();
-                if (example) {
-                    me.loadExample(example);
-                    return;
-                }
+        .examples img {
+            max-width: 160px;
+            width: 100%;
+            margin: 0 10px;
+        }
 
-                var url = getParam('url', '[^&]+').trim();
-                var type = getParam('type', '[^&]+').trim();
-                if (url && type) {
-                    me.loadUrl(url, type);
-                    return;
-                }
+        .examples div.pad {
+            max-width: 40px;
+            width: 100%;
+            margin: 0 10px
+        }
 
-                var pdb = getParam('pdb', '[^&]+').trim();
-                if (pdb) {
-                    me.loadPdb(pdb);
-                    return;
-                }
+        .tooltip>a {
+            display: block;
+            opacity: 0.75;
+        }
 
-                var pdbdev = getParam('pdbdev', '[^&]+').trim();
-                if (pdbdev) {
-                    me.loadPdbDev(pdbdev);
-                    return;
-                }
+        .examples a:hover {
+            opacity: 1;
+        }
 
-                window.addEventListener('unload', () => {
-                    // to aid GC
-                    me.dispose();
-                });
-            });
-        </script>
-        <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c414cbae2d284ea995171a81e4a3e721"}'></script><!-- End Cloudflare Web Analytics --><iframe src="https://web3dsurvey.com/collector-iframe.html" style="width: 1px; height: 1px;"></iframe>
-    </body>
+        .tooltip {
+            display: inline-block;
+            position: relative;
+        }
+
+        .tooltip .tooltip-info {
+            display: none;
+            color: rgb(51, 43, 31);
+            background-color: #E0DDD4;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #D0CDC4;
+            border-radius: 4px;
+            padding: 5px;
+            position: absolute;
+            left: -50%;
+            width: 200%;
+            z-index: 2;
+        }
+
+        .tooltip-info:after {
+            content: "";
+            position: absolute;
+            left: calc(50% - 5px);
+            top: -10px;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #E0DDD4;
+        }
+
+        .tooltip:hover .tooltip-info,
+        .tooltip:focus .tooltip-info {
+            display: inline-block;
+        }
+
+        a:focus+.tooltip .tooltip-info {
+            display: inline-block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="margin-bottom: 20px;">
+        <div class="row" style="text-align: center; margin: 80px 0 20px 0">
+            <img style="max-width: 525px; width: 100%;" src="img/molstar-logo.png" />
+            <h1>Mesoscale Explorer &mdash; BETA</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px; display: flex;">
+            <div class="offset-by-two eight columns"
+                style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
+                <div style="text-align: justify; margin: 5px">
+                    <a href="https://molstar.org/me/viewer/">A Mol* app for exploring mesoscale models</a>. This is a BETA version. The larger models may crash your browser with an out-of-memory exception. Generally best viewed on desktops with a dedicated GPU. Use the "Graphics" dropdown in the right panel to trade quality for performance.
+                    Check here the <a href="https://molstar.org/me/docs/">documentation</a>.
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="text-align: center; margin-top: 60px">
+            <div class="twelve columns">
+                <h4 class="hero-heading" style="margin-bottom: 40px"><b>Guide Tour Examples</b></h4>
+                <div class="row" id="tours">
+                    <script>
+                        fetch('tour.json')
+                            .then(r => r.json())
+                            .then(l => {
+                                const row = document.getElementById('tours');
+                                let examples;
+                                l.forEach((e, i) => {
+                                    if (i % 4 === 0) {
+                                        examples = document.createElement('div');
+                                        examples.className = 'examples';
+                                        row.appendChild(examples);
+                                    }
+
+                                    const div = document.createElement('div');
+                                    div.className = 'tooltip';
+                                    examples.appendChild(div);
+
+                                    const a = document.createElement('a');
+                                    a.href = `https://molstar.org/me/viewer/?example=${e.id}&hide-controls=1`;
+                                    a.target = '_blank';
+                                    a.title = e.label;
+                                    div.appendChild(a);
+
+                                    const img = document.createElement('img');
+                                    img.src = e.image;
+                                    img.alt = e.label;
+                                    a.appendChild(img);
+
+                                    const p = document.createElement('div');
+                                    p.className = 'tooltip-info';
+                                    p.innerHTML = e.link ? `${e.description}<br/><a href=${e.link} target='_blank'>Source</a>` : e.description;
+                                    div.appendChild(p);
+                                });
+                            });
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="text-align: center; margin-top: 60px">
+            <div class="twelve columns">
+                <h4 class="hero-heading" style="margin-bottom: 40px"><b>Interactive Examples</b></h4>
+                <div class="row" id="examples">
+                    <script>
+                        fetch('list.json')
+                            .then(r => r.json())
+                            .then(l => {
+                                const row = document.getElementById('examples');
+                                let examples;
+                                l.forEach((e, i) => {
+                                    if (i % 4 === 0) {
+                                        examples = document.createElement('div');
+                                        examples.className = 'examples';
+                                        row.appendChild(examples);
+                                    }
+
+                                    const div = document.createElement('div');
+                                    div.className = 'tooltip';
+                                    examples.appendChild(div);
+
+                                    const a = document.createElement('a');
+                                    a.href = `https://molstar.org/me/viewer/?example=${e.id}`;
+                                    a.target = '_blank';
+                                    a.title = e.label;
+                                    div.appendChild(a);
+
+                                    const img = document.createElement('img');
+                                    img.src = e.image;
+                                    img.alt = e.label;
+                                    a.appendChild(img);
+
+                                    const p = document.createElement('div');
+                                    p.className = 'tooltip-info';
+                                    p.innerHTML = e.link ? `${e.description}<br/><a href=${e.link} target='_blank'>Source</a>` : e.description;
+                                    div.appendChild(p);
+                                });
+                            });
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="text-align: right; margin-top: 60px; color: #999">
+            Copyright 2023–now, Mol* Contributors | <a href="https://molstar.org/terms-of-use.html" style="color: #999">Terms of Use & GDPR</a>
+        </div>
+    </div>
+
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c414cbae2d284ea995171a81e4a3e721"}'></script><!-- End Cloudflare Web Analytics -->
+    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c414cbae2d284ea995171a81e4a3e721"}'></script><!-- End Cloudflare Web Analytics -->
+    <iframe src="https://web3dsurvey.com/collector-iframe.html" style="width: 1px; height: 1px;"></iframe>
+</body>
+
 </html>
