@@ -96,13 +96,20 @@
         a {
             text-decoration: none;
         }
+
+        .overflow-button {
+            white-space: wrap;
+            word-break: break-word;
+            min-height: 38px;
+            height: auto;
+        }
     </style>
 </head>
 
 <body>
     <div class="container" style="margin-bottom: 20px;">
         <div class="row" style="text-align: center; margin: 80px 0 20px 0">
-            <img style="max-width: 525px; width: 100%;" src="img/molstar-logo.png" />
+            <img style="max-width: 525px; width: 85%;" src="img/molstar-logo.png" />
             <h1>Mesoscale Explorer<sup>BETA</sup></h1>
         </div>
 
@@ -125,6 +132,29 @@
             <div class="two columns">&nbsp;</div>
         </div>
 
+        
+        <div class="row" style="text-align: justify; margin-top: 60px;">
+            <div class="two columns">
+                &nbsp;
+            </div>
+
+            <div class="eight columns">
+                <a class="button button-primary overflow-button" href="https://onlinelibrary.wiley.com/doi/full/10.1002/pro.5177"
+                    style="font-size: 2rem; width: 100%;" target="_blank">Read about Mesoscale Explorer in Protein Science</a>
+
+                <div style="margin: 0 4px">
+                    <b>When using Mesoscale Explorer, please cite:</b><br />
+                    <span style="font-size: smaller;">Alexander Rose, David Sehnal, David S. Goodsell, Ludovic Autin: <a
+                        href="https://onlinelibrary.wiley.com/doi/full/10.1002/pro.5177">Mesoscale explorer: Visual exploration of large-scale molecular models</a>, <i>Protein Science</i>, 2024; <a
+                        href="https://doi.org/10.1002/pro.5177">10.1002/pro.5177</a>.</span>
+                </div>
+            </div>
+
+            <div class="two columns">
+                &nbsp;
+            </div>
+        </div>
+
         <div class="row" style="margin-top: 60px; display: flex;">
             <div class="one-half column"
                 style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
@@ -134,7 +164,7 @@
             </div>
             <div class="one-half column"
                 style="display: flex; flex-direction: column; justify-content: center; align-items: center; ">
-                <a class="button button-primary" href="https://molstar.org/me/viewer" style="font-size: 2rem; width: 100%;"
+                <a class="button button-primary overflow-button" href="https://molstar.org/me/viewer" style="font-size: 2rem; width: 100%;"
                     >Open Mesoscale Explorer</a>
                 <a class="button" href="https://molstar.org/me-docs/" style="font-size: 2rem; width: 100%;">
                     Documentation</a>
