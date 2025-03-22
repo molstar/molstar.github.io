@@ -2,19 +2,11 @@
  * Copyright (c) 2025 mol* contributors, licensed under MIT, See LICENSE file for more info.
  *
  * @author Andy Turner <agdturner@gmail.com>
- *
- * @description Service worker for the viewer app.
- * The service worker:
- * - caches the static resources that the app needs to function
- * - intercepts server requests and responds with cached responses instead of going to the network
- * - deletes old caches on activation
- * - responds with cached resources on fetch
- * - responds with a network error if fetching fails
- * - responds with a cache error if the cache match fails
+ * @author Alexander Rose <alexander.rose@weirdbyte.de>
  */
 
-/** version from package.json, to be filled in at build time */
-const VERSION = '4.12.1-1741391442834';
+/** version from package.json, to be filled in during deployment */
+const VERSION = '4.12.1';
 
 const CACHE_NAME = `molstar-viewer-${VERSION}`;
 
@@ -25,68 +17,44 @@ const APP_STATIC_RESOURCES = [
     'molstar.css',
     'molstar.js',
     'manifest.webmanifest',
-    'logo-144.png'
+    'logo-144.png',
+    'pwa.js'
 ];
 
-// On install, cache the static resources.
-self.addEventListener('install', (event) => {
-    console.log(`Service Worker version ${VERSION} installed.`);
-    event.waitUntil(
-        (async () => {
-            const cache = await caches.open(CACHE_NAME);
-            await cache.addAll(APP_STATIC_RESOURCES);
-            await self.skipWaiting(); // Ensures the new service worker takes control immediately.
-        })(),
-    );
-});
+async function cacheStaticResources() {
+    const cache = await caches.open(CACHE_NAME);
+    await cache.addAll(APP_STATIC_RESOURCES);
+    await self.skipWaiting(); // Ensures the new service worker takes control immediately.
+}
 
-// On activate, delete old caches.
-self.addEventListener('activate', (event) => {
-    console.log(`Service Worker version ${VERSION} activated.`);
-    event.waitUntil(
-        (async () => {
-            const keys = await caches.keys();
-            await Promise.all(
-                keys.map((key) => {
-                    if (key !== CACHE_NAME) {
-                        return caches.delete(key);
-                    }
-                }),
-            );
-            await self.clients.claim(); // Ensures the new service worker takes control immediately.
-        })(),
-    );
-});
-
-// On fetch, respond with cached resources.
-self.addEventListener('fetch', (event) => {
-    event.respondWith(
-        (async () => {
-            try {
-                // Try to match the request with the cache
-                const cachedResponse = await caches.match(event.request);
-                if (cachedResponse) {
-                    return cachedResponse;
-                }
-                // Fetch from network if not found in cache
-                const networkResponse = await fetch(event.request);
-                // Check if the network response is valid
-                if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== 'basic') {
-                    return networkResponse;
-                }
-                // Clone the network response
-                const responseToCache = networkResponse.clone();
-                // Open the cache and put the network response in it
-                const cache = await caches.open(CACHE_NAME);
-                await cache.put(event.request, responseToCache);
-                return networkResponse;
-            } catch (error) {
-                console.error('Fetching failed:', error);
-                return new Response('Network error occurred', {
-                    status: 408,
-                    statusText: 'Network error occurred'
-                });
+async function deleteOldCaches() {
+    const keys = await caches.keys();
+    await Promise.all(
+        keys.map((key) => {
+            if (key !== CACHE_NAME) {
+                return caches.delete(key);
             }
-        })()
+        }),
     );
+    await self.clients.claim(); // Ensures the new service worker takes control immediately.
+}
+
+async function respondWithCacheFirst(request) {
+    // Try to match the request with the cache
+    const cachedResponse = await caches.match(request);
+    return cachedResponse || fetch(request);
+}
+
+self.addEventListener('install', (event) => {
+    // console.log(`Service Worker version ${VERSION} installed.`);
+    event.waitUntil(cacheStaticResources());
+});
+
+self.addEventListener('activate', (event) => {
+    // console.log(`Service Worker version ${VERSION} activated.`);
+    event.waitUntil(deleteOldCaches());
+});
+
+self.addEventListener('fetch', (event) => {
+    event.respondWith(respondWithCacheFirst(event.request));
 });
