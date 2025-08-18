@@ -1196,6 +1196,13 @@ fieldset[disabled] .msp-plugin .msp-btn-link:focus {
   top: 0;
   bottom: 0;
 }
+.msp-plugin .msp-slider-no-input > div:first-child {
+  right: 18px;
+}
+.msp-plugin .msp-slider-no-input > div:last-child {
+  visibility: hidden;
+  width: 0;
+}
 .msp-plugin .msp-slider input[type=text] {
   padding-right: 6px;
   padding-left: 4px;
@@ -2076,6 +2083,15 @@ fieldset[disabled] .msp-plugin .msp-btn-link:focus {
   width: 200px;
   margin-right: 10px;
 }
+.msp-plugin .msp-viewport-top-left-controls .msp-state-snapshot-animation-slider {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  line-height: 32px;
+}
+.msp-plugin .msp-viewport-top-left-controls .msp-state-snapshot-animation-button {
+  margin-left: 10px;
+}
 .msp-plugin .msp-viewport-top-left-controls .msp-animation-viewport-controls {
   line-height: 32px;
   float: left;
@@ -2095,6 +2111,7 @@ fieldset[disabled] .msp-plugin .msp-btn-link:focus {
   left: 0;
   margin-top: 10px;
   background: rgb(224.2548780488, 220.637804878, 211.5951219512);
+  z-index: 10001;
 }
 .msp-plugin .msp-viewport-top-left-controls .msp-animation-viewport-controls .msp-animation-viewport-controls-select .msp-control-row:first-child {
   margin-top: 0;

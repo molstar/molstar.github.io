@@ -17,6 +17,24 @@
         "link": "http://download.yasara.org/petworld/sarscov2/index.html",
         "image": "./img/petworld-sarscov2.png"
     },
+    {
+        "id": "petworld-flagellarmotor",
+        "label": "Petworld Flagellar Motor",
+        "url": "../examples/flagellarmotor_2-no_bonds.bcif",
+        "type": "bcif",
+        "description": "Petworld model of Flagellar Motor, 0.736 million atoms. Author: Kornel Ozvoldik. Based on the RCSB Molecule of the Month: Flagellar Motor (doi: 10.2210/rcsb_pdb/mom_2024_12).",
+        "link": "http://download.yasara.org/petworld/flagellarmotor/index.html",
+        "image": "./img/petworld-flagellarmotor.png"
+    },
+    {
+        "id": "petworld-t7phage",
+        "label": "Petworld T7 phage",
+        "url": "../examples/t7phage_2-no_bonds.bcif",
+        "type": "bcif",
+        "description": "Petworld model of T7 phage, 18.484 million atoms. Authors: Teruaki Koto, Kornel Ozvoldik and Tibor Pali.",
+        "link": "http://download.yasara.org/petworld/t7phage/index.html",
+        "image": "./img/petworld-t7phage.png"
+    },
 
     {
         "id": "petworld-postsynmushroom",
