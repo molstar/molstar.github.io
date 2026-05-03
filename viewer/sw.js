@@ -6,7 +6,7 @@
  */
 
 /** version from package.json, to be filled in during deployment */
-const VERSION = '5.8.0';
+const VERSION = '5.9.0';
 
 const CACHE_NAME = `molstar-viewer-${VERSION}`;
 
