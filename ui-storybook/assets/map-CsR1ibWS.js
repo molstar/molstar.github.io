@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{i as t,n,r,t as i}from"./OperatorSubscriber-C8tumhdd.js";function a(e,n){return t(function(t,r){var a=0;t.subscribe(i(r,function(t){r.next(e.call(n,t,a++))}))})}function o(){return(o=e((()=>{r(),n()})))()}export{a as n,o as t};

@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";function t(e){let t=n.get(e);if(t||(t={status:`pending`},n.set(e,t),e.then(t=>n.set(e,{status:`done`,value:t}),t=>n.set(e,{status:`failed`,reason:t}))),t.status===`done`)return t.value;throw t.status===`failed`?t.reason:e}var n;function r(){return(r=e((()=>{n=new WeakMap})))()}export{t as n,r as t};
