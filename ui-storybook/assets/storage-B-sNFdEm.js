@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";var t;function n(){return(n=e((()=>{t=class extends Error{constructor(e){super(`Rows of ${e} were written elsewhere.`),this.name=`RowConflict`}}})))()}export{n,t};

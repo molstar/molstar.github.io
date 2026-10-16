@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";var t;function n(){return(n=e((()=>{t={now:function(){return(t.delegate||Date).now()},delegate:void 0}})))()}export{n,t};

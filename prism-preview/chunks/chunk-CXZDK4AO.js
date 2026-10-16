@@ -1,0 +1,1 @@
+var a;(T=>{function K(){return{keys:new Set,array:[]}}T.create=K;function u({keys:r,array:e},n,t){return r.has(n)?!1:(r.add(n),e[e.length]=t,!0)}T.add=u;function i({keys:r},e){return r.has(e)}T.has=i})(a||={});export{a};
