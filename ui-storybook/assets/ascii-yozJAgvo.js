@@ -1,0 +1,1 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";function t(e,t){for(let n=0,r=t.length;n<r;++n)e[n]=t.charCodeAt(n)}function n(e,t,n){let r=``;for(let i=t;i<n;i++)r+=String.fromCharCode(e[i]);return r}function r(){return(r=e((()=>{})))()}export{t as n,r,n as t};

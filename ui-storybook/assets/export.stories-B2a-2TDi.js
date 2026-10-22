@@ -1,0 +1,11 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{t}from"./react-B6tGW3fj.js";import{t as n}from"./jsx-runtime-ATHzeHXA.js";import{o as r,r as i}from"./seqstar-cases-Fwes-sXX.js";import{d as a,u as o}from"./seqstar-prism-C8YUN_JZ.js";import{n as s,t as c}from"./seqstar-read-cJpSZCRE.js";import{n as l,r as u,t as d}from"./genome-fixture-Bx-2Ixys.js";import{n as f,r as p,t as m}from"./seqstar-export-C5iO5uwD.js";function h(){let e=s(i(`case14`));return(0,v.jsx)(m,{doc:e.doc,label:`Case 14: A protein over its coding DNA`,note:`A gene fragment of about 120 nucleotides, the protein translated from its codons, exons, a domain and a phosphosite.`})}function g(){let e=(0,_.useMemo)(()=>(b??=d(u()),b),[]);return(0,v.jsx)(m,{doc:e,label:`Genome-scale, 3M nucleotides`,note:`24 chromosomes, 3,000 genes, 300 proteins, GC content, 20,000 variants, 10,000 repeats: the figure draws what the canvas draws at its current zoom (zoom first to export a region).`})}var _,v,y,b,x,S;function C(){return(C=e((()=>{c(),_=t(),l(),r(),p(),o(),v=n(),y={title:`Seq*/Cases/Default UIs`,parameters:{layout:`fullscreen`,docs:{source:{type:`code`},description:{component:`Exporting a figure: the viewer's \`view.exportSvg\` action, which the UI's Export part runs, on
+two live viewers: case 14 (a protein over its coding DNA) and the genome story (3,000,000 nucleotides). The SVG it makes
+is drawn beside the canvas; the PNG is that SVG drawn by the page. File sizes, export times and downloads are shown.`}}}},b=null,x={name:`SVG and PNG export`,render:()=>(0,v.jsxs)(f,{children:[(0,v.jsx)(_.Suspense,{fallback:(0,v.jsx)(`div`,{className:a.status,children:`Compiling…`}),children:(0,v.jsx)(h,{})}),(0,v.jsx)(g,{})]})},S=[`SvgAndPng`],x.parameters={...x.parameters,docs:{...x.parameters?.docs,source:{originalSource:`{
+  name: 'SVG and PNG export',
+  render: () => <ExportFrame>
+      <Suspense fallback={<div className={f.status}>Compiling…</div>}>
+        <Case14 />
+      </Suspense>
+      <Genome />
+    </ExportFrame>
+}`,...x.parameters?.docs?.source}}}})))()}C();export{x as SvgAndPng,S as __namedExportsOrder,y as default};
