@@ -1,0 +1,14 @@
+import{n as e}from"./rolldown-runtime-DkW27tQK.js";import{n as t,t as n}from"./jsx-runtime-DbCUSNU3.js";import{a as r,i,n as a,t as o}from"./real-viewer-Bej2U4vD.js";import{n as s}from"./story-root-DfeAHAKA.js";import{d as c}from"./scene-tree-B-CrD89j.js";async function l(e,t,n){let i=await t();i.ok||console.error(`[story] ${i.message}`);let a=await e.api.trajectory.periodic({mode:n.periodic,center:n.center});a.ok||console.error(`[story] ${a.message}`),n.frame&&await e.api.trajectory.frame({index:n.frame}),n.unitCell&&await e.api.structure.unitCell({}),n.images&&await e.api.structure.symmetry({kind:`cells`,cells:1}),await e.api.camera.reset({animate:!1}),n.play&&await e.api.trajectory.play({mode:`loop`,seconds:5}),r(e,e=>e.kind===`structure`)}var u,d,f,p,m;function h(){return(h=e((()=>{c(),i(),n(),u={title:`Viewer/Simulations/Periodic box`,parameters:{layout:`fullscreen`},args:{periodic:`box`,center:`polymers`,frame:0,unitCell:!0,play:!1,images:!1},argTypes:{periodic:{control:`inline-radio`,options:[`whole`,`box`,`nojump`,`off`]},center:{control:`inline-radio`,options:[`box`,`polymers`]}}},d=e=>`https://raw.githubusercontent.com/MDAnalysis/mdanalysis/develop/testsuite/MDAnalysisTests/data/${e}`,f={name:`Split chain`,render:e=>s(()=>t(a,{setup:t=>l(t,()=>t.api.load.url({url:o.splitPeptide}),e)}))},p={name:`AdK in water`,render:e=>s(()=>t(a,{setup:t=>l(t,()=>t.api.load.trajectory({model:d(`adk_oplsaa.gro`),modelFormat:`gro`,coordinates:d(`adk_oplsaa.xtc`),coordinatesFormat:`xtc`}),e)}))},m=[`SplitChain`,`AdkInWater`],f.parameters={...f.parameters,docs:{...f.parameters?.docs,source:{originalSource:`{
+  name: 'Split chain',
+  render: args => story(() => <RealViewerStory setup={v => show(v, () => v.api.load.url!({
+    url: ExampleFiles.splitPeptide
+  }), args)} />)
+}`,...f.parameters?.docs?.source},description:{story:`A four-residue peptide and three waters in a rhombic dodecahedron: split across a face in most frames.`,...f.parameters?.docs?.description}}},p.parameters={...p.parameters,docs:{...p.parameters?.docs,source:{originalSource:`{
+  name: 'AdK in water',
+  render: args => story(() => <RealViewerStory setup={v => show(v, () => v.api.load.trajectory!({
+    model: MDAnalysis('adk_oplsaa.gro'),
+    modelFormat: 'gro',
+    coordinates: MDAnalysis('adk_oplsaa.xtc'),
+    coordinatesFormat: 'xtc'
+  }), args)} />)
+}`,...p.parameters?.docs?.source},description:{story:`Adenylate kinase in water (rhombic dodecahedron): the protein is split across the box in every frame as written.`,...p.parameters?.docs?.description}}}})))()}h();export{p as AdkInWater,f as SplitChain,m as __namedExportsOrder,u as default};

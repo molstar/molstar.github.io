@@ -1,0 +1,1 @@
+var n=e=>`${e}#sequence`,o=e=>`${e}#components`,t=e=>`${e}#other`;function r(e){if(!(e.kind!=="components"&&e.kind!=="other"))return e.id.slice(0,e.id.lastIndexOf("#"))}export{n as a,o as b,t as c,r as d};

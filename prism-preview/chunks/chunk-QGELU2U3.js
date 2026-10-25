@@ -1,0 +1,1 @@
+var u;(l=>{function i(e,r=-1){return new s(e,r)}l.error=i;function c(e,r=[]){return new t(e,r)}l.success=c;class s{constructor(r,n){this.message=r;this.line=n;this.isError=!0}toString(){return this.line>=0?`[Line ${this.line}] ${this.message}`:this.message}}l.Error=s;class t{constructor(r,n){this.result=r;this.warnings=n;this.isError=!1}}l.Success=t})(u||={});export{u as a};
